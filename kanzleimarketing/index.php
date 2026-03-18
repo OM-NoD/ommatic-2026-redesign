@@ -73,9 +73,9 @@ require_once '../includes/components.php';
        ============================================================ -->
   <section id="leistungen" class="services-section">
     <div class="container">
-      <div class="section-head sr">
+      <div class="section-header sr">
         <span class="tag-chip">Was wir bieten</span>
-        <h2>Was beinhaltet <span class="gradient-text">Kanzleimarketing</span> – und warum ist es essenziell?</h2>
+        <h2>Was beinhaltet Kanzleimarketing – und warum ist es essenziell?</h2>
         <p class="section-sub">Die neun Säulen eines erfolgreichen digitalen Auftritts für Rechtsanwaltskanzleien.</p>
       </div>
 
