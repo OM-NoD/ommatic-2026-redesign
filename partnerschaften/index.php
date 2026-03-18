@@ -154,12 +154,98 @@ require_once '../includes/header.php';
   </section>
 
   <!-- ============================================================
-       EXISTING PARTNERS GRID
+       TECHNOLOGY PARTNERS GRID
        ============================================================ -->
-  <section class="content-section alt">
+  <section class="content-section alt" id="technologie-partner">
     <div class="container">
       <div class="sr" style="text-align:center;margin-bottom:3rem;">
-        <h2 style="font-family:var(--font-h);font-size:clamp(1.5rem,3vw,2.25rem);font-weight:800;">
+        <span class="tag-chip">Technologie-Ökosystem</span>
+        <h2 style="font-family:var(--font-h);font-size:clamp(1.5rem,3vw,2.25rem);font-weight:800;margin-top:1rem;">
+          Führende <span class="gradient-text">Technologiepartner</span>
+        </h2>
+        <p style="color:var(--text-2);max-width:560px;margin:1rem auto 0;">
+          Wir arbeiten mit den besten Tools und Plattformen – für messbare Ergebnisse in jeder Kanzlei-Kampagne.
+        </p>
+      </div>
+
+      <?php
+      /* Hilfsfunktion: Initialen aus Name generieren (max. 2 Zeichen) */
+      function partner_initials(string $name): string {
+          $words = preg_split('/[\s\-_]+/', trim($name));
+          if (count($words) >= 2) {
+              return strtoupper(substr($words[0], 0, 1) . substr($words[1], 0, 1));
+          }
+          return strtoupper(substr($name, 0, 2));
+      }
+
+      /* Farb-Hash: deterministisch, aber schön bunt */
+      function partner_color(string $name): string {
+          $colors = ['#4f46e5','#0ea5e9','#10b981','#f59e0b','#ef4444','#8b5cf6','#ec4899','#06b6d4','#84cc16','#f97316'];
+          return $colors[abs(crc32($name)) % count($colors)];
+      }
+
+      $tech_partners = [
+          ['name' => 'Google',            'cat' => 'Ads & Analytics',       'domain' => 'google.com',           'url' => 'https://ads.google.com/'],
+          ['name' => 'Meta',              'cat' => 'Social Ads',             'domain' => 'meta.com',             'url' => 'https://www.meta.com/'],
+          ['name' => 'Microsoft',         'cat' => 'Microsoft Advertising',  'domain' => 'microsoft.com',        'url' => 'https://ads.microsoft.com/'],
+          ['name' => 'HubSpot',           'cat' => 'CRM & Automation',       'domain' => 'hubspot.com',          'url' => 'https://www.hubspot.com/'],
+          ['name' => 'Semrush',           'cat' => 'SEO & Content',          'domain' => 'semrush.com',          'url' => 'https://www.semrush.com/'],
+          ['name' => 'Ahrefs',            'cat' => 'SEO & Backlink-Analyse', 'domain' => 'ahrefs.com',           'url' => 'https://ahrefs.com/'],
+          ['name' => 'Sistrix',           'cat' => 'SEO-Sichtbarkeit',       'domain' => 'sistrix.de',           'url' => 'https://www.sistrix.de/'],
+          ['name' => 'Calendly',          'cat' => 'Terminbuchung',          'domain' => 'calendly.com',         'url' => 'https://calendly.com/'],
+          ['name' => 'Zapier',            'cat' => 'Workflow-Automatisierung','domain' => 'zapier.com',          'url' => 'https://zapier.com/'],
+          ['name' => 'Trustpilot',        'cat' => 'Bewertungsmanagement',   'domain' => 'trustpilot.com',       'url' => 'https://www.trustpilot.com/'],
+          ['name' => 'ProvenExpert',      'cat' => 'Kanzlei-Bewertungen',    'domain' => 'provenexpert.com',     'url' => 'https://www.provenexpert.com/'],
+          ['name' => 'OptimizeLocation', 'cat' => 'Local SEO',              'domain' => 'optimizelocation.com', 'url' => 'https://optimizelocation.com/'],
+          ['name' => 'WP Engine',         'cat' => 'Managed WordPress',      'domain' => 'wpengine.com',         'url' => 'https://wpengine.com/'],
+          ['name' => 'Cloudflare',        'cat' => 'CDN & Security',         'domain' => 'cloudflare.com',       'url' => 'https://www.cloudflare.com/'],
+      ];
+      ?>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1.25rem;" class="sr">
+        <?php foreach ($tech_partners as $p):
+            $logo     = 'https://logo.clearbit.com/' . $p['domain'];
+            $initials = partner_initials($p['name']);
+            $color    = partner_color($p['name']);
+            $bg       = $color . '22'; /* ~13 % opacity */
+        ?>
+        <a href="<?= htmlspecialchars($p['url']) ?>" target="_blank" rel="noopener"
+           style="background:var(--bg-card);border:1px solid var(--border-s);border-radius:var(--radius);padding:1.5rem 1.25rem;text-align:center;transition:border-color .2s,transform .2s,box-shadow .2s;display:block;text-decoration:none;"
+           onmouseover="this.style.borderColor='var(--primary)';this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 32px var(--primary-glow)'"
+           onmouseout="this.style.borderColor='var(--border-s)';this.style.transform='translateY(0)';this.style.boxShadow='none'">
+
+          <!-- Logo-Bereich: weißer Hintergrund damit farbige Logos sichtbar sind -->
+          <div style="height:3.5rem;display:flex;align-items:center;justify-content:center;margin:0 auto .875rem;background:#fff;border-radius:.625rem;padding:.5rem .75rem;">
+            <img
+              src="<?= htmlspecialchars($logo) ?>"
+              alt="<?= htmlspecialchars($p['name']) ?> Logo"
+              width="120"
+              height="48"
+              style="max-height:2.75rem;max-width:7.5rem;width:auto;height:auto;object-fit:contain;display:block;"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+            >
+            <!-- Initialen-Fallback -->
+            <div style="display:none;width:3rem;height:3rem;border-radius:.75rem;background:<?= htmlspecialchars($bg) ?>;align-items:center;justify-content:center;font-weight:800;font-size:1rem;color:<?= htmlspecialchars($color) ?>;font-family:var(--font-h);">
+              <?= htmlspecialchars($initials) ?>
+            </div>
+          </div>
+
+          <div style="font-weight:700;font-size:.9rem;color:var(--text-1);margin-bottom:.3rem;"><?= htmlspecialchars($p['name']) ?></div>
+          <div style="font-size:.75rem;color:var(--text-3);"><?= htmlspecialchars($p['cat']) ?></div>
+        </a>
+        <?php endforeach; ?>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EXISTING PARTNERS GRID
+       ============================================================ -->
+  <section class="content-section">
+    <div class="container">
+      <div class="sr" style="text-align:center;margin-bottom:3rem;">
+        <span class="tag-chip">Legal-Tech-Netzwerk</span>
+        <h2 style="font-family:var(--font-h);font-size:clamp(1.5rem,3vw,2.25rem);font-weight:800;margin-top:1rem;">
           Ausgewählte Partner
         </h2>
       </div>
@@ -181,25 +267,32 @@ require_once '../includes/header.php';
             ['name' => 'Muxom',           'cat' => 'Tech Solutions',     'domain' => 'muxom.de',            'url' => 'https://muxom.de/'],
         ];
         foreach ($partners as $p):
-            $logo = 'https://logo.clearbit.com/' . $p['domain'];
-            $initials = strtoupper(substr($p['name'], 0, 2));
+            $logo     = 'https://logo.clearbit.com/' . $p['domain'];
+            $initials = partner_initials($p['name']);
+            $color    = partner_color($p['name']);
+            $bg       = $color . '22';
         ?>
         <a href="<?= htmlspecialchars($p['url']) ?>" target="_blank" rel="noopener"
            style="background:var(--bg-card);border:1px solid var(--border-s);border-radius:var(--radius);padding:1.5rem 1.25rem;text-align:center;transition:border-color .2s,transform .2s,box-shadow .2s;display:block;text-decoration:none;"
            onmouseover="this.style.borderColor='var(--primary)';this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 32px var(--primary-glow)'"
            onmouseout="this.style.borderColor='var(--border-s)';this.style.transform='translateY(0)';this.style.boxShadow='none'">
-          <!-- Logo mit Fallback auf Initialen -->
-          <div style="height:3.5rem;display:flex;align-items:center;justify-content:center;margin:0 auto .875rem;">
+
+          <!-- Logo-Bereich: weißer Hintergrund damit farbige Logos sichtbar sind -->
+          <div style="height:3.5rem;display:flex;align-items:center;justify-content:center;margin:0 auto .875rem;background:#fff;border-radius:.625rem;padding:.5rem .75rem;">
             <img
               src="<?= htmlspecialchars($logo) ?>"
               alt="<?= htmlspecialchars($p['name']) ?> Logo"
-              style="max-height:3rem;max-width:8rem;object-fit:contain;filter:brightness(0) invert(1);opacity:.85;"
+              width="120"
+              height="48"
+              style="max-height:2.75rem;max-width:7.5rem;width:auto;height:auto;object-fit:contain;display:block;"
               onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
             >
-            <div style="display:none;width:3rem;height:3rem;border-radius:.75rem;background:var(--primary-dim);align-items:center;justify-content:center;font-weight:800;font-size:.95rem;color:var(--primary);">
+            <!-- Initialen-Fallback -->
+            <div style="display:none;width:3rem;height:3rem;border-radius:.75rem;background:<?= htmlspecialchars($bg) ?>;align-items:center;justify-content:center;font-weight:800;font-size:1rem;color:<?= htmlspecialchars($color) ?>;font-family:var(--font-h);">
               <?= htmlspecialchars($initials) ?>
             </div>
           </div>
+
           <div style="font-weight:700;font-size:.9rem;color:var(--text-1);margin-bottom:.3rem;"><?= htmlspecialchars($p['name']) ?></div>
           <div style="font-size:.75rem;color:var(--text-3);"><?= htmlspecialchars($p['cat']) ?></div>
         </a>
