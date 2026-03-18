@@ -1,6 +1,6 @@
 <?php
-$page_title       = 'Datenschutz & Compliance für Rechtsanwälte – DSGVO-sicher online | OMmatic';
-$page_description = 'OMmatic sorgt für rechtssicheres Online-Marketing für Rechtsanwälte: DSGVO-konforme Datenschutzerklärung, Impressum, Consent Management und technische Compliance – vollständig abgemahnsicher.';
+$page_title       = 'Datenschutz & Compliance für Rechtsanwälte – DSGVO-konforme Website | OMmatic';
+$page_description = 'Gerade für Rechtsanwälte gelten besondere Anforderungen: DSGVO-konforme Website, rechtssicheres Impressum, Cookie-Consent und Abmahnschutz – von OMmatic.';
 $page_canonical   = 'https://ommatic.de/kanzleimarketing/datenschutz-und-compliance-fuer-rechtsanwaelte/';
 require_once '../../includes/header.php';
 ?>

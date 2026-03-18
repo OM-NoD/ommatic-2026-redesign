@@ -1,6 +1,6 @@
 <?php
-$page_title       = 'Analytics & Reporting für Kanzleien – Online-Marketing messbar machen | OMmatic';
-$page_description = 'OMmatic liefert verständliches Analytics & Reporting für Rechtsanwaltskanzleien. Echtzeit-Dashboards, monatliche Berichte und klare KPIs – damit Sie immer wissen, was funktioniert.';
+$page_title       = 'Analytics & Reporting für Rechtsanwälte – Transparente Performance-Daten | OMmatic';
+$page_description = 'Steigern Sie die Performance Ihrer Online-Marketing-Kampagnen mit branchenspezifischen Analyse-Tools und transparenten Reporting-Dashboards – speziell für Kanzleien.';
 $page_canonical   = 'https://ommatic.de/kanzleimarketing/messung-und-berichte-analytics-reporting/';
 require_once '../../includes/header.php';
 ?>

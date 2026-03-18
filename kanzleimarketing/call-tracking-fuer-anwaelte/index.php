@@ -1,6 +1,6 @@
 <?php
-$page_title       = 'Call Tracking für Anwälte – Anrufe analysieren & Werbebudget optimieren | OMmatic';
-$page_description = 'Mit OMmatic Call Tracking wissen Sie, über welchen Kanal jeder Mandant anruft. Google Ads, Website oder Verzeichnis – vollständige Anruf-Analyse für Ihre Kanzlei, DSGVO-konform.';
+$page_title       = 'Call Tracking für Anwälte – Anrufe messen & Kampagnen optimieren | OMmatic';
+$page_description = 'Mit OMmatic Call Tracking Anrufe analysieren, Werbestrategie optimieren und Mandantenkommunikation verbessern – ohne Mehraufwand für Ihre Kanzlei.';
 $page_canonical   = 'https://ommatic.de/kanzleimarketing/call-tracking-fuer-anwaelte/';
 require_once '../../includes/header.php';
 ?>

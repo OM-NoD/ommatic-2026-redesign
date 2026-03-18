@@ -63,16 +63,16 @@ require_once '../../includes/header.php';
             <div class="hs-label">Verzeichnisse gleichzeitig</div>
           </div>
           <div class="hs-card" style="background:var(--bg-card);border:1px solid var(--border-s);border-radius:var(--radius);padding:28px 22px;text-align:center;">
-            <div class="hs-num" style="color:var(--indigo);">+40%</div>
-            <div class="hs-label">Mehr lokale Sichtbarkeit im Ø</div>
+            <div class="hs-num" style="color:var(--indigo);">3×</div>
+            <div class="hs-label">Mehr lokale Anfragen im Ø</div>
           </div>
           <div class="hs-card" style="background:var(--bg-card);border:1px solid var(--border-s);border-radius:var(--radius);padding:28px 22px;text-align:center;">
-            <div class="hs-num" style="color:var(--teal);">100%</div>
+            <div class="hs-num" style="color:var(--teal);">4,8★</div>
+            <div class="hs-label">Ø-Bewertung nach Optimierung</div>
+          </div>
+          <div class="hs-card" style="background:var(--bg-card);border:1px solid var(--border-s);border-radius:var(--radius);padding:28px 22px;text-align:center;">
+            <div class="hs-num" style="color:var(--primary);">100%</div>
             <div class="hs-label">NAP-Konsistenz garantiert</div>
-          </div>
-          <div class="hs-card" style="background:var(--bg-card);border:1px solid var(--border-s);border-radius:var(--radius);padding:28px 22px;text-align:center;">
-            <div class="hs-num" style="color:var(--primary);">24h</div>
-            <div class="hs-label">Reaktionszeit bei Änderungen</div>
           </div>
         </div>
       </div>
