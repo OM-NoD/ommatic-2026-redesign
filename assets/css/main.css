@@ -284,7 +284,7 @@ button, input, textarea, select { font-family: inherit; }
 [data-theme="light"] .hs-card { background: #fff; }
 [data-theme="light"] .blog-card { background: #fff; }
 [data-theme="light"] .contact-info-card { background: #fff; }
-[data-theme="light"] .process-step { background: #fff; }
+/* process-step: kein separates Background – transparent wie Section */
 [data-theme="light"] .cta-banner { background: linear-gradient(135deg, #E8F4FF 0%, #EEF2FF 50%, #E6FFF9 100%); }
 [data-theme="light"] .topbar { background: #EBF5FF; border-bottom: 1px solid rgba(0,153,204,0.15); }
 [data-theme="light"] .nav-dropdown-menu { background: #fff; border-color: rgba(0,0,0,0.1); }
@@ -691,27 +691,13 @@ button, input, textarea, select { font-family: inherit; }
    PROCESS
    ========================================================== */
 .process-section { padding:var(--py) 0; background:var(--bg-2); }
-.process-track { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; position:relative; }
+.process-track { display:grid; grid-template-columns:repeat(4,1fr); position:relative; }
 .process-track::before {
   content:''; position:absolute; top:44px;
   left:calc(12.5% + 22px); right:calc(12.5% + 22px);
   height:2px; background:var(--grad-line); z-index:0;
 }
-.process-step {
-  position:relative; z-index:1; text-align:center;
-  padding:32px 20px 32px;
-  background:var(--bg-card);
-  border:1px solid var(--border-s);
-  border-radius:var(--radius-l);
-  transition: transform .3s, border-color .3s, box-shadow .3s;
-}
-.process-step:hover { transform:translateY(-4px); border-color:var(--border); box-shadow:var(--shadow-card); }
-.process-step::before {
-  content:''; position:absolute; top:0; left:0; right:0; height:2px;
-  background:var(--grad-line); border-radius:var(--radius-l) var(--radius-l) 0 0;
-  opacity:0; transition:opacity .3s;
-}
-.process-step:hover::before { opacity:1; }
+.process-step { position:relative; z-index:1; text-align:center; padding:0 16px 40px; }
 .proc-circle {
   width:48px; height:48px; border-radius:50%; display:flex; align-items:center; justify-content:center;
   font-family:var(--font-h); font-size:17px; font-weight:800;
