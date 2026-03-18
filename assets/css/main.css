@@ -822,6 +822,10 @@ a.contact-info-card:hover { border-color:var(--border); background:var(--bg-3); 
   position:relative; overflow:hidden;
 }
 .contact-form-wrap::before { content:''; position:absolute; top:0; left:0; right:0; height:2px; background:var(--grad-line); }
+.form-label { font-family:var(--font-h); font-size:13px; font-weight:600; letter-spacing:.04em; text-transform:uppercase; color:var(--text-3); }
+.form-input { width:100%; background:var(--bg-3); border:1px solid var(--border-s); border-radius:var(--radius-s); color:var(--text); font-size:15px; font-weight:400; padding:13px 16px; outline:none; transition:border-color .2s,background .2s,box-shadow .2s; appearance:none; -webkit-appearance:none; }
+.form-input:focus { border-color:var(--primary); background:var(--bg-2); box-shadow:0 0 0 3px var(--primary-dim); }
+.contact-item-row:hover { border-color:var(--primary) !important; }
 
 .form-title {
   font-family:var(--font-h);
@@ -1103,6 +1107,23 @@ main > section ul li::before {
   backdrop-filter:blur(14px); transition:border-color .3s, transform .3s;
 }
 .team-card:hover { border-color:var(--border); transform:translateY(-4px); }
+
+/* Horizontale Variante: Foto links, Text rechts – für 2-Spalten-Grid */
+.team-card--wide {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 24px;
+  text-align: left;
+}
+.team-card--wide .team-card-img {
+  flex-shrink: 0;
+  width: 100px !important;
+  height: 100px !important;
+}
+.team-card--wide .team-card-body { text-align: left; flex: 1; }
+.team-card--wide .team-card-name { font-size: 19px; }
+.team-card--wide .team-card-bio { font-size: 14px; line-height: 1.7; }
 .team-avatar {
   width:80px; height:80px; border-radius:50%;
   margin:0 auto 20px;
