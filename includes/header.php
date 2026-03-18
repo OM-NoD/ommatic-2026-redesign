@@ -176,34 +176,74 @@ $robots_content = $page_noindex ? 'noindex, nofollow' : 'index, follow';
   </div>
 </header>
 
-<nav class="mobile-nav" id="mobileNav" aria-label="Mobile Navigation">
-  <a href="/kanzleimarketing/"                                                                     class="nav-link">Kanzleimarketing</a>
-  <a href="/kanzleimarketing/suchmaschinenoptimierung-seo-fuer-rechtsanwaelte/"                    class="nav-link">SEO für Rechtsanwälte</a>
-  <a href="/kanzleimarketing/suchanzeigen-kampagnen-sea-fuer-rechtsanwaelte-und-kanzleien/"        class="nav-link">SEA für Rechtsanwälte</a>
-  <a href="/kanzleimarketing/lokales-online-marketing-mybusiness-fuer-rechtsanwaelte/"             class="nav-link">Lokales Online Marketing</a>
-  <a href="/kanzleimarketing/social-media-fuer-rechtsanwaelte/"                                    class="nav-link">Social Media für Rechtsanwälte</a>
-  <a href="/kanzleimarketing/messung-und-berichte-analytics-reporting/"                            class="nav-link">Analytics &amp; Reporting</a>
-  <a href="/kanzleimarketing/datenschutz-und-compliance-fuer-rechtsanwaelte/"                      class="nav-link">Datenschutz &amp; Compliance</a>
-  <a href="/kanzleimarketing/branchenlisting-fuer-anwaelte/"                                       class="nav-link">Branchenlisting</a>
-  <a href="/kanzleimarketing/call-tracking-fuer-anwaelte/"                                         class="nav-link">Call Tracking</a>
-  <a href="/kanzleimarketing/ki-anrufbeantworter-fuer-anwaelte/"                                   class="nav-link">KI Anrufbeantworter</a>
-  <a href="/ueber-uns/"               class="nav-link">Über uns</a>
-  <a href="/ansprechpartner/"         class="nav-link">Ansprechpartner</a>
-  <a href="/partnerschaften/"         class="nav-link">Partnerschaften</a>
-  <a href="/karriere/"                class="nav-link">Karriere</a>
-  <a href="/erfolge/"                 class="nav-link">Erfolge</a>
-  <a href="/preise/"                  class="nav-link">Preise</a>
-  <a href="/check/"                   class="nav-link">Website-Check</a>
-  <a href="/lokale-praesenz-pruefen/" class="nav-link">Online-Präsenz-Check</a>
-  <a href="/blog/"                    class="nav-link">Blog</a>
-  <a href="/neuigkeiten/"             class="nav-link">Neuigkeiten</a>
-  <a href="/legal-business-forum/"    class="nav-link">Legal Business Forum</a>
-  <a href="/kontakt/"                 class="btn btn-primary">Beratung anfragen</a>
-  <div class="mobile-nav-divider"></div>
-  <button class="mobile-nav-theme-btn" id="themeToggleMobile" aria-label="Dark/Light Mode umschalten">
-    <svg class="i-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
-    <svg class="i-sun"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
-    <span class="i-moon">Dark Mode</span>
-    <span class="i-sun">Light Mode</span>
-  </button>
+<!-- Mobile Drawer Overlay -->
+<div class="mobile-overlay" id="mobileOverlay" aria-hidden="true"></div>
+
+<!-- Mobile Drawer -->
+<nav class="mobile-nav" id="mobileNav" aria-label="Mobile Navigation" aria-modal="true" role="dialog">
+
+  <!-- Drawer Header -->
+  <div class="mobile-nav-head">
+    <a href="/" class="logo">OMmatic<span class="dot">.</span></a>
+    <button class="mobile-nav-close" id="mobileClose" aria-label="Menü schließen">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="22" height="22"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+  </div>
+
+  <!-- Scrollable Body -->
+  <div class="mobile-nav-body">
+
+    <div class="mobile-nav-section">
+      <div class="mobile-nav-label">Leistungen</div>
+      <a href="/kanzleimarketing/"                                                                    class="mobile-nav-link">Kanzleimarketing <span class="mnl-badge">Übersicht</span></a>
+      <a href="/kanzleimarketing/suchmaschinenoptimierung-seo-fuer-rechtsanwaelte/"                   class="mobile-nav-link">SEO für Rechtsanwälte</a>
+      <a href="/kanzleimarketing/suchanzeigen-kampagnen-sea-fuer-rechtsanwaelte-und-kanzleien/"       class="mobile-nav-link">SEA / Google Ads</a>
+      <a href="/kanzleimarketing/lokales-online-marketing-mybusiness-fuer-rechtsanwaelte/"            class="mobile-nav-link">Lokales Online Marketing</a>
+      <a href="/kanzleimarketing/social-media-fuer-rechtsanwaelte/"                                   class="mobile-nav-link">Social Media</a>
+      <a href="/kanzleimarketing/messung-und-berichte-analytics-reporting/"                           class="mobile-nav-link">Analytics &amp; Reporting</a>
+      <a href="/kanzleimarketing/datenschutz-und-compliance-fuer-rechtsanwaelte/"                     class="mobile-nav-link">Datenschutz &amp; Compliance</a>
+      <a href="/kanzleimarketing/branchenlisting-fuer-anwaelte/"                                      class="mobile-nav-link">Branchenlisting</a>
+      <a href="/kanzleimarketing/call-tracking-fuer-anwaelte/"                                        class="mobile-nav-link">Call Tracking</a>
+      <a href="/kanzleimarketing/ki-anrufbeantworter-fuer-anwaelte/"                                  class="mobile-nav-link">KI Anrufbeantworter</a>
+    </div>
+
+    <div class="mobile-nav-section">
+      <div class="mobile-nav-label">Tools &amp; Checks</div>
+      <a href="/preise/"                  class="mobile-nav-link">Preise</a>
+      <a href="/check/"                   class="mobile-nav-link">Website-Check</a>
+      <a href="/lokale-praesenz-pruefen/" class="mobile-nav-link">Online-Präsenz-Check</a>
+    </div>
+
+    <div class="mobile-nav-section">
+      <div class="mobile-nav-label">Unternehmen</div>
+      <a href="/ueber-uns/"       class="mobile-nav-link">Über uns</a>
+      <a href="/ansprechpartner/" class="mobile-nav-link">Ansprechpartner</a>
+      <a href="/partnerschaften/" class="mobile-nav-link">Partnerschaften</a>
+      <a href="/karriere/"        class="mobile-nav-link">Karriere</a>
+      <a href="/erfolge/"         class="mobile-nav-link">Erfolge</a>
+    </div>
+
+    <div class="mobile-nav-section">
+      <div class="mobile-nav-label">Aktuelles</div>
+      <a href="/blog/"             class="mobile-nav-link">Blog</a>
+      <a href="/neuigkeiten/"      class="mobile-nav-link">Neuigkeiten</a>
+      <a href="/legal-business-forum/" class="mobile-nav-link">
+        Legal Business Forum
+        <span class="mnl-badge mnl-badge--event">Event</span>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Drawer Footer: CTA + Theme Toggle -->
+  <div class="mobile-nav-foot">
+    <a href="/kontakt/" class="btn btn-primary mobile-nav-cta">Beratung anfragen</a>
+    <button class="mobile-nav-theme-btn" id="themeToggleMobile" aria-label="Dark/Light Mode umschalten">
+      <svg class="i-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+      <svg class="i-sun"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+      <span class="i-moon">Dark Mode aktivieren</span>
+      <span class="i-sun">Light Mode aktivieren</span>
+    </button>
+  </div>
+
 </nav>

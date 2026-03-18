@@ -23,15 +23,19 @@ const themeToggleMobile = document.getElementById('themeToggleMobile');
 if (themeToggleMobile) themeToggleMobile.addEventListener('click', toggleTheme);
 
 /* ==========================================================
-   HAMBURGER MENU
+   MOBILE DRAWER
    ========================================================== */
-const hamburger = document.getElementById('hamburger');
-const mobileNav = document.getElementById('mobileNav');
+const hamburger    = document.getElementById('hamburger');
+const mobileNav    = document.getElementById('mobileNav');
+const mobileOverlay = document.getElementById('mobileOverlay');
+const mobileClose  = document.getElementById('mobileClose');
 let navOpen = false;
 
 const setNav = open => {
   navOpen = open;
-  if (mobileNav) mobileNav.classList.toggle('open', open);
+  if (mobileNav)     mobileNav.classList.toggle('open', open);
+  if (mobileOverlay) mobileOverlay.classList.toggle('open', open);
+  document.body.style.overflow = open ? 'hidden' : '';
   if (hamburger) {
     const s = hamburger.querySelectorAll('span');
     if (open) {
@@ -45,8 +49,11 @@ const setNav = open => {
   }
 };
 
-if (hamburger) hamburger.addEventListener('click', () => setNav(!navOpen));
-if (mobileNav) mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setNav(false)));
+if (hamburger)     hamburger.addEventListener('click', () => setNav(!navOpen));
+if (mobileClose)   mobileClose.addEventListener('click', () => setNav(false));
+if (mobileOverlay) mobileOverlay.addEventListener('click', () => setNav(false));
+if (mobileNav)     mobileNav.querySelectorAll('.mobile-nav-link, .mobile-nav-cta').forEach(a => a.addEventListener('click', () => setNav(false)));
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && navOpen) setNav(false); });
 
 /* ==========================================================
    HEADER SCROLL
