@@ -1,0 +1,113 @@
+# ============================================================
+# OMmatic 2026 – .htaccess
+# Server: AllInkl w020cff5.kasserver.com
+# ============================================================
+
+Options -Indexes
+ServerSignature Off
+
+# ============================================================
+# HTTPS erzwingen
+# ============================================================
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# ============================================================
+# www → non-www (oder anpassen auf www-Präferenz)
+# ============================================================
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
+
+# ============================================================
+# 301-REDIRECT MAP: ommatic.de → neue URL-Struktur
+# Aktiv nach DNS-Umstieg – alle Pfade die sich geändert haben.
+# Bei 1:1-Mapping (gleicher Pfad) ist kein Eintrag nötig –
+# der Request landet automatisch auf der richtigen Seite.
+#
+# Format: RewriteRule ^alter-pfad/?$ /neuer-pfad/ [L,R=301]
+# ============================================================
+
+# --- Beispiel: Falls /blog/kategorie/ umbenannt wird ---
+# RewriteRule ^blog/category/allgemein/?$ /blog/kategorie/allgemein/ [L,R=301]
+
+# --- WordPress-Altlasten (wp-*, xmlrpc) abblocken ---
+RewriteRule ^wp-admin(/.*)?$ - [F,L]
+RewriteRule ^wp-login\.php$ - [F,L]
+RewriteRule ^xmlrpc\.php$ - [F,L]
+RewriteRule ^wp-config\.php$ - [F,L]
+
+# ============================================================
+# Clean URLs – Trailing Slash erzwingen (außer Dateien)
+# ============================================================
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !/$
+RewriteCond %{REQUEST_URI} !\.[a-zA-Z0-9]+$
+RewriteRule ^ %{REQUEST_URI}/ [L,R=301]
+
+# ============================================================
+# PHP-Dateien ohne .php-Endung aufrufen
+# ============================================================
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+?)/?$ $1.php [L]
+
+# Directory Index
+DirectoryIndex index.php index.html
+
+# ============================================================
+# Caching (statische Assets)
+# ============================================================
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpeg         "access plus 1 year"
+    ExpiresByType image/png          "access plus 1 year"
+    ExpiresByType image/webp         "access plus 1 year"
+    ExpiresByType image/svg+xml      "access plus 1 year"
+    ExpiresByType image/gif          "access plus 1 year"
+    ExpiresByType image/x-icon       "access plus 1 year"
+    ExpiresByType text/css           "access plus 6 months"
+    ExpiresByType application/javascript "access plus 6 months"
+    ExpiresByType font/woff2         "access plus 1 year"
+    ExpiresByType font/woff          "access plus 1 year"
+    ExpiresByType application/font-woff2 "access plus 1 year"
+</IfModule>
+
+# ============================================================
+# Gzip-Kompression
+# ============================================================
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/css
+    AddOutputFilterByType DEFLATE application/javascript application/json
+    AddOutputFilterByType DEFLATE image/svg+xml application/xml
+    AddOutputFilterByType DEFLATE font/woff2 font/woff
+</IfModule>
+
+# ============================================================
+# Security Headers
+# ============================================================
+<IfModule mod_headers.c>
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains" env=HTTPS
+    # CSP – anpassen nach Bedarf (Google Ads, GTM, Fonts etc.)
+    # Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; ..."
+</IfModule>
+
+# ============================================================
+# Sensible Dateien schützen
+# ============================================================
+<FilesMatch "\.(env|json|log|sh|sql|bak|git)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# crawl/redirect-map.json schützen
+<Files "redirect-map.json">
+    Order allow,deny
+    Deny from all
+</Files>

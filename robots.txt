@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+Disallow: /kontakt/danke/
+Disallow: /kontakt/send.php
+Disallow: /crawl/
+Disallow: /scripts/
+Disallow: /.env
+Disallow: /.env.example
+Disallow: /.gitignore
+
+Sitemap: https://ommatic.de/sitemap.xml

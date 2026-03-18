@@ -1,0 +1,12 @@
+# Credentials
+.env
+
+# macOS
+.DS_Store
+__MACOSX/
+
+# Logs
+*.log
+
+# PHP-Cache
+/vendor/
