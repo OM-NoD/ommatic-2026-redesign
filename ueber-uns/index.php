@@ -300,8 +300,8 @@ require_once '../includes/header.php';
             <img src="/assets/img/team/Markus_OMmatic_M-Mobile-1024x683.jpg" alt="Markus Weiler">
           </div>
           <div class="team-card-name" style="font-size:16px;">Markus Weiler</div>
-          <div class="team-card-role">Gesellschafter &amp; Gründer</div>
-          <p class="team-card-bio" style="font-size:13px;">Strategische Ausrichtung und Unternehmensentwicklung. Erfolgreicher Exit einer Calltracking-Firma 2019 (Kunden: Vodafone, Scout24).</p>
+          <div class="team-card-role">Gesellschafter, Gründer &amp; Head of Tech</div>
+          <p class="team-card-bio" style="font-size:13px;">Co-Founder von OMmatic und verantwortlich für technische Infrastruktur und Entwicklung. Vorheriger Exit einer Calltracking-Firma 2019 (Kunden: Vodafone, Scout24).</p>
         </div>
 
         <div class="team-card">
@@ -309,8 +309,8 @@ require_once '../includes/header.php';
             <img src="/assets/img/team/ommatic_normen.jpg" alt="Normen Daunderer">
           </div>
           <div class="team-card-name" style="font-size:16px;">Normen Daunderer</div>
-          <div class="team-card-role">Head of Tech</div>
-          <p class="team-card-bio" style="font-size:13px;">Verantwortet die technische Infrastruktur, Softwareentwicklung und alle digitalen Tools der OMmatic-Plattform.</p>
+          <div class="team-card-role">Head of Marketing</div>
+          <p class="team-card-bio" style="font-size:13px;">Ads- und Grafik-Experte. Verantwortet die Marketingstrategie sowie die Erstellung und Optimierung von Kampagnen und kreativen Assets.</p>
         </div>
 
         <div class="team-card">
@@ -336,8 +336,8 @@ require_once '../includes/header.php';
             <img src="/assets/img/team/Celina_OMmatic_2026-1024x683.jpg" alt="Celina Gann">
           </div>
           <div class="team-card-name" style="font-size:16px;">Celina Gann</div>
-          <div class="team-card-role">Google Ads Managerin</div>
-          <p class="team-card-bio" style="font-size:13px;">Betreut und optimiert Google Ads Kampagnen für Kanzleien – mit Fokus auf maximale Effizienz des Werbebudgets.</p>
+          <div class="team-card-role">Head of Operations</div>
+          <p class="team-card-bio" style="font-size:13px;">Steuert und koordiniert alle operativen Abläufe im Team – von der Projektplanung bis zur termingerechten Umsetzung aller Kundenmaßnahmen.</p>
         </div>
 
         <div class="team-card">
@@ -345,8 +345,8 @@ require_once '../includes/header.php';
             <img src="/assets/img/team/Zoe_OMmatic_M-Mobile-1024x683.jpg" alt="Zoe Klein">
           </div>
           <div class="team-card-name" style="font-size:16px;">Zoe Klein</div>
-          <div class="team-card-role">Local SEO &amp; Analytics</div>
-          <p class="team-card-bio" style="font-size:13px;">Zuständig für lokale Sichtbarkeit, Google My Business und die Auswertung aller SEO-Kennzahlen.</p>
+          <div class="team-card-role">SEO Texterin</div>
+          <p class="team-card-bio" style="font-size:13px;">Erstellt SEO-optimierte Texte für Kanzlei-Websites – zielgruppengerecht, suchmaschinenfreundlich und rechtlich passend.</p>
         </div>
 
         <div class="team-card">
@@ -354,17 +354,8 @@ require_once '../includes/header.php';
             <img src="/assets/img/team/Jannis_OMmatic_M-Mobile-1024x683.jpg" alt="Jannis Schottler">
           </div>
           <div class="team-card-name" style="font-size:16px;">Jannis Schottler</div>
-          <div class="team-card-role">Performance Analyst</div>
-          <p class="team-card-bio" style="font-size:13px;">Analysiert Kampagnendaten und Suchverhalten, leitet daraus konkrete Optimierungsmaßnahmen ab.</p>
-        </div>
-
-        <div class="team-card">
-          <div class="team-photo-wrap" style="width:100px;height:100px;">
-            <img src="/assets/img/team/Aziz_OMmatic_M-Mobile-1024x683.jpg" alt="Aziz Ben Salah">
-          </div>
-          <div class="team-card-name" style="font-size:16px;">Aziz Ben Salah</div>
-          <div class="team-card-role">SEA &amp; Paid Social</div>
-          <p class="team-card-bio" style="font-size:13px;">Entwickelt Kampagnenstrategien für bezahlte Suchanzeigen und Social Ads – kosteneffizient und datengestützt.</p>
+          <div class="team-card-role">Developer</div>
+          <p class="team-card-bio" style="font-size:13px;">Entwickelt und wartet technische Lösungen für Kanzlei-Websites und interne Tools der OMmatic-Plattform.</p>
         </div>
 
         <div class="team-card">
@@ -372,8 +363,8 @@ require_once '../includes/header.php';
             <img src="/assets/img/team/ommatic-dina.jpg" alt="Dina Jokanovic">
           </div>
           <div class="team-card-name" style="font-size:16px;">Dina Jokanovic</div>
-          <div class="team-card-role">Content Marketing</div>
-          <p class="team-card-bio" style="font-size:13px;">Produziert SEO-relevante Texte und Inhalte für Kanzlei-Websites, die Suchmaschinen und Besucher überzeugen.</p>
+          <div class="team-card-role">Web Developer &amp; UI/UX</div>
+          <p class="team-card-bio" style="font-size:13px;">Entwickelt ansprechende Kanzlei-Websites mit Fokus auf User Experience und modernem Design – schnell, responsiv und konversionsstark.</p>
         </div>
 
         <div class="team-card">
@@ -381,8 +372,8 @@ require_once '../includes/header.php';
             <img src="/assets/img/team/Julia-Weber_white_bg.jpg" alt="Julia Weber">
           </div>
           <div class="team-card-name" style="font-size:16px;">Julia Weber</div>
-          <div class="team-card-role">Client Managerin</div>
-          <p class="team-card-bio" style="font-size:13px;">Unterstützt das Account Management im Tagesgeschäft und stellt sicher, dass alle laufenden Maßnahmen koordiniert umgesetzt werden.</p>
+          <div class="team-card-role">Content, Ads &amp; Social Media</div>
+          <p class="team-card-bio" style="font-size:13px;">Verantwortet Content-Produktion, Anzeigenkampagnen und Social-Media-Auftritte für Kanzleien – crossmedial und zielgruppenfokussiert.</p>
         </div>
 
       </div>
