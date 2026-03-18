@@ -43,7 +43,7 @@ require_once '../includes/header.php';
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 70% 60% at 60% 30%, rgba(212,175,55,.12) 0%, transparent 70%),
+    radial-gradient(ellipse 70% 60% at 60% 30%, rgba(139,92,246,.12) 0%, transparent 70%),
     radial-gradient(ellipse 50% 40% at 20% 80%, rgba(var(--primary-rgb,99,102,241),.10) 0%, transparent 60%);
   pointer-events: none;
 }
@@ -52,7 +52,7 @@ require_once '../includes/header.php';
   position: absolute;
   bottom: 0; left: 0; right: 0;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #D4AF37, var(--primary), transparent);
+  background: linear-gradient(90deg, transparent, #8B5CF6, var(--primary), transparent);
 }
 .lbf-hero-badge {
   display: inline-flex;
@@ -62,9 +62,9 @@ require_once '../includes/header.php';
   font-weight: 700;
   letter-spacing: .12em;
   text-transform: uppercase;
-  color: #D4AF37;
-  background: rgba(212,175,55,.12);
-  border: 1px solid rgba(212,175,55,.3);
+  color: #8B5CF6;
+  background: rgba(139,92,246,.12);
+  border: 1px solid rgba(139,92,246,.3);
   border-radius: 100px;
   padding: 6px 16px;
   margin-bottom: 28px;
@@ -106,9 +106,9 @@ require_once '../includes/header.php';
   width: 36px;
   height: 36px;
   border-radius: 8px;
-  background: rgba(212,175,55,.1);
-  border: 1px solid rgba(212,175,55,.2);
-  color: #D4AF37;
+  background: rgba(139,92,246,.1);
+  border: 1px solid rgba(139,92,246,.2);
+  color: #8B5CF6;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,9 +116,9 @@ require_once '../includes/header.php';
 }
 .lbf-meta-item strong { color: var(--text); }
 
-/* Gold gradient text variant */
+/* LBF accent text */
 .gold-text {
-  background: linear-gradient(135deg, #F5E27A 0%, #D4AF37 40%, #B8860B 100%);
+  background: linear-gradient(135deg, #A78BFA 0%, #8B5CF6 50%, #6D28D9 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -145,19 +145,19 @@ require_once '../includes/header.php';
   position: absolute;
   top: 0; left: 0; right: 0;
   height: 3px;
-  background: linear-gradient(90deg, #D4AF37, #F5E27A, #D4AF37);
+  background: linear-gradient(90deg, transparent, #8B5CF6, #A78BFA, #8B5CF6, transparent);
   opacity: 0;
   transition: opacity .25s;
 }
-.lbf-highlight-card:hover { transform: translateY(-6px); border-color: rgba(212,175,55,.4); box-shadow: 0 20px 60px rgba(212,175,55,.08); }
+.lbf-highlight-card:hover { transform: translateY(-6px); border-color: rgba(139,92,246,.4); box-shadow: 0 20px 60px rgba(139,92,246,.08); }
 .lbf-highlight-card:hover::before { opacity: 1; }
 .lbf-highlight-icon {
   width: 56px;
   height: 56px;
   border-radius: 14px;
-  background: rgba(212,175,55,.1);
-  border: 1px solid rgba(212,175,55,.2);
-  color: #D4AF37;
+  background: rgba(139,92,246,.1);
+  border: 1px solid rgba(139,92,246,.2);
+  color: #8B5CF6;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -189,7 +189,7 @@ require_once '../includes/header.php';
   left: 72px;
   top: 0; bottom: 0;
   width: 2px;
-  background: linear-gradient(180deg, transparent, rgba(212,175,55,.4) 10%, rgba(212,175,55,.4) 90%, transparent);
+  background: linear-gradient(180deg, transparent, rgba(139,92,246,.4) 10%, rgba(139,92,246,.4) 90%, transparent);
 }
 .lbf-timeline-item {
   display: flex;
@@ -204,7 +204,7 @@ require_once '../includes/header.php';
   text-align: right;
   font-size: .8rem;
   font-weight: 700;
-  color: #D4AF37;
+  color: #8B5CF6;
   letter-spacing: .04em;
   font-family: var(--font-h);
 }
@@ -221,8 +221,8 @@ require_once '../includes/header.php';
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #D4AF37;
-  box-shadow: 0 0 0 4px rgba(212,175,55,.2);
+  background: #8B5CF6;
+  box-shadow: 0 0 0 4px rgba(139,92,246,.2);
   flex-shrink: 0;
 }
 .lbf-timeline-dot--highlight {
@@ -241,7 +241,7 @@ require_once '../includes/header.php';
   margin-bottom: 12px;
   transition: border-color .2s;
 }
-.lbf-timeline-content:hover { border-color: rgba(212,175,55,.3); }
+.lbf-timeline-content:hover { border-color: rgba(139,92,246,.3); }
 .lbf-timeline-label {
   font-family: var(--font-h);
   font-size: 1rem;
@@ -265,7 +265,7 @@ require_once '../includes/header.php';
   padding: 2px 8px;
   margin-bottom: 6px;
 }
-.lbf-timeline-tag--keynote { background: rgba(212,175,55,.15); color: #D4AF37; }
+.lbf-timeline-tag--keynote { background: rgba(139,92,246,.15); color: #8B5CF6; }
 .lbf-timeline-tag--workshop { background: var(--indigo-dim); color: var(--indigo); }
 .lbf-timeline-tag--networking { background: var(--teal-dim); color: var(--teal); }
 .lbf-timeline-tag--lunch { background: rgba(var(--primary-rgb,99,102,241),.1); color: var(--primary); }
@@ -289,12 +289,12 @@ require_once '../includes/header.php';
   width: 72px;
   height: 72px;
   border-radius: 50%;
-  background: linear-gradient(135deg, rgba(212,175,55,.3), rgba(212,175,55,.1));
-  border: 2px solid rgba(212,175,55,.4);
+  background: linear-gradient(135deg, rgba(139,92,246,.3), rgba(139,92,246,.1));
+  border: 2px solid rgba(139,92,246,.4);
   font-family: var(--font-h);
   font-size: 1.5rem;
   font-weight: 800;
-  color: #D4AF37;
+  color: #8B5CF6;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -335,7 +335,7 @@ require_once '../includes/header.php';
   overflow: hidden;
   transition: border-color .2s;
 }
-.lbf-faq-item.is-open { border-color: rgba(212,175,55,.35); }
+.lbf-faq-item.is-open { border-color: rgba(139,92,246,.35); }
 .lbf-faq-toggle {
   width: 100%;
   background: none;
@@ -360,14 +360,14 @@ require_once '../includes/header.php';
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background: rgba(212,175,55,.1);
-  color: #D4AF37;
+  background: rgba(139,92,246,.1);
+  color: #8B5CF6;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: transform .25s, background .2s;
 }
-.lbf-faq-item.is-open .lbf-faq-icon { transform: rotate(45deg); background: rgba(212,175,55,.2); }
+.lbf-faq-item.is-open .lbf-faq-icon { transform: rotate(45deg); background: rgba(139,92,246,.2); }
 .lbf-faq-answer {
   display: none;
   padding: 0 1.5rem 1.25rem;
@@ -400,7 +400,7 @@ require_once '../includes/header.php';
 /* Info aside */
 .lbf-info-aside {
   background: var(--bg-card);
-  border: 1px solid rgba(212,175,55,.25);
+  border: 1px solid rgba(139,92,246,.25);
   border-radius: var(--radius);
   padding: 2rem;
   position: sticky;
@@ -421,7 +421,7 @@ require_once '../includes/header.php';
   font-size: .88rem;
   color: var(--text-2);
 }
-.lbf-info-row svg { flex-shrink: 0; margin-top: 1px; color: #D4AF37; }
+.lbf-info-row svg { flex-shrink: 0; margin-top: 1px; color: #8B5CF6; }
 .lbf-info-row strong { color: var(--text); display: block; font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; margin-bottom: 2px; }
 .lbf-divider { height: 1px; background: var(--border-s); margin: 1.25rem 0; }
 
@@ -429,8 +429,8 @@ require_once '../includes/header.php';
 .lbf-grid-bg {
   position: absolute;
   inset: 0;
-  background-image: linear-gradient(rgba(212,175,55,.03) 1px, transparent 1px),
-                    linear-gradient(90deg, rgba(212,175,55,.03) 1px, transparent 1px);
+  background-image: linear-gradient(rgba(139,92,246,.03) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(139,92,246,.03) 1px, transparent 1px);
   background-size: 60px 60px;
   pointer-events: none;
 }
@@ -490,7 +490,7 @@ require_once '../includes/header.php';
       </div>
 
       <div class="page-hero-ctas sr sr-d3">
-        <a href="#anmeldung" class="btn btn-primary btn-lg" style="background:linear-gradient(135deg,#D4AF37,#B8860B);border-color:transparent;color:#000;font-weight:800;">
+        <a href="#anmeldung" class="btn btn-primary btn-lg" style="background:linear-gradient(135deg,#8B5CF6,#6D28D9);border-color:transparent;color:#fff;font-weight:800;">
           Jetzt anmelden
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width:18px;height:18px;"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
         </a>
@@ -700,10 +700,10 @@ require_once '../includes/header.php';
   <!-- ============================================================
        CTA INTERSTITIAL
        ============================================================ -->
-  <section class="cta-banner" style="background:linear-gradient(135deg,rgba(212,175,55,.08) 0%,var(--bg-2) 50%,rgba(var(--primary-rgb,99,102,241),.05) 100%);">
+  <section class="cta-banner" style="background:linear-gradient(135deg,rgba(139,92,246,.08) 0%,var(--bg-2) 50%,rgba(var(--primary-rgb,99,102,241),.05) 100%);">
     <div class="container">
       <div class="cta-banner-inner sr">
-        <span class="tag-chip" style="background:rgba(212,175,55,.12);color:#D4AF37;border-color:rgba(212,175,55,.3);margin-bottom:24px;">Limitierte Plätze</span>
+        <span class="tag-chip" style="background:rgba(139,92,246,.12);color:#8B5CF6;border-color:rgba(139,92,246,.3);margin-bottom:24px;">Limitierte Plätze</span>
         <h2 class="cta-banner-title">
           Sichern Sie sich<br><span class="gold-text">Ihren Platz</span>
         </h2>
@@ -711,7 +711,7 @@ require_once '../includes/header.php';
           Die Teilnehmerzahl ist bewusst limitiert – für einen hochwertigen Austausch auf Augenhöhe. Melden Sie sich jetzt an und sichern Sie sich einen der exklusiven Plätze.
         </p>
         <div class="cta-banner-btns">
-          <a href="#anmeldung" class="btn btn-lg" style="background:linear-gradient(135deg,#D4AF37,#B8860B);color:#000;font-weight:800;border:none;">
+          <a href="#anmeldung" class="btn btn-lg" style="background:linear-gradient(135deg,#8B5CF6,#6D28D9);color:#fff;font-weight:800;border:none;">
             Jetzt anmelden
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width:18px;height:18px;"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
           </a>
@@ -768,7 +768,7 @@ require_once '../includes/header.php';
               'Exklusive Unterlagen',
             ] as $item): ?>
             <div style="display:flex;gap:8px;align-items:center;margin-bottom:6px;">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="14" height="14" style="color:#D4AF37;flex-shrink:0;"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="14" height="14" style="color:#8B5CF6;flex-shrink:0;"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
               <?= $item ?>
             </div>
             <?php endforeach; ?>
@@ -852,14 +852,14 @@ require_once '../includes/header.php';
             </div>
 
             <!-- Submit -->
-            <button type="submit" class="btn btn-lg" style="width:100%;justify-content:center;margin-top:24px;background:linear-gradient(135deg,#D4AF37,#B8860B);border:none;color:#000;font-weight:800;">
+            <button type="submit" class="btn btn-lg" style="width:100%;justify-content:center;margin-top:24px;background:linear-gradient(135deg,#8B5CF6,#6D28D9);border:none;color:#fff;font-weight:800;">
               Jetzt verbindlich anmelden
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width:18px;height:18px;"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
             </button>
 
             <!-- Trust -->
             <p style="text-align:center;font-size:13px;color:var(--text-3);margin-top:14px;margin-bottom:0;display:flex;align-items:center;justify-content:center;gap:8px;">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="width:15px;height:15px;flex-shrink:0;color:#D4AF37;"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="width:15px;height:15px;flex-shrink:0;color:#8B5CF6;"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
               Ihre Daten werden vertraulich behandelt.
             </p>
 
