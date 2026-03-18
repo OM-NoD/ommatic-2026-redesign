@@ -2422,16 +2422,16 @@ main > section ul li::before {
 .cal-modal-body {
   flex: 1;
   overflow: hidden;
-  min-height: 580px;
+  min-height: 700px;
 }
 #cal-iframe {
   width: 100%;
   height: 100%;
-  min-height: 580px;
+  min-height: 700px;
   border: none;
   display: block;
 }
 @media (max-width: 600px) {
   .cal-modal-dialog { border-radius: var(--radius); max-height: calc(100vh - 16px); }
-  .cal-modal-body, #cal-iframe { min-height: 520px; }
+  .cal-modal-body, #cal-iframe { min-height: calc(100vh - 80px); }
 }

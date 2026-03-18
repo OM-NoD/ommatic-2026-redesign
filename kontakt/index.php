@@ -178,7 +178,7 @@ require_once '../includes/components.php';
           </div>
           <h3 class="feature-title">Erstgespräch buchen</h3>
           <p class="feature-text">45-minütiges kostenloses Strategiegespräch direkt mit Marcel Zirkel – unverbindlich, ohne Verkaufsdruck.</p>
-          <a href="https://calendly.com/marcel-zirkel/45min" target="_blank" rel="noopener" class="btn btn-ghost btn-sm" style="margin-top:auto;display:inline-flex;align-items:center;gap:6px;">
+          <a href="https://calendly.com/marcel-zirkel/45min" class="btn btn-ghost btn-sm" style="margin-top:auto;display:inline-flex;align-items:center;gap:6px;">
             Termin buchen →
           </a>
         </article>
