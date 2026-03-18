@@ -195,6 +195,31 @@ require_once '../includes/header.php';
     </div><!-- .container -->
   </section>
 
+  <!-- LinkedIn Feed -->
+  <section style="padding: clamp(48px,6vw,96px) 0;" aria-labelledby="linkedin-feed-h">
+    <div class="container">
+      <div class="sr" style="text-align:center;margin-bottom:clamp(32px,4vw,56px);">
+        <span class="tag-chip" style="margin-bottom:16px;">Unser LinkedIn-Feed</span>
+        <h2 id="linkedin-feed-h" style="font-size:clamp(24px,3vw,36px);font-weight:700;margin:0 0 12px;">Aktuelle Updates von <span class="gradient-text">LinkedIn</span></h2>
+        <p style="color:var(--text-2);max-width:520px;margin:0 auto;">Folgen Sie uns auf LinkedIn für tägliche Insights rund um Kanzleimarketing, Google Ads und Legal Tech.</p>
+      </div>
+
+      <!-- LinkedIn Profile Posts (Normen Daunderer) -->
+      <div class="sr sr-d1" style="margin-bottom:48px;">
+        <h3 style="font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--text-3);margin-bottom:20px;">Beiträge von Normen Daunderer</h3>
+        <div class="sk-ww-linkedin-profile-post" data-embed-id="25661987"></div>
+        <script src="https://widgets.sociablekit.com/linkedin-profile-posts/widget.js" defer></script>
+      </div>
+
+      <!-- LinkedIn Page Posts (OMmatic) -->
+      <div class="sr sr-d2">
+        <h3 style="font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--text-3);margin-bottom:20px;">Beiträge der OMmatic-Seite</h3>
+        <div class="sk-ww-linkedin-page-post" data-embed-id="25646199"></div>
+        <script src="https://widgets.sociablekit.com/linkedin-page-posts/widget.js" defer></script>
+      </div>
+    </div>
+  </section>
+
   <!-- Newsletter CTA -->
   <section class="cta-banner" aria-labelledby="neuigkeiten-cta-h">
     <div class="container">
