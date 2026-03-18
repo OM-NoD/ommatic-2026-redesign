@@ -1,7 +1,7 @@
 <?php
 $page_lang = 'en';
 $page_title = 'Contact OMmatic – Law Firm Marketing Consultation';
-$page_description = 'Contact OMmatic – Germany's leading law firm marketing agency. We are here for you. Phone: +49 631 206 9182-0, Email: hallo@ommatic.de';
+$page_description = "Contact OMmatic – Germany's leading law firm marketing agency. We are here for you. Phone: +49 631 206 9182-0, Email: hallo@ommatic.de";
 $page_canonical = 'https://ommatic.de/en/contact/';
 $page_hreflang_en = 'https://ommatic.de/en/contact/';
 $page_hreflang_de = 'https://ommatic.de/kontakt/';

@@ -1,7 +1,7 @@
 <?php
 $page_lang = 'en';
 $page_title = 'About OMmatic – The Law Firm Marketing Agency | Team & Mission';
-$page_description = 'Learn more about OMmatic – Germany's leading performance marketing agency for law firms. Certified, experienced, and successful.';
+$page_description = "Learn more about OMmatic – Germany's leading performance marketing agency for law firms. Certified, experienced, and successful.";
 $page_canonical = 'https://ommatic.de/en/about-us/';
 $page_hreflang_en = 'https://ommatic.de/en/about-us/';
 $page_hreflang_de = 'https://ommatic.de/ueber-uns/';
