@@ -154,6 +154,11 @@ $robots_content = $page_noindex ? 'noindex, nofollow' : 'index, follow';
         </ul>
       </div>
 
+      <a href="/legal-business-forum/" class="nav-link" style="display:inline-flex;align-items:center;gap:6px;">
+        LBF
+        <span style="font-size:.65rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;background:linear-gradient(135deg,#D4AF37,#B8860B);color:#000;border-radius:4px;padding:2px 6px;line-height:1.4;">Event</span>
+      </a>
+
       <a href="/kontakt/"           class="nav-link">Kontakt</a>
     </nav>
 

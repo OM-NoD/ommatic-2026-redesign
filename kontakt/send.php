@@ -195,6 +195,51 @@ if ($form_type === 'bewerbung') {
 }
 
 // ════════════════════════════════════════════════════════════
+//  LBF ANMELDUNG
+// ════════════════════════════════════════════════════════════
+if ($form_type === 'lbf_anmeldung') {
+
+    // DSGVO
+    if (empty($_POST['dsgvo'])) back_error('dsgvo');
+
+    // Felder
+    $vorname   = clean($_POST['vorname']   ?? '');
+    $nachname  = clean($_POST['nachname']  ?? '');
+    $email     = filter_var(trim($_POST['email'] ?? ''), FILTER_SANITIZE_EMAIL);
+    $telefon   = clean($_POST['telefon']   ?? '');
+    $kanzlei   = clean($_POST['kanzlei']   ?? '');
+    $tickets   = clean($_POST['tickets']   ?? '');
+    $nachricht = clean($_POST['nachricht'] ?? '');
+    $full_name = trim($vorname . ' ' . $nachname);
+
+    // Validierung
+    if (empty($vorname) || empty($nachname)) back_error('validation');
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL))  back_error('validation');
+    if (empty($kanzlei))                             back_error('validation');
+
+    // Mail aufbauen
+    $subject = SUBJECT_PREFIX . ' LBF Anmeldung – ' . $full_name . ' / ' . $kanzlei;
+    $body    = "Neue LBF-Anmeldung (Legal Business Forum 2026)\n{$line}\n\n";
+    $body   .= "Name:      {$full_name}\n";
+    $body   .= "E-Mail:    {$email}\n";
+    if ($telefon) $body .= "Telefon:   {$telefon}\n";
+    $body   .= "Kanzlei:   {$kanzlei}\n";
+    if ($tickets) $body .= "Tickets:   {$tickets}\n";
+    if ($nachricht) $body .= "\nNachricht/Fragen:\n{$nachricht}\n";
+    $body   .= "\n{$line}\n";
+    $body   .= "Gesendet:  {$sent_at}\nIP:        {$ip}\nDSGVO:     Ja\n";
+
+    $ok = send_mail(RECIPIENT_EMAIL, $subject, $body, $email);
+    if ($ok) {
+        $_SESSION['last_contact_submit'] = time();
+        auto_reply($email, $vorname, 'LBF Anmeldung');
+        header('Location: ' . SUCCESS_URL);
+        exit;
+    }
+    back_error('mail');
+}
+
+// ════════════════════════════════════════════════════════════
 //  STANDARD-KONTAKTFORMULAR (kein / unbekannter form_type)
 // ════════════════════════════════════════════════════════════
 
