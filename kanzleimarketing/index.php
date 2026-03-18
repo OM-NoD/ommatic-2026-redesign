@@ -367,7 +367,7 @@ require_once '../includes/components.php';
     <div class="container">
       <div class="section-head sr">
         <span class="tag-chip">Unsere Zahlen</span>
-        <h2>Kanzleimarketing, das <span class="gradient-text">messbare Ergebnisse</span> liefert</h2>
+        <h2>Kanzleimarketing, das messbare Ergebnisse liefert</h2>
         <p class="section-sub">Vertrauen Sie nicht auf Versprechen – vertrauen Sie auf Daten. Das sind unsere nachgewiesenen Kennzahlen aus über 150 Kanzlei-Projekten bundesweit.</p>
       </div>
       <div class="stats-row sr">
