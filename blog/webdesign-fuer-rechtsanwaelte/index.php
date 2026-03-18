@@ -5,18 +5,42 @@ $page_canonical = 'https://ommatic.de/blog/webdesign-fuer-rechtsanwaelte/';
 require_once '../../includes/header.php';
 ?>
 <main>
-  <article class="blog-post">
-    <div class="container">
-      <div class="blog-post-header section">
-        <div class="tag-chip">Blog</div>
-        <h1 class="sr">Webdesign für Rechtsanwälte: Professionelle Websites, die Mandate gewinnen</h1>
-        <p class="blog-meta">09. März 2026 · 45 Min. Lesezeit</p>
+
+  <!-- Post Hero -->
+  <header class="blog-post-hero">
+    <div class="blog-post-hero-inner">
+      <nav class="breadcrumb sr">
+        <a href="/">OMmatic</a>
+        <span class="breadcrumb-sep">›</span>
+        <a href="/blog/">Blog</a>
+        <span class="breadcrumb-sep">›</span>
+        <span>Webdesign für Rechtsanwälte</span>
+      </nav>
+      <div class="blog-post-category sr sr-d1">Webdesign</div>
+      <h1 class="blog-post-title sr sr-d2">Webdesign für Rechtsanwälte: Professionelle Websites, die Mandate gewinnen</h1>
+      <div class="blog-post-meta-row sr sr-d3">
+        <div class="meta-author">
+          <div class="meta-author-avatar">MZ</div>
+          <span>Marcel Zirkel</span>
+        </div>
+        <span class="blog-meta-sep">·</span>
+        <span>09. März 2026</span>
+        <span class="blog-meta-sep">·</span>
+        <span>15 Min. Lesezeit</span>
       </div>
-      <div class="blog-post-body">
-<p>In der heutigen digitalen Welt ist eine professionelle Website für Anwaltskanzleien nicht mehr optional &#8211; sie ist ein absolutes Muss. Doch während viele Kanzleien verstanden haben, dass sie online präsent sein müssen, machen die meisten einen kritischen Fehler: Sie behandeln ihre Website wie jedes andere Unternehmen. Das ist ein kostspieliger Irrtum, der Ihnen Jahr für Jahr mehr Mandate und damit Geld kostet.</p>
-<figure class="blog-figure">
-<img src="https://ommatic.de/wp-content/uploads/2026/03/webdesign-anwalt-1024x682.jpg" alt="Webdesign für Rechtsanwälte" width="1024" height="682" loading="lazy">
-</figure>
+    </div>
+    <div class="blog-post-hero-img sr">
+      <img src="https://ommatic.de/wp-content/uploads/2026/03/webdesign-anwalt-1024x682.jpg"
+           alt="Webdesign für Rechtsanwälte" width="1024" height="682" loading="eager">
+    </div>
+  </header>
+
+  <!-- Post Body -->
+  <section class="blog-post-section">
+    <div class="blog-post-layout">
+      <article class="blog-article-content">
+
+<p>In der heutigen digitalen Welt ist eine professionelle Website für Anwaltskanzleien nicht mehr optional &#8211; sie ist ein absolutes Muss. Doch während viele Kanzleien verstanden haben, dass sie online präsent sein müssen, machen die meisten einen kritischen Fehler: Sie behandeln ihre Website wie jedes andere Unternehmen. Das ist ein kostspieliger Irrtum.</p>
 <p>Eine Website für Rechtsanwälte ist etwas Besonderes. Sie muss nicht nur ästhetisch ansprechend sein &#8211; sie muss Vertrauen aufbauen, rechtliche Vorgaben einhalten, Ihre Expertise demonstrieren und potenzielle Mandanten überzeugen, dass Ihre Kanzlei die richtige Wahl ist. Gleichzeitig muss sie technisch optimiert sein, auf Suchmaschinen ranken und Besucher in konkrete Anfragen konvertieren. Das ist eine komplexe Aufgabe, die spezialisiertes Wissen erfordert.</p>
 <p>Bei OMmatic haben wir genau verstanden, welche besonderen Anforderungen Anwälte und Kanzleien an ihre digitale Präsenz haben. Wir haben spezialisiertes Webdesign entwickelt, das diese Anforderungen nicht nur erfüllt, sondern übertrifft. Unsere Websites sind nicht nur technisch optimiert und rechtlich konform &#8211; sie sind echte Geschäftsgeneratoren, die kontinuierlich neue Mandate bringen.</p>
 <div class="blog-highlight-box">
@@ -267,14 +291,53 @@ require_once '../../includes/header.php';
 </div>
       </div>
     </div>
-  </article>
 
-  <section class="section cta-section">
-    <div class="container" style="text-align:center">
-      <h2>Mehr Mandanten für Ihre Kanzlei?</h2>
-      <p class="text-muted">Sprechen Sie jetzt mit unseren Experten.</p>
-      <a href="/kontakt/" class="btn btn-primary">Kostenlose Erstberatung</a>
+      </article><!-- .blog-article-content -->
+
+      <!-- Sidebar -->
+      <aside class="blog-sidebar">
+        <div class="sidebar-cta-box">
+          <h3>Website für Ihre Kanzlei?</h3>
+          <p>OMmatic entwickelt professionelle Kanzleiwebsites, die konvertieren.</p>
+          <a href="https://calendly.com/marcel-zirkel/45min" class="btn" target="_blank" rel="noopener">Termin buchen →</a>
+        </div>
+        <div class="sidebar-card">
+          <p class="sidebar-card-title">Ähnliche Artikel</p>
+          <a href="/blog/mandantenakquise-rechtsanwaelte/" class="related-post-item">
+            <div class="related-post-thumb">
+              <img src="https://ommatic.de/wp-content/uploads/2026/03/mandantenakquise-fuer-rechtsanwaelte-768x512.jpg" alt="" loading="lazy">
+            </div>
+            <div class="related-post-info">
+              <p class="related-post-title">Mandantenakquise für Rechtsanwälte</p>
+              <p class="related-post-date">16. März 2026</p>
+            </div>
+          </a>
+          <a href="/blog/anwaltsmarketing/" class="related-post-item">
+            <div class="related-post-thumb">
+              <img src="https://ommatic.de/wp-content/uploads/2026/03/anwaltsmarketing-768x430.jpg" alt="" loading="lazy">
+            </div>
+            <div class="related-post-info">
+              <p class="related-post-title">Anwaltsmarketing – Der komplette Guide</p>
+              <p class="related-post-date">11. März 2026</p>
+            </div>
+          </a>
+        </div>
+      </aside>
+    </div><!-- .blog-post-layout -->
+  </section>
+
+  <!-- Post CTA -->
+  <section class="blog-post-cta">
+    <div class="container" style="position:relative;z-index:1">
+      <div class="tag-chip" style="margin-bottom:20px;display:inline-flex">Bereit für mehr Mandate?</div>
+      <h2>Mehr Mandanten durch besseres Webdesign?</h2>
+      <p>Sprechen Sie jetzt mit unseren Experten. In einem kostenlosen Erstgespräch analysieren wir Ihre aktuelle Website und zeigen Ihnen konkrete Verbesserungspotenziale.</p>
+      <div class="cta-btns">
+        <a href="https://calendly.com/marcel-zirkel/45min" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Kostenlose Erstberatung buchen</a>
+        <a href="/kanzleimarketing/" class="btn btn-ghost btn-lg">Alle Leistungen ansehen</a>
+      </div>
     </div>
   </section>
+
 </main>
 <?php require_once '../../includes/footer.php'; ?>

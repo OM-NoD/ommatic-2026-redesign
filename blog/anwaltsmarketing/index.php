@@ -5,17 +5,44 @@ $page_canonical = 'https://ommatic.de/blog/anwaltsmarketing/';
 require_once '../../includes/header.php';
 ?>
 <main>
-  <article class="blog-post">
-    <div class="container">
-      <div class="blog-post-header section">
-        <div class="tag-chip">Blog</div>
-        <h1 class="sr">Anwaltsmarketing – Der komplette Guide für erfolgreiche Mandantenakquisition</h1>
-        <p class="blog-meta">11. März 2026 · 45 Min. Lesezeit</p>
+
+  <!-- Post Hero -->
+  <header class="blog-post-hero">
+    <div class="blog-post-hero-inner">
+      <nav class="breadcrumb sr">
+        <a href="/">OMmatic</a>
+        <span class="breadcrumb-sep">›</span>
+        <a href="/blog/">Blog</a>
+        <span class="breadcrumb-sep">›</span>
+        <span>Anwaltsmarketing</span>
+      </nav>
+      <div class="blog-post-category sr sr-d1">Strategie</div>
+      <h1 class="blog-post-title sr sr-d2">Anwaltsmarketing – Der komplette Guide für erfolgreiche Mandantenakquisition</h1>
+      <div class="blog-post-meta-row sr sr-d3">
+        <div class="meta-author">
+          <div class="meta-author-avatar">MZ</div>
+          <span>Marcel Zirkel</span>
+        </div>
+        <span class="blog-meta-sep">·</span>
+        <span>11. März 2026</span>
+        <span class="blog-meta-sep">·</span>
+        <span>45 Min. Lesezeit</span>
       </div>
-      <div class="blog-post-body">
+    </div>
+    <div class="blog-post-hero-img sr">
+      <img src="https://ommatic.de/wp-content/uploads/2026/03/anwaltsmarketing-1024x574.jpg"
+           alt="Anwaltsmarketing – Der komplette Guide" width="1024" height="574" loading="eager">
+    </div>
+  </header>
+
+  <!-- Post Body -->
+  <section class="blog-post-section">
+    <div class="blog-post-layout">
+      <article class="blog-article-content">
+
 <p>Anwaltsmarketing ist nicht wie traditionelles Marketing. Es geht nicht darum, Produkte zu verkaufen oder Dienstleistungen anzupreisen. Es geht darum, Vertrauen aufzubauen, Expertise zu demonstrieren und potenzielle Mandanten davon zu überzeugen, dass Sie der richtige Anwalt für ihre Probleme sind. Und das ist eine völlig andere Herausforderung.</p>
-<p>In der heutigen digitalen Welt ist Marketing für Anwälte unverzichtbar geworden. Die Zeiten, in denen Anwälte nur auf Empfehlungen und Mundpropaganda angewiesen waren, sind vorbei. Heute suchen potenzielle Mandanten online nach Lösungen. Sie googeln ihre Rechtsprobleme. Sie lesen Bewertungen. Sie vergleichen Kanzleien. Sie schauen sich Social Media Profile an. Sie lesen Blog-Artikel. Wenn Sie nicht sichtbar sind, werden Sie nicht gefunden. Wenn Sie nicht professionell präsent sind, werden Sie nicht gewählt. Das ist eine harte Realität, aber es ist die Realität.</p>
-<p>Die gute Nachricht ist: Mit einer durchdachten Anwaltsmarketing-Strategie können Sie kontinuierlich neue Mandate gewinnen. Sie können Ihre Kanzlei wachsen lassen. Sie können Ihre Expertise nutzen, um Ihre Zielgruppe zu erreichen. Und Sie können das auf ethische, professionelle Weise tun, die den Berufsstandards entspricht.</p>
+<p>In der heutigen digitalen Welt ist Marketing für Anwälte unverzichtbar geworden. Die Zeiten, in denen Anwälte nur auf Empfehlungen und Mundpropaganda angewiesen waren, sind vorbei. Heute suchen potenzielle Mandanten online nach Lösungen. Sie googeln ihre Rechtsprobleme. Sie lesen Bewertungen. Sie vergleichen Kanzleien. Wenn Sie nicht sichtbar sind, werden Sie nicht gefunden.</p>
+<p>Die gute Nachricht ist: Mit einer durchdachten Anwaltsmarketing-Strategie können Sie kontinuierlich neue Mandate gewinnen. Sie können Ihre Kanzlei wachsen lassen. Und Sie können das auf ethische, professionelle Weise tun, die den Berufsstandards entspricht.</p>
 <figure class="blog-figure">
 <img src="https://ommatic.de/wp-content/uploads/2026/03/anwaltsmarketing-1024x574.jpg" alt="" width="1024" height="574" loading="lazy">
 </figure>
@@ -192,15 +219,62 @@ require_once '../../includes/header.php';
 <p></p>
 </div>
       </div>
-    </div>
-  </article>
 
-  <section class="section cta-section">
-    <div class="container" style="text-align:center">
+      </article><!-- .blog-article-content -->
+
+      <!-- Sidebar -->
+      <aside class="blog-sidebar">
+        <div class="sidebar-cta-box">
+          <h3>Kostenlose Beratung</h3>
+          <p>Mehr Mandate mit bewährten Anwaltsmarketing-Strategien – in 45 Minuten.</p>
+          <a href="https://calendly.com/marcel-zirkel/45min" class="btn" target="_blank" rel="noopener">Termin buchen →</a>
+        </div>
+        <div class="sidebar-card">
+          <p class="sidebar-card-title">Ähnliche Artikel</p>
+          <a href="/blog/mandantenakquise-rechtsanwaelte/" class="related-post-item">
+            <div class="related-post-thumb">
+              <img src="https://ommatic.de/wp-content/uploads/2026/03/mandantenakquise-fuer-rechtsanwaelte-768x512.jpg" alt="" loading="lazy">
+            </div>
+            <div class="related-post-info">
+              <p class="related-post-title">Mandantenakquise für Rechtsanwälte</p>
+              <p class="related-post-date">16. März 2026</p>
+            </div>
+          </a>
+          <a href="/blog/rechtsanwalt-werbung-erlaubt/" class="related-post-item">
+            <div class="related-post-thumb">
+              <img src="https://ommatic.de/wp-content/uploads/2026/03/Rechtsanwalt-Werbung-erlaubt-768x512.jpg" alt="" loading="lazy">
+            </div>
+            <div class="related-post-info">
+              <p class="related-post-title">Rechtsanwalt Werbung – Was ist erlaubt?</p>
+              <p class="related-post-date">13. März 2026</p>
+            </div>
+          </a>
+          <a href="/blog/webdesign-fuer-rechtsanwaelte/" class="related-post-item">
+            <div class="related-post-thumb">
+              <img src="https://ommatic.de/wp-content/uploads/2026/03/webdesign-anwalt-768x512.jpg" alt="" loading="lazy">
+            </div>
+            <div class="related-post-info">
+              <p class="related-post-title">Webdesign für Rechtsanwälte</p>
+              <p class="related-post-date">09. März 2026</p>
+            </div>
+          </a>
+        </div>
+      </aside>
+    </div><!-- .blog-post-layout -->
+  </section>
+
+  <!-- Post CTA -->
+  <section class="blog-post-cta">
+    <div class="container" style="position:relative;z-index:1">
+      <div class="tag-chip" style="margin-bottom:20px;display:inline-flex">Bereit für mehr Mandate?</div>
       <h2>Mehr Mandanten für Ihre Kanzlei?</h2>
-      <p class="text-muted">Sprechen Sie jetzt mit unseren Experten.</p>
-      <a href="/kontakt/" class="btn btn-primary">Kostenlose Erstberatung</a>
+      <p>Sprechen Sie jetzt mit unseren Experten. In einem kostenlosen Erstgespräch analysieren wir Ihre aktuelle Situation und zeigen Ihnen konkrete Hebel.</p>
+      <div class="cta-btns">
+        <a href="https://calendly.com/marcel-zirkel/45min" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Kostenlose Erstberatung buchen</a>
+        <a href="/kanzleimarketing/" class="btn btn-ghost btn-lg">Alle Leistungen ansehen</a>
+      </div>
     </div>
   </section>
+
 </main>
 <?php require_once '../../includes/footer.php'; ?>

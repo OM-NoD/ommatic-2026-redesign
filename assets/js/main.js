@@ -159,3 +159,32 @@ if (contactForm) {
     }, 1200);
   });
 }
+
+/* ==========================================================
+   NAV DROPDOWNS
+   ========================================================== */
+document.querySelectorAll('.nav-dropdown-toggle').forEach(btn => {
+  btn.addEventListener('click', function(e) {
+    e.stopPropagation();
+    const menu = this.nextElementSibling;
+    const isOpen = menu.classList.contains('open');
+    // Close all dropdowns first
+    document.querySelectorAll('.nav-dropdown-menu.open').forEach(m => m.classList.remove('open'));
+    document.querySelectorAll('.nav-dropdown-toggle.active').forEach(b => b.classList.remove('active'));
+    if (!isOpen) {
+      menu.classList.add('open');
+      this.classList.add('active');
+      this.setAttribute('aria-expanded', 'true');
+    } else {
+      this.setAttribute('aria-expanded', 'false');
+    }
+  });
+});
+// Close dropdowns on outside click
+document.addEventListener('click', () => {
+  document.querySelectorAll('.nav-dropdown-menu.open').forEach(m => m.classList.remove('open'));
+  document.querySelectorAll('.nav-dropdown-toggle.active').forEach(b => {
+    b.classList.remove('active');
+    b.setAttribute('aria-expanded', 'false');
+  });
+});

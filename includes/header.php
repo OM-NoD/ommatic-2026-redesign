@@ -76,17 +76,84 @@ $robots_content = $page_noindex ? 'noindex, nofollow' : 'index, follow';
 <!-- ============================================================
      HEADER
      ============================================================ -->
+<!-- Top Bar -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <a href="/legal-business-forum/" class="topbar-link">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="14" height="14"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+      Legal Business Forum
+    </a>
+    <a href="tel:+4963120691820" class="topbar-link">+49 631 20691820</a>
+  </div>
+</div>
+
 <header class="header" id="header">
   <div class="container header-inner">
 
     <a href="/" class="logo" aria-label="OMmatic – zur Startseite">OMmatic<span class="dot">.</span></a>
 
     <nav class="nav-desktop" aria-label="Hauptnavigation">
-      <a href="/kanzleimarketing/"  class="nav-link">Leistungen</a>
-      <a href="/#ergebnisse"        class="nav-link">Ergebnisse</a>
-      <a href="/ueber-uns/"         class="nav-link">Über uns</a>
+
+      <!-- Leistungen Dropdown -->
+      <div class="nav-dropdown">
+        <a href="/kanzleimarketing/" class="nav-link nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+          Leistungen
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="12" height="12"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </a>
+        <ul class="nav-dropdown-menu nav-dropdown-menu--wide" role="menu">
+          <li><a href="/kanzleimarketing/"                                                                       class="nav-dropdown-item" role="menuitem">Kanzleimarketing</a></li>
+          <li><a href="/kanzleimarketing/suchmaschinenoptimierung-seo-fuer-rechtsanwaelte/"                      class="nav-dropdown-item" role="menuitem">SEO für Rechtsanwälte</a></li>
+          <li><a href="/kanzleimarketing/suchanzeigen-kampagnen-sea-fuer-rechtsanwaelte-und-kanzleien/"          class="nav-dropdown-item" role="menuitem">SEA für Rechtsanwälte</a></li>
+          <li><a href="/kanzleimarketing/lokales-online-marketing-mybusiness-fuer-rechtsanwaelte/"               class="nav-dropdown-item" role="menuitem">Lokales Online Marketing</a></li>
+          <li><a href="/kanzleimarketing/social-media-fuer-rechtsanwaelte/"                                      class="nav-dropdown-item" role="menuitem">Social Media für Rechtsanwälte</a></li>
+          <li><a href="/kanzleimarketing/messung-und-berichte-analytics-reporting/"                              class="nav-dropdown-item" role="menuitem">Analytics &amp; Reporting</a></li>
+          <li><a href="/kanzleimarketing/datenschutz-und-compliance-fuer-rechtsanwaelte/"                        class="nav-dropdown-item" role="menuitem">Datenschutz &amp; Compliance</a></li>
+          <li><a href="/kanzleimarketing/branchenlisting-fuer-anwaelte/"                                         class="nav-dropdown-item" role="menuitem">Branchenlisting</a></li>
+          <li><a href="/kanzleimarketing/call-tracking-fuer-anwaelte/"                                           class="nav-dropdown-item" role="menuitem">Call Tracking</a></li>
+          <li><a href="/kanzleimarketing/ki-anrufbeantworter-fuer-anwaelte/"                                     class="nav-dropdown-item" role="menuitem">KI Anrufbeantworter</a></li>
+        </ul>
+      </div>
+
+      <!-- Über uns Dropdown -->
+      <div class="nav-dropdown">
+        <a href="/ueber-uns/" class="nav-link nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+          Über uns
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="12" height="12"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </a>
+        <ul class="nav-dropdown-menu" role="menu">
+          <li><a href="/ansprechpartner/"  class="nav-dropdown-item" role="menuitem">Ansprechpartner</a></li>
+          <li><a href="/partnerschaften/"  class="nav-dropdown-item" role="menuitem">Partnerschaften</a></li>
+          <li><a href="/karriere/"         class="nav-dropdown-item" role="menuitem">Karriere</a></li>
+        </ul>
+      </div>
+
       <a href="/erfolge/"           class="nav-link">Erfolge</a>
-      <a href="/blog/"              class="nav-link">Blog</a>
+      <a href="/preise/"            class="nav-link">Preise</a>
+
+      <!-- Online Checks Dropdown -->
+      <div class="nav-dropdown">
+        <a href="#" class="nav-link nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+          Online Checks
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="12" height="12"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </a>
+        <ul class="nav-dropdown-menu" role="menu">
+          <li><a href="/check/"                    class="nav-dropdown-item" role="menuitem">Website-Check</a></li>
+          <li><a href="/lokale-praesenz-pruefen/"  class="nav-dropdown-item" role="menuitem">Online-Präsenz-Check</a></li>
+        </ul>
+      </div>
+
+      <!-- Aktuelles Dropdown -->
+      <div class="nav-dropdown">
+        <a href="#" class="nav-link nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+          Aktuelles
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="12" height="12"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </a>
+        <ul class="nav-dropdown-menu" role="menu">
+          <li><a href="/blog/"        class="nav-dropdown-item" role="menuitem">Blog</a></li>
+          <li><a href="/neuigkeiten/" class="nav-dropdown-item" role="menuitem">Neuigkeiten</a></li>
+        </ul>
+      </div>
+
       <a href="/kontakt/"           class="nav-link">Kontakt</a>
     </nav>
 
@@ -105,10 +172,26 @@ $robots_content = $page_noindex ? 'noindex, nofollow' : 'index, follow';
 </header>
 
 <nav class="mobile-nav" id="mobileNav" aria-label="Mobile Navigation">
-  <a href="/kanzleimarketing/"  class="nav-link">Leistungen</a>
-  <a href="/#ergebnisse"        class="nav-link">Ergebnisse</a>
-  <a href="/ueber-uns/"         class="nav-link">Über uns</a>
-  <a href="/erfolge/"           class="nav-link">Erfolge</a>
-  <a href="/blog/"              class="nav-link">Blog</a>
-  <a href="/kontakt/"           class="btn btn-primary">Beratung anfragen</a>
+  <a href="/kanzleimarketing/"                                                                     class="nav-link">Kanzleimarketing</a>
+  <a href="/kanzleimarketing/suchmaschinenoptimierung-seo-fuer-rechtsanwaelte/"                    class="nav-link">SEO für Rechtsanwälte</a>
+  <a href="/kanzleimarketing/suchanzeigen-kampagnen-sea-fuer-rechtsanwaelte-und-kanzleien/"        class="nav-link">SEA für Rechtsanwälte</a>
+  <a href="/kanzleimarketing/lokales-online-marketing-mybusiness-fuer-rechtsanwaelte/"             class="nav-link">Lokales Online Marketing</a>
+  <a href="/kanzleimarketing/social-media-fuer-rechtsanwaelte/"                                    class="nav-link">Social Media für Rechtsanwälte</a>
+  <a href="/kanzleimarketing/messung-und-berichte-analytics-reporting/"                            class="nav-link">Analytics &amp; Reporting</a>
+  <a href="/kanzleimarketing/datenschutz-und-compliance-fuer-rechtsanwaelte/"                      class="nav-link">Datenschutz &amp; Compliance</a>
+  <a href="/kanzleimarketing/branchenlisting-fuer-anwaelte/"                                       class="nav-link">Branchenlisting</a>
+  <a href="/kanzleimarketing/call-tracking-fuer-anwaelte/"                                         class="nav-link">Call Tracking</a>
+  <a href="/kanzleimarketing/ki-anrufbeantworter-fuer-anwaelte/"                                   class="nav-link">KI Anrufbeantworter</a>
+  <a href="/ueber-uns/"               class="nav-link">Über uns</a>
+  <a href="/ansprechpartner/"         class="nav-link">Ansprechpartner</a>
+  <a href="/partnerschaften/"         class="nav-link">Partnerschaften</a>
+  <a href="/karriere/"                class="nav-link">Karriere</a>
+  <a href="/erfolge/"                 class="nav-link">Erfolge</a>
+  <a href="/preise/"                  class="nav-link">Preise</a>
+  <a href="/check/"                   class="nav-link">Website-Check</a>
+  <a href="/lokale-praesenz-pruefen/" class="nav-link">Online-Präsenz-Check</a>
+  <a href="/blog/"                    class="nav-link">Blog</a>
+  <a href="/neuigkeiten/"             class="nav-link">Neuigkeiten</a>
+  <a href="/legal-business-forum/"    class="nav-link">Legal Business Forum</a>
+  <a href="/kontakt/"                 class="btn btn-primary">Beratung anfragen</a>
 </nav>

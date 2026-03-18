@@ -5,18 +5,41 @@ $page_canonical = 'https://ommatic.de/blog/rechtsanwalt-werbung-erlaubt/';
 require_once '../../includes/header.php';
 ?>
 <main>
-  <article class="blog-post">
-    <div class="container">
-      <div class="blog-post-header section">
-        <div class="tag-chip">Blog</div>
-        <h1 class="sr">Rechtsanwalt Werbung – Was ist erlaubt?</h1>
-        <p class="blog-meta">13. März 2026 · 8 Min. Lesezeit</p>
+
+  <!-- Post Hero -->
+  <header class="blog-post-hero">
+    <div class="blog-post-hero-inner">
+      <nav class="breadcrumb sr">
+        <a href="/">OMmatic</a>
+        <span class="breadcrumb-sep">›</span>
+        <a href="/blog/">Blog</a>
+        <span class="breadcrumb-sep">›</span>
+        <span>Rechtsanwalt Werbung</span>
+      </nav>
+      <div class="blog-post-category sr sr-d1">Recht &amp; Marketing</div>
+      <h1 class="blog-post-title sr sr-d2">Rechtsanwalt Werbung – Was ist erlaubt?</h1>
+      <div class="blog-post-meta-row sr sr-d3">
+        <div class="meta-author">
+          <div class="meta-author-avatar">MZ</div>
+          <span>Marcel Zirkel</span>
+        </div>
+        <span class="blog-meta-sep">·</span>
+        <span>13. März 2026</span>
+        <span class="blog-meta-sep">·</span>
+        <span>8 Min. Lesezeit</span>
       </div>
-      <div class="blog-post-body">
+    </div>
+    <div class="blog-post-hero-img sr">
+      <img src="https://ommatic.de/wp-content/uploads/2026/03/Rechtsanwalt-Werbung-erlaubt-1024x682.jpg"
+           alt="Rechtsanwalt Werbung – Was ist erlaubt?" width="1024" height="682" loading="eager">
+    </div>
+  </header>
+
+  <!-- Post Body -->
+  <section class="blog-post-section">
+    <div class="blog-post-layout">
+      <article class="blog-article-content">
 <p>Ein Fachanwalt für Arbeitsrecht schaltet Google Ads mit dem Slogan „Wir gewinnen Ihren Fall“. Ein Strafverteidiger wirbt auf Flyern mit „Deutschlands bester Strafverteidiger“. Eine Kanzlei veröffentlicht Mandantenbewertungen auf ihrer Website – ohne erbetene Zustimmung der Mandanten. Alle drei fällen unter einen der häufigsten Fehler im Anwaltsmarketing: Sie verstoßen gegen berufsrechtliche Werbepflichten, ohne es zu wissen.</p>
-<figure class="blog-figure">
-<img src="https://ommatic.de/wp-content/uploads/2026/03/Rechtsanwalt-Werbung-erlaubt-1024x682.jpg" alt="" width="1024" height="682" loading="lazy">
-</figure>
 <p>Die Grundregel nach <strong>BRAO §&nbsp;43b</strong> lautet: Anwaltswerbung ist grundsätzlich erlaubt – solange sie sachlich und berufsbezogen ist, nicht auf die Erteilung eines konkreten Auftrags im Einzelfall gerichtet ist und nicht mit unsachlichen oder irreführenden Angaben wirbt. Was das im Alltag bedeutet, was in der Grauzone liegt und was definitiv verboten ist, erklärt dieser Leitfaden.</p>
 <h2>Die Rechtsgrundlagen im Überblick</h2>
 <p>Anwaltswerbung in Deutschland ist durch zwei Quellen geregelt:</p>
@@ -107,18 +130,53 @@ require_once '../../includes/header.php';
 <p>OMmatic ist spezialisiert auf Marketingstrategien für Rechtsanwälte. Wir kennen die Grenzen – und wissen, wie man innerhalb dieser Grenzen maximale Sichtbarkeit erzielt.</p>
 <a href="https://calendly.com/marcel-zirkel/45min" class="btn btn-primary">Kostenlose Erstberatung vereinbaren</a>
 </div>
-<p></p>
-</div>
+
+      </article><!-- .blog-article-content -->
+
+      <!-- Sidebar -->
+      <aside class="blog-sidebar">
+        <div class="sidebar-cta-box">
+          <h3>Rechtssicheres Marketing</h3>
+          <p>BRAO-konformes Kanzleimarketing, das messbar Mandate generiert.</p>
+          <a href="https://calendly.com/marcel-zirkel/45min" class="btn" target="_blank" rel="noopener">Termin buchen →</a>
+        </div>
+        <div class="sidebar-card">
+          <p class="sidebar-card-title">Ähnliche Artikel</p>
+          <a href="/blog/mandantenakquise-rechtsanwaelte/" class="related-post-item">
+            <div class="related-post-thumb">
+              <img src="https://ommatic.de/wp-content/uploads/2026/03/mandantenakquise-fuer-rechtsanwaelte-768x512.jpg" alt="" loading="lazy">
+            </div>
+            <div class="related-post-info">
+              <p class="related-post-title">Mandantenakquise für Rechtsanwälte</p>
+              <p class="related-post-date">16. März 2026</p>
+            </div>
+          </a>
+          <a href="/blog/anwaltsmarketing/" class="related-post-item">
+            <div class="related-post-thumb">
+              <img src="https://ommatic.de/wp-content/uploads/2026/03/anwaltsmarketing-768x430.jpg" alt="" loading="lazy">
+            </div>
+            <div class="related-post-info">
+              <p class="related-post-title">Anwaltsmarketing – Der komplette Guide</p>
+              <p class="related-post-date">11. März 2026</p>
+            </div>
+          </a>
+        </div>
+      </aside>
+    </div><!-- .blog-post-layout -->
+  </section>
+
+  <!-- Post CTA -->
+  <section class="blog-post-cta">
+    <div class="container" style="position:relative;z-index:1">
+      <div class="tag-chip" style="margin-bottom:20px;display:inline-flex">Bereit für mehr Mandate?</div>
+      <h2>Kanzleimarketing, das wirkt – und rechtskonform ist</h2>
+      <p>OMmatic ist spezialisiert auf Marketingstrategien für Rechtsanwälte. Wir kennen die Grenzen – und wissen, wie man innerhalb dieser Grenzen maximale Sichtbarkeit erzielt.</p>
+      <div class="cta-btns">
+        <a href="https://calendly.com/marcel-zirkel/45min" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Kostenlose Erstberatung buchen</a>
+        <a href="/kanzleimarketing/" class="btn btn-ghost btn-lg">Alle Leistungen ansehen</a>
       </div>
     </div>
-  </article>
-
-  <section class="section cta-section">
-    <div class="container" style="text-align:center">
-      <h2>Mehr Mandanten für Ihre Kanzlei?</h2>
-      <p class="text-muted">Sprechen Sie jetzt mit unseren Experten.</p>
-      <a href="/kontakt/" class="btn btn-primary">Kostenlose Erstberatung</a>
-    </div>
   </section>
+
 </main>
 <?php require_once '../../includes/footer.php'; ?>
