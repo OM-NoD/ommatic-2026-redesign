@@ -202,6 +202,123 @@ function om_stat_item(string $number, string $label, string $sr_class = ''): voi
 
 
 // ============================================================
+//  CONTACT SECTION  (Kontaktformular – globales Segment)
+//  React: <ContactSection />
+// ============================================================
+/**
+ * Zeigt das Kontaktformular-Segment an.
+ * Wird automatisch in footer.php vor dem Footer eingeblendet.
+ * Auf der Kontakt-Seite selbst per $hide_contact_section = true unterdrücken.
+ */
+function om_contact_section(): void {
+    ?>
+    <section class="contact-section" id="kontakt" aria-labelledby="contact-h">
+      <div class="container">
+        <div class="contact-grid">
+
+          <div class="contact-info sr">
+            <span class="tag-chip">Kontakt aufnehmen</span>
+            <h2 class="contact-info-title" id="contact-h">
+              Bereit für mehr<br><span class="gradient-text">Mandanten?</span>
+            </h2>
+            <p class="contact-info-sub">
+              In einem unverbindlichen Erstgespräch analysieren wir Ihre aktuelle Situation und zeigen Ihnen konkret, wie wir Ihre Kanzlei digital nach vorne bringen – ohne leere Versprechen, nur mit messbaren Ergebnissen.
+            </p>
+            <div class="contact-details">
+              <a href="tel:+4963120691820" class="contact-detail-item">
+                <div class="contact-detail-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.05 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16.92z"/></svg>
+                </div>
+                +49 631 206918 20
+              </a>
+              <a href="mailto:info@ommatic.de" class="contact-detail-item">
+                <div class="contact-detail-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                info@ommatic.de
+              </a>
+              <div class="contact-detail-item">
+                <div class="contact-detail-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                Mo – Fr, 09:00 – 17:00 Uhr
+              </div>
+            </div>
+            <div class="contact-trust">
+              <div class="contact-trust-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div class="contact-trust-text">
+                <strong>Kostenlos &amp; unverbindlich.</strong><br>
+                Unser Erstgespräch ist für Sie ohne Kosten und ohne Verpflichtung.
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap sr sr-d1">
+            <h3 class="form-title">Erstberatung anfragen</h3>
+            <p class="form-sub">Füllen Sie das Formular aus – wir melden uns innerhalb von 24 Stunden.</p>
+            <form class="om-contact-form" method="post" action="/kontakt/send.php" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Name <span class="req">*</span></label>
+                  <input type="text" name="name" placeholder="Ihr vollständiger Name" required>
+                </div>
+                <div class="form-group">
+                  <label>Kanzlei</label>
+                  <input type="text" name="kanzlei" placeholder="Name Ihrer Kanzlei">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>E-Mail <span class="req">*</span></label>
+                  <input type="email" name="email" placeholder="ihre@email.de" required>
+                </div>
+                <div class="form-group">
+                  <label>Telefon</label>
+                  <input type="tel" name="telefon" placeholder="+49 ...">
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Gewünschte Leistung</label>
+                <select name="leistung">
+                  <option value="" disabled selected>Bitte wählen ...</option>
+                  <option value="google-ads">Google Ads für Kanzleien</option>
+                  <option value="social-ads">Facebook &amp; Instagram Ads</option>
+                  <option value="webdesign">Webdesign &amp; Entwicklung</option>
+                  <option value="seo">SEO für Anwälte</option>
+                  <option value="landing-pages">SEA Landing Pages</option>
+                  <option value="full-service">Full-Service (alles)</option>
+                  <option value="beratung">Erstberatung / Analyse</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Nachricht</label>
+                <textarea name="nachricht" placeholder="Kurze Beschreibung Ihrer aktuellen Situation und Ihrer Ziele ..."></textarea>
+              </div>
+              <div class="form-divider"></div>
+              <div class="form-check">
+                <input type="checkbox" name="dsgvo" required>
+                <label class="form-check-label">
+                  Ich habe die <a href="/datenschutz/">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage zu. <span class="req">*</span>
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg form-submit">
+                Anfrage kostenfrei absenden
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width:18px;height:18px;"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </button>
+              <p class="form-note">Keine Weitergabe an Dritte. Antwort innerhalb von 24 Stunden.</p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <?php
+}
+
+
+// ============================================================
 //  PROCESS STEP  (4-Schritte-Prozess)
 //  React: <ProcessStep num title text />
 // ============================================================

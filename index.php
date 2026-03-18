@@ -2,6 +2,7 @@
 $page_title       = 'OMmatic – Legal Marketing & Performance Ads für Kanzleien | Google Ads, SEO, Webdesign';
 $page_description = 'OMmatic ist Deutschlands führende Marketing-Agentur für Rechtsanwaltskanzleien. Messbare Mandantengewinnung durch Google Ads, SEO, Webdesign und Performance Marketing. Kostenlose Erstberatung.';
 $page_canonical   = 'https://ommatic.de/';
+$hide_contact_section = true; // Startseite hat eigenes Kontaktformular inline
 $page_hreflang_de = 'https://ommatic.de/';
 $page_hreflang_en = 'https://ommatic.de/en/';
 require_once 'includes/header.php';

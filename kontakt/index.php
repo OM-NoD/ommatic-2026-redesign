@@ -2,6 +2,7 @@
 $page_title       = 'Kontakt – OMmatic Legal Marketing | Kostenlose Erstberatung anfragen';
 $page_description = 'Kontaktieren Sie OMmatic für eine kostenlose Erstberatung. Wir analysieren Ihre Kanzlei-Marketing-Situation und zeigen, wie Sie messbar mehr Mandanten gewinnen.';
 $page_canonical   = 'https://ommatic.de/kontakt/';
+$hide_contact_section = true; // Seite hat eigenes Kontaktformular
 require_once '../includes/header.php';
 require_once '../includes/components.php';
 ?>

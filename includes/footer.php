@@ -1,4 +1,9 @@
 
+<?php
+require_once __DIR__ . '/components.php';
+if (empty($hide_contact_section)) om_contact_section();
+?>
+
 <!-- ============================================================
      FOOTER
      ============================================================ -->
