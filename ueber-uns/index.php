@@ -258,48 +258,46 @@ require_once '../includes/header.php';
       </div>
 
       <!-- ── BLOCK 1: Geschäftsführung ── -->
-      <div class="sr" style="display:flex;justify-content:center;margin-bottom:24px;">
+      <div class="sr" style="display:flex;justify-content:center;margin-top:3rem;margin-bottom:32px;">
         <div class="team-card" style="max-width:400px;width:100%;">
           <div class="team-photo-wrap">
-            <img src="/assets/img/team/Marcel-Zirkel_Ommatic.jpg" alt="Marcel Zirkel – CEO OMmatic" loading="lazy">
+            <img src="/assets/img/team/Marcel-Zirkel_Ommatic.jpg" alt="Marcel Zirkel – Geschäftsführer OMmatic">
           </div>
           <div class="team-card-name">Marcel Zirkel</div>
-          <div class="team-card-role">Geschäftsführer &amp; Gründer (CEO)</div>
-          <p class="team-card-bio">Marcel gründete OMmatic 2019 mit der Vision, professionelles Legal Marketing für mittelständische Kanzleien zum Festpreis zu ermöglichen. Als CEO verantwortet er Strategie, Produktentwicklung und die Weiterentwicklung unserer Software-Plattform Trailblazer.</p>
+          <div class="team-card-role">Geschäftsführer &amp; Co-Founder</div>
+          <p class="team-card-bio">Als Geschäftsführer und Co-Founder der OMmatic GmbH verantwortet Marcel Strategie, Produktentwicklung und die Weiterentwicklung der Software-Plattform Trailblazer. Er bringt über 10 Jahre Erfahrung in SEO, SEA und Social Media mit und betreut mit seinem Team alle Kundenbelange.</p>
         </div>
       </div>
 
-      <!-- ── BLOCK 2: Sales & Account Management – Gesicht nach außen ── -->
-      <p class="sr" style="text-align:center;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--text-3);margin-bottom:16px;">Sales &amp; Account Management</p>
+      <!-- ── BLOCK 2: Ansprechpartner nach außen ── -->
       <div class="team-grid sr" style="grid-template-columns:repeat(2,1fr);gap:24px;margin-bottom:48px;">
 
         <div class="team-card">
           <div class="team-photo-wrap">
-            <img src="/assets/img/team/ommatic-conny.jpg" alt="Cornelia Day – Head of Client Success" loading="lazy">
+            <img src="/assets/img/team/ommatic-conny.jpg" alt="Cornelia Day – Senior Account Managerin">
           </div>
           <div class="team-card-name">Cornelia Day</div>
-          <div class="team-card-role">Head of Client Success</div>
-          <p class="team-card-bio">Cornelia ist die erste Ansprechpartnerin für unsere Kanzleikunden. Sie begleitet neue Kunden vom Onboarding bis zur laufenden Betreuung, führt die monatlichen Strategie-Calls durch und sorgt dafür, dass vereinbarte Maßnahmen termingerecht umgesetzt werden.</p>
+          <div class="team-card-role">Senior Account Managerin</div>
+          <p class="team-card-bio">Cornelia verantwortet die Betreuung und Weiterentwicklung unserer Bestandskunden. Mit analytischer und pragmatischer Arbeitsweise erkennt sie Potenziale frühzeitig, koordiniert Prozesse sauber und sorgt dafür, dass digitale Marketingmaßnahmen langfristig erfolgreich umgesetzt werden.</p>
         </div>
 
         <div class="team-card">
           <div class="team-photo-wrap">
-            <img src="/assets/img/team/alex-boersig-ommatic.jpg" alt="Alex Börsig – Head of Performance Marketing" loading="lazy">
+            <img src="/assets/img/team/alex-boersig-ommatic.jpg" alt="Alex Börsig – Chief Sales Officer">
           </div>
           <div class="team-card-name">Alex Börsig</div>
-          <div class="team-card-role">Head of Performance Marketing</div>
-          <p class="team-card-bio">Alex ist Ansprechpartner für alle Performance-Themen und betreut Kanzleikunden direkt in der Kampagnen-Optimierung. Als Head of Performance Marketing verantwortet er alle Google Ads- und SEA-Kampagnen und präsentiert die monatlichen Ergebnisse persönlich.</p>
+          <div class="team-card-role">Chief Sales Officer (CSO)</div>
+          <p class="team-card-bio">Alex verantwortet die strategische Ausrichtung des Vertriebs, den Aufbau skalierbarer Sales-Prozesse und die Entwicklung neuer Angebote für Kanzleien und Beratungsunternehmen. Sein Fokus liegt auf strukturierten Go-to-Market-Konzepten und klarer Positionierung.</p>
         </div>
 
       </div>
 
       <!-- ── BLOCK 3: Operations & Experten-Team ── -->
-      <p class="sr" style="text-align:center;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--text-3);margin-bottom:16px;">Operations &amp; Experten-Team</p>
       <div class="team-grid sr" style="grid-template-columns:repeat(4,1fr);gap:20px;">
 
         <div class="team-card">
           <div class="team-photo-wrap" style="width:100px;height:100px;">
-            <img src="/assets/img/team/Markus_OMmatic_M-Mobile-1024x683.jpg" alt="Markus Weiler" loading="lazy">
+            <img src="/assets/img/team/Markus_OMmatic_M-Mobile-1024x683.jpg" alt="Markus Weiler">
           </div>
           <div class="team-card-name" style="font-size:16px;">Markus Weiler</div>
           <div class="team-card-role">Gesellschafter &amp; Gründer</div>
@@ -308,16 +306,16 @@ require_once '../includes/header.php';
 
         <div class="team-card">
           <div class="team-photo-wrap" style="width:100px;height:100px;">
-            <img src="/assets/img/team/ommatic_normen.jpg" alt="Normen Daunderer" loading="lazy">
+            <img src="/assets/img/team/ommatic_normen.jpg" alt="Normen Daunderer">
           </div>
           <div class="team-card-name" style="font-size:16px;">Normen Daunderer</div>
-          <div class="team-card-role">Gesellschafter &amp; Head of Tech</div>
+          <div class="team-card-role">Head of Tech</div>
           <p class="team-card-bio" style="font-size:13px;">Verantwortet die technische Infrastruktur, Softwareentwicklung und alle digitalen Tools der OMmatic-Plattform.</p>
         </div>
 
         <div class="team-card">
           <div class="team-photo-wrap" style="width:100px;height:100px;">
-            <img src="/assets/img/team/Kristin_OMmatic_M-Mobile-1024x683.jpg" alt="Kristin Krogmann" loading="lazy">
+            <img src="/assets/img/team/Kristin_OMmatic_M-Mobile-1024x683.jpg" alt="Kristin Krogmann">
           </div>
           <div class="team-card-name" style="font-size:16px;">Kristin Krogmann</div>
           <div class="team-card-role">Content &amp; Social Media</div>
@@ -326,7 +324,7 @@ require_once '../includes/header.php';
 
         <div class="team-card">
           <div class="team-photo-wrap" style="width:100px;height:100px;">
-            <img src="/assets/img/team/Vlad_OMmatic_Mobile-Mobile-1024x683.jpg" alt="Vlad Sierov" loading="lazy">
+            <img src="/assets/img/team/Vlad_OMmatic_Mobile-Mobile-1024x683.jpg" alt="Vlad Sierov">
           </div>
           <div class="team-card-name" style="font-size:16px;">Vlad Sierov</div>
           <div class="team-card-role">Web Developer</div>
@@ -335,7 +333,7 @@ require_once '../includes/header.php';
 
         <div class="team-card">
           <div class="team-photo-wrap" style="width:100px;height:100px;">
-            <img src="/assets/img/team/Celina_OMmatic_2026-1024x683.jpg" alt="Celina Gann" loading="lazy">
+            <img src="/assets/img/team/Celina_OMmatic_2026-1024x683.jpg" alt="Celina Gann">
           </div>
           <div class="team-card-name" style="font-size:16px;">Celina Gann</div>
           <div class="team-card-role">Google Ads Managerin</div>
@@ -344,7 +342,7 @@ require_once '../includes/header.php';
 
         <div class="team-card">
           <div class="team-photo-wrap" style="width:100px;height:100px;">
-            <img src="/assets/img/team/Zoe_OMmatic_M-Mobile-1024x683.jpg" alt="Zoe Klein" loading="lazy">
+            <img src="/assets/img/team/Zoe_OMmatic_M-Mobile-1024x683.jpg" alt="Zoe Klein">
           </div>
           <div class="team-card-name" style="font-size:16px;">Zoe Klein</div>
           <div class="team-card-role">Local SEO &amp; Analytics</div>
@@ -353,7 +351,7 @@ require_once '../includes/header.php';
 
         <div class="team-card">
           <div class="team-photo-wrap" style="width:100px;height:100px;">
-            <img src="/assets/img/team/Jannis_OMmatic_M-Mobile-1024x683.jpg" alt="Jannis Schottler" loading="lazy">
+            <img src="/assets/img/team/Jannis_OMmatic_M-Mobile-1024x683.jpg" alt="Jannis Schottler">
           </div>
           <div class="team-card-name" style="font-size:16px;">Jannis Schottler</div>
           <div class="team-card-role">Performance Analyst</div>
@@ -362,7 +360,7 @@ require_once '../includes/header.php';
 
         <div class="team-card">
           <div class="team-photo-wrap" style="width:100px;height:100px;">
-            <img src="/assets/img/team/Aziz_OMmatic_M-Mobile-1024x683.jpg" alt="Aziz Ben Salah" loading="lazy">
+            <img src="/assets/img/team/Aziz_OMmatic_M-Mobile-1024x683.jpg" alt="Aziz Ben Salah">
           </div>
           <div class="team-card-name" style="font-size:16px;">Aziz Ben Salah</div>
           <div class="team-card-role">SEA &amp; Paid Social</div>
@@ -371,7 +369,7 @@ require_once '../includes/header.php';
 
         <div class="team-card">
           <div class="team-photo-wrap" style="width:100px;height:100px;">
-            <img src="/assets/img/team/ommatic-dina.jpg" alt="Dina Jokanovic" loading="lazy">
+            <img src="/assets/img/team/ommatic-dina.jpg" alt="Dina Jokanovic">
           </div>
           <div class="team-card-name" style="font-size:16px;">Dina Jokanovic</div>
           <div class="team-card-role">Content Marketing</div>
@@ -380,7 +378,7 @@ require_once '../includes/header.php';
 
         <div class="team-card">
           <div class="team-photo-wrap" style="width:100px;height:100px;">
-            <img src="/assets/img/team/Julia-Weber_white_bg.jpg" alt="Julia Weber" loading="lazy">
+            <img src="/assets/img/team/Julia-Weber_white_bg.jpg" alt="Julia Weber">
           </div>
           <div class="team-card-name" style="font-size:16px;">Julia Weber</div>
           <div class="team-card-role">Client Managerin</div>
