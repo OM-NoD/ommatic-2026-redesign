@@ -475,6 +475,100 @@ button, input, textarea, select { font-family: inherit; }
 .svc-card:nth-child(6) .svc-feat-check { background:var(--teal-dim); color:var(--teal); }
 
 /* ==========================================================
+   SERVICE DETAILS GRID (Leistungen im Detail)
+   ========================================================== */
+.service-details-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+  margin-top:48px;
+}
+.service-detail-block {
+  background:var(--bg-card);
+  border:1px solid var(--border-s);
+  border-radius:var(--radius-lg);
+  padding:32px 28px 28px;
+  display:flex;
+  flex-direction:column;
+  transition:border-color .25s, box-shadow .25s, transform .25s;
+  position:relative;
+}
+.service-detail-block::before {
+  content:''; position:absolute; top:0; left:0; right:0; height:2px;
+  background:var(--grad-line); opacity:0; transition:opacity .3s; border-radius:var(--radius-lg) var(--radius-lg) 0 0;
+}
+.service-detail-block:hover { border-color:var(--border); transform:translateY(-4px); box-shadow:var(--shadow-card); }
+.service-detail-block:hover::before { opacity:1; }
+
+.service-detail-icon {
+  width:44px; height:44px;
+  border-radius:10px;
+  display:flex; align-items:center; justify-content:center;
+  margin-bottom:18px; flex-shrink:0;
+}
+.service-detail-icon svg { width:22px; height:22px; }
+.service-detail-icon.ic-cyan   { background:var(--primary-dim); color:var(--primary); }
+.service-detail-icon.ic-indigo { background:var(--indigo-dim);  color:var(--indigo); }
+.service-detail-icon.ic-teal   { background:var(--teal-dim);    color:var(--teal); }
+
+.service-detail-block h3 {
+  font-family:var(--font-h);
+  font-size:clamp(1rem,1.8vw,1.15rem);
+  font-weight:700;
+  line-height:1.35;
+  color:var(--fg);
+  margin:0 0 14px;
+}
+.service-detail-block p {
+  font-size:.925rem;
+  color:var(--fg-2);
+  line-height:1.7;
+  margin:0 0 10px;
+}
+.service-detail-block p:last-of-type { margin-bottom:0; }
+.service-detail-block .btn { margin-top:auto; align-self:flex-start; }
+
+/* STATS ROW */
+.stats-row {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:0;
+  border:1px solid var(--border-s);
+  border-radius:var(--radius-lg);
+  overflow:hidden;
+  margin-top:48px;
+}
+.stat-block {
+  padding:clamp(28px,4vw,48px) 28px;
+  text-align:center;
+  border-right:1px solid var(--border-s);
+  transition:background .25s;
+}
+.stat-block:last-child { border-right:none; }
+.stat-block:hover { background:var(--primary-dim); }
+.stat-number {
+  font-family:var(--font-h);
+  font-size:clamp(1.6rem,3vw,2.25rem);
+  font-weight:800;
+  letter-spacing:-.02em;
+  line-height:1.1;
+  margin-bottom:6px;
+}
+.stat-label {
+  font-size:.85rem;
+  font-weight:700;
+  color:var(--fg);
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  margin-bottom:8px;
+}
+.stat-desc {
+  font-size:.8rem;
+  color:var(--fg-3);
+  line-height:1.5;
+}
+
+/* ==========================================================
    STATS
    ========================================================== */
 .stats-section {
@@ -920,6 +1014,11 @@ textarea { resize:vertical; min-height:120px; line-height:1.6; }
   .two-col { grid-template-columns:1fr; }
   .two-col.reverse { direction:ltr; }
   .team-grid { grid-template-columns:1fr 1fr; }
+  .service-details-grid { grid-template-columns:1fr 1fr; }
+  .stats-row { grid-template-columns:1fr 1fr; }
+  .stats-row .stat-block:nth-child(2) { border-right:none; }
+  .stats-row .stat-block:nth-child(3),
+  .stats-row .stat-block:nth-child(4) { border-top:1px solid var(--border-s); }
 }
 @media (max-width:800px) {
   .services-grid { grid-template-columns:1fr 1fr; }
@@ -937,6 +1036,10 @@ textarea { resize:vertical; min-height:120px; line-height:1.6; }
 }
 @media (max-width:540px) {
   .services-grid { grid-template-columns:1fr; }
+  .service-details-grid { grid-template-columns:1fr; }
+  .stats-row { grid-template-columns:1fr; }
+  .stats-row .stat-block { border-right:none !important; border-top:1px solid var(--border-s); }
+  .stats-row .stat-block:first-child { border-top:none; }
   .hero-stats { grid-template-columns:1fr 1fr; }
   .hero-stats .hs-card:last-child { grid-column:span 2; }
   .hero-ctas { flex-direction:column; }

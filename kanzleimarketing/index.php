@@ -258,6 +258,162 @@ require_once '../includes/header.php';
 
 
   <!-- ============================================================
+       LEISTUNGEN IM DETAIL – Detaillierte Erklärungen zu den 9 Säulen
+       ============================================================ -->
+  <section class="content-section">
+    <div class="container">
+      <div class="section-head sr">
+        <span class="tag-chip">Leistungen im Detail</span>
+        <h2>Was steckt hinter den 9 Säulen des Kanzleimarketings?</h2>
+        <p class="section-sub">Jede Maßnahme hat ihre eigene Logik und Wirkung. Hier erfahren Sie, wie die einzelnen Bausteine funktionieren und warum sie für Ihre Kanzlei entscheidend sind.</p>
+      </div>
+
+      <div class="service-details-grid sr">
+
+        <!-- SEO Detail -->
+        <div class="service-detail-block">
+          <div class="service-detail-icon ic-cyan">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <h3>SEO für Rechtsanwälte – Das Fundament für eine erfolgreiche Online-Präsenz</h3>
+          <p>SEO bildet das Fundament für eine erfolgreiche Online-Präsenz Ihrer Kanzlei. Um potenzielle Mandanten zu erreichen, ist es wichtig, dass Ihre Kanzlei bei relevanten Suchanfragen gut sichtbar ist. Dazu gehört die Optimierung Ihrer Website-Struktur, Inhalte und technischen Aspekte. Schnelle Ladezeiten, mobile Optimierung und klare Navigation sind Grundvoraussetzungen.</p>
+          <p>Zudem sollten Sie Keywords wie „Kanzleimarketing", „Arbeitsrecht Anwalt" oder „Kanzlei [Ort]" gezielt einsetzen, um Ihre Zielgruppe anzusprechen. Hochwertige Inhalte, die häufig gestellte Fragen beantworten oder juristische Themen leicht verständlich erklären, verbessern nicht nur Ihre Sichtbarkeit, sondern auch Ihre Glaubwürdigkeit.</p>
+          <a href="/kanzleimarketing/suchmaschinenoptimierung-seo-fuer-rechtsanwaelte/" class="btn btn-ghost" style="margin-top:12px;">Mehr erfahren &rarr;</a>
+        </div>
+
+        <!-- SEA Detail -->
+        <div class="service-detail-block">
+          <div class="service-detail-icon ic-indigo">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3>Suchmaschinenwerbung (SEA) für Kanzleien – Sichtbarkeit auf Knopfdruck</h3>
+          <p>Mit SEA haben Kanzleien die Möglichkeit, die Sichtbarkeit Ihrer Kanzlei innerhalb kürzester Zeit zu maximieren. Über Plattformen wie Google Ads können Sie gezielte Anzeigen schalten, die genau dann erscheinen, wenn potenzielle Mandanten nach Begriffen wie „Familienrecht Beratung" oder „Kündigungsschutz Anwalt" suchen.</p>
+          <p>Im Gegensatz zu SEO, bei dem organische Platzierungen durch Optimierung erreicht werden, können Sie sich bei SEA eine Spitzenposition erkaufen. Das bedeutet: Wenn Sie für ein Keyword wie „Arbeitsrecht Anwalt [Ort]" bieten und bereit sind, pro Klick einen bestimmten Betrag zu zahlen, kann Ihre Anzeige sofort ganz oben erscheinen.</p>
+          <p>SEA ist ein mächtiges Werkzeug, um Ihre Kanzlei gezielt und schnell ins Rampenlicht zu rücken. Allerdings können hohe Kosten und ineffiziente Kampagnen ohne die richtige Expertise zu einem Verlustgeschäft werden. Deshalb ist es ratsam, sich an erfahrene Spezialisten zu wenden, die Ihre Kampagnen nicht nur starten, sondern auch kontinuierlich optimieren und überwachen.</p>
+          <a href="/kanzleimarketing/suchanzeigen-kampagnen-sea-fuer-rechtsanwaelte-und-kanzleien/" class="btn btn-ghost" style="margin-top:12px;">Mehr erfahren &rarr;</a>
+        </div>
+
+        <!-- Social Media Detail -->
+        <div class="service-detail-block">
+          <div class="service-detail-icon ic-teal">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>Social Media Marketing – Vertrauen aufbauen und Expertise zeigen</h3>
+          <p>Soziale Netzwerke wie LinkedIn, Facebook und Instagram sind mächtige Werkzeuge, um die Expertise und Persönlichkeit Ihrer Kanzlei zu präsentieren. Sie bieten Ihnen die Möglichkeit, mit potenziellen Mandanten in Kontakt zu treten, Ihre Fachkompetenz zu demonstrieren und Vertrauen aufzubauen.</p>
+          <p>Display-Netzwerke dienen primär dazu, die Aufmerksamkeit und Wahrnehmung für Ihre Kanzlei zu steigern. Niemand wird absichtlich in eine rechtliche Auseinandersetzung geraten, nur um Ihre Dienstleistungen in Anspruch zu nehmen. Doch wenn jemand, der Ihre Anzeigen immer wieder sieht, später tatsächlich juristische Unterstützung benötigt, wird er sich an Sie erinnern.</p>
+          <p>Mit regelmäßigem Content-Marketing können Sie Ihre Expertise gezielt hervorheben: Tipps zur Vertragsgestaltung, Beiträge zu aktuellen rechtlichen Entwicklungen, Erklärvideos, die komplexe Themen verständlich machen.</p>
+          <a href="/kanzleimarketing/social-media-fuer-rechtsanwaelte/" class="btn btn-ghost" style="margin-top:12px;">Mehr erfahren &rarr;</a>
+        </div>
+
+        <!-- Local SEO Detail -->
+        <div class="service-detail-block">
+          <div class="service-detail-icon ic-cyan">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3>Lokales Online-Marketing für Kanzleien – In Ihrer Region sichtbar werden</h3>
+          <p>Für Kanzleien, die regionale Mandanten ansprechen möchten, ist Local Online Marketing ein unverzichtbarer Bestandteil der Marketingstrategie. Es ermöglicht Ihnen, sich gezielt in Ihrer Region zu positionieren und lokal suchende Mandanten effektiv zu erreichen.</p>
+          <p>Ein professionell gepflegtes Google Unternehmensprofil (My Business) ist der Schlüssel, um in den lokalen Suchergebnissen sichtbar zu sein. Potenzielle Mandanten können so auf einen Blick Ihre Kontaktdaten einsehen, Bewertungen und Erfahrungsberichte anderer Mandanten lesen, Ihre Öffnungszeiten überprüfen und direkt über Google Kontakt aufnehmen oder Ihren Standort finden.</p>
+          <p>Laut einer Studie von Google nutzen 89 Prozent der Verbraucher das Internet, um lokale Unternehmen zu suchen, und 46 Prozent aller Google-Suchen haben einen lokalen Bezug.</p>
+          <a href="/kanzleimarketing/lokales-online-marketing-mybusiness-fuer-rechtsanwaelte/" class="btn btn-ghost" style="margin-top:12px;">Mehr erfahren &rarr;</a>
+        </div>
+
+        <!-- Analytics Detail -->
+        <div class="service-detail-block">
+          <div class="service-detail-icon ic-indigo">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </div>
+          <h3>Analytics &amp; Reporting – Erfolg messbar machen und Strategien optimieren</h3>
+          <p>Analytics ist die Basis für erfolgreiches Kanzleimarketing. Mit den richtigen Analysetools können Sie genau nachvollziehen, welche Maßnahmen wirken und wo Optimierungspotenzial besteht.</p>
+          <p>Durch die Implementierung von Tools wie Google Analytics 4 und Google Search Console erhalten Sie wertvolle Einblicke in das Verhalten Ihrer Website-Besucher. Transparente, monatliche Performance-Berichte zeigen Ihnen genau, wie sich Ihre Investitionen in das Online-Marketing auszahlen.</p>
+          <a href="/kanzleimarketing/messung-und-berichte-analytics-reporting/" class="btn btn-ghost" style="margin-top:12px;">Mehr erfahren &rarr;</a>
+        </div>
+
+        <!-- Datenschutz Detail -->
+        <div class="service-detail-block">
+          <div class="service-detail-icon ic-teal">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h3>Datenschutz und Compliance – Rechtssicher agieren und Vertrauen stärken</h3>
+          <p>Gerade für Rechtsanwälte gelten besondere Anforderungen für die Angaben zu Datenschutz und Impressum. Ohne diesen Schutz machen Sie sich für kommerzielle Abmahnungen angreifbar. Die DSGVO stellt strenge Anforderungen an die Verarbeitung personenbezogener Daten.</p>
+          <p>Für Anwaltskanzleien bedeutet dies: Alle Marketing-Maßnahmen müssen datenschutzkonform gestaltet sein. Wir unterstützen Sie bei der rechtssicheren Gestaltung Ihrer Online-Präsenz – von der Datenschutzerklärung über das Cookie-Consent-Management bis zur BRAO-konformen Werbung.</p>
+          <a href="/kanzleimarketing/datenschutz-und-compliance-fuer-rechtsanwaelte/" class="btn btn-ghost" style="margin-top:12px;">Mehr erfahren &rarr;</a>
+        </div>
+
+        <!-- Branchenverzeichnisse Detail -->
+        <div class="service-detail-block">
+          <div class="service-detail-icon ic-cyan">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <h3>Branchenverzeichnisse – Optimale Präsenz für mehr Mandantenanfragen</h3>
+          <p>Professionelles Branchenlisting bringt Ihre Kanzlei genau dort, wo Mandanten suchen. Wir pflegen Ihre Einträge auf anwalt.de, das örtliche Rechtsanwaltsverzeichnis und vielen mehr.</p>
+          <p>Konsistente NAP-Daten (Name, Adresse, Telefon) in allen relevanten Verzeichnissen sind ein wichtiger Rankingfaktor für lokale Google-Suchanfragen. Wir stellen sicher, dass Ihre Kanzlei in allen relevanten juristischen Fachportalen und lokalen Verzeichnissen mit aktuellen und einheitlichen Informationen vertreten ist.</p>
+          <a href="/kanzleimarketing/branchenlisting-fuer-anwaelte/" class="btn btn-ghost" style="margin-top:12px;">Mehr erfahren &rarr;</a>
+        </div>
+
+        <!-- Call Tracking Detail -->
+        <div class="service-detail-block">
+          <div class="service-detail-icon ic-indigo">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 9.81 19.79 19.79 0 0 1 .07 1.18 2 2 0 0 1 2 0h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L6.09 7.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 14.16z"/></svg>
+          </div>
+          <h3>Call Tracking – Präzise Analyse Ihrer Mandantenanfragen für gezieltes Marketing</h3>
+          <p>Mit Call Tracking wissen Sie genau, welche Marketingmaßnahme den Anruf ausgelöst hat. Ob SEO, Google Ads oder Social Media – Sie erkennen, welcher Kanal die wertvollsten Mandantenanfragen generiert.</p>
+          <p>Durch dynamische Rufnummernvergabe wird jedem Werbekanal eine eindeutige Telefonnummer zugewiesen. So lässt sich jeder Anruf einem bestimmten Marketingkanal zuordnen. Diese Daten sind Gold wert: Sie ermöglichen es Ihnen, Ihr Budget gezielt in die Kanäle zu investieren, die tatsächlich Mandanten bringen.</p>
+          <a href="/kanzleimarketing/call-tracking-fuer-anwaelte/" class="btn btn-ghost" style="margin-top:12px;">Mehr erfahren &rarr;</a>
+        </div>
+
+        <!-- KI Anrufbeantworter Detail -->
+        <div class="service-detail-block">
+          <div class="service-detail-icon ic-teal">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 0 2h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1 0-2h1a7 7 0 0 1 7-7h1V5.73A2 2 0 0 1 10 4a2 2 0 0 1 2-2z"/><path d="M7.5 14a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5z"/></svg>
+          </div>
+          <h3>KI Anrufbeantworter – Automatisierte Mandatsannahme rund um die Uhr</h3>
+          <p>Der KI Call Assistant für Anwälte übernimmt Ihre Anrufannahme automatisch. Im Gegensatz zu herkömmlichen Systemen ist unsere Lösung nicht auf starre Menüs angewiesen. Sie versteht frei formulierte Sprache, interpretiert juristisch relevante Inhalte und erfasst dabei nicht nur Namen und Kontaktdaten, sondern auch die Art des Anliegens, betroffene Rechtsgebiete und Dringlichkeitsstufen.</p>
+          <p>Die KI unterscheidet präzise zwischen Notfällen, allgemeinen Anfragen und konkreten Mandatsanfragen. So geht keine Anfrage mehr verloren – auch am Wochenende oder nach Feierabend nicht.</p>
+          <a href="/kanzleimarketing/ki-anrufbeantworter-fuer-anwaelte/" class="btn btn-ghost" style="margin-top:12px;">Mehr erfahren &rarr;</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       STATS & TRUST SIGNALS
+       ============================================================ -->
+  <section class="content-section alt">
+    <div class="container">
+      <div class="section-head sr">
+        <span class="tag-chip">Unsere Zahlen</span>
+        <h2>Kanzleimarketing, das messbare Ergebnisse liefert</h2>
+        <p class="section-sub">Vertrauen Sie nicht auf Versprechen – vertrauen Sie auf Daten. Das sind unsere nachgewiesenen Kennzahlen aus über 150 Kanzlei-Projekten bundesweit.</p>
+      </div>
+      <div class="stats-row sr">
+        <div class="stat-block">
+          <div class="stat-number gradient-text">312 %</div>
+          <div class="stat-label">Durchschnittlicher ROI</div>
+          <div class="stat-desc">nach 6 Monaten nachgewiesener Return on Investment</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-number gradient-text">150+</div>
+          <div class="stat-label">Kanzleien betreut</div>
+          <div class="stat-desc">bundesweit in allen Rechtsgebieten und Kanzleigrößen</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-number gradient-text">Google</div>
+          <div class="stat-label">Partner</div>
+          <div class="stat-desc">zertifizierter Google Ads Partner mit nachgewiesener Kampagnenkompetenz</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-number gradient-text">Seit 2019</div>
+          <div class="stat-label">Kanzlei-Spezialist</div>
+          <div class="stat-desc">ausschließlich für Rechtsanwaltskanzleien tätig – kein Branchenwirrwarr</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
        WARUM OMMATIC
        ============================================================ -->
   <section class="content-section alt">
