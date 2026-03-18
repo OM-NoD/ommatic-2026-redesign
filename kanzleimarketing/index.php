@@ -3,37 +3,20 @@ $page_title       = 'Kanzleimarketing – OMmatic Kanzleimarketing';
 $page_description = 'OMmatic – Die Online Marketing Branchenlösung für Rechtsanwaltskanzleien. SEO, Google Ads, Social Media, Local SEO und mehr. Jetzt kostenlose Erstberatung anfordern.';
 $page_canonical   = 'https://ommatic.de/kanzleimarketing/';
 require_once '../includes/header.php';
+require_once '../includes/components.php';
 ?>
 <main>
 
-  <!-- ============================================================
-       PAGE HERO
-       ============================================================ -->
-  <section class="page-hero">
-    <div class="hero-mesh" aria-hidden="true">
-      <div class="mesh-blob mesh-1"></div>
-      <div class="mesh-blob mesh-2"></div>
-    </div>
-    <div class="hero-grid-bg" aria-hidden="true"></div>
-    <div class="container page-hero-inner">
-      <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="/">OMmatic</a>
-        <span class="breadcrumb-sep" aria-hidden="true">/</span>
-        <span>Kanzleimarketing</span>
-      </nav>
-      <div class="sr"><span class="tag-chip">Leistungen</span></div>
-      <h1 class="page-hero-title sr sr-d1">
-        Kanzleimarketing<br><span class="gradient-text">Erfolgreiche Strategien<br>für Ihre Kanzlei.</span>
-      </h1>
-      <p class="page-hero-sub sr sr-d2">
-        OMmatic – Die branchenspezifische Online-Marketing-Komplettlösung für Rechtsanwaltskanzleien. Wir verbinden SEO, Google Ads, Social Media und Local SEO zu einer messbaren Wachstumsstrategie.
-      </p>
-      <div class="page-hero-ctas sr sr-d3">
-        <a href="/kontakt/" class="btn btn-primary btn-lg">Kostenlose Erstberatung</a>
-        <a href="#leistungen" class="btn btn-ghost btn-lg">Alle Leistungen</a>
-      </div>
-    </div>
-  </section>
+<?php om_page_hero([
+    'tag'        => 'Leistungen',
+    'breadcrumb' => 'Kanzleimarketing',
+    'title'      => 'Kanzleimarketing<br><span class="gradient-text">Erfolgreiche Strategien<br>für Ihre Kanzlei.</span>',
+    'sub'        => 'OMmatic – Die branchenspezifische Online-Marketing-Komplettlösung für Rechtsanwaltskanzleien. Wir verbinden SEO, Google Ads, Social Media und Local SEO zu einer messbaren Wachstumsstrategie.',
+    'ctas'       => [
+        ['label' => 'Kostenlose Erstberatung', 'href' => '/kontakt/',   'class' => 'btn-primary'],
+        ['label' => 'Alle Leistungen',         'href' => '#leistungen', 'class' => 'btn-ghost'],
+    ],
+]); ?>
 
 
   <!-- ============================================================
@@ -466,24 +449,7 @@ require_once '../includes/header.php';
   </section>
 
 
-  <!-- ============================================================
-       CTA BANNER
-       ============================================================ -->
-  <section class="cta-banner">
-    <div class="container">
-      <div class="cta-banner-inner sr">
-        <span class="tag-chip">Jetzt starten</span>
-        <h2 class="cta-banner-title">Bereit für messbar mehr Mandanten?</h2>
-        <p class="cta-banner-sub">Fordern Sie jetzt Ihre kostenlose Erstberatung an. Wir analysieren Ihre Situation und zeigen konkret, was möglich ist.</p>
-        <div class="cta-banner-btns">
-          <a href="/kontakt/" class="btn btn-primary btn-lg">Kostenlose Erstberatung
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width:18px;height:18px;"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-          </a>
-          <a href="/ueber-uns/" class="btn btn-ghost btn-lg">Über OMmatic</a>
-        </div>
-      </div>
-    </div>
-  </section>
+<?php om_cta_banner([]); // Standard-CTA ?>
 
 </main>
 
