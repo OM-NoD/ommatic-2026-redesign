@@ -3,25 +3,20 @@ $page_title       = 'Unser Team – Ansprechpartner bei OMmatic';
 $page_description = 'Lernen Sie das OMmatic-Team kennen: Marcel Zirkel, Alex Börsig und Cornelia Day – Ihre persönlichen Ansprechpartner für erfolgreiches Kanzleimarketing.';
 $page_canonical   = 'https://ommatic.de/ansprechpartner/';
 require_once '../includes/header.php';
+require_once '../includes/components.php';
 ?>
 <main>
 
-  <!-- ============================================================
-       HERO
-       ============================================================ -->
-  <section class="hero-sub section">
-    <div class="container">
-      <div class="tag-chip sr">Team</div>
-      <h1 class="sr" style="font-family:var(--font-h);font-size:clamp(32px,5vw,56px);font-weight:800;line-height:1.15;margin:20px 0 16px;">
-        Ihr persönliches<br>
-        <span class="gradient-text">Experten-Team</span>
-      </h1>
-      <p class="hero-sub-desc sr" style="max-width:600px;font-size:clamp(16px,2vw,19px);color:var(--text-2);line-height:1.7;">
-        Drei Experten. Ein Ziel: messbare Mandantengewinnung für Ihre Kanzlei.
-        Lernen Sie die Menschen kennen, die täglich für Ihren Erfolg arbeiten.
-      </p>
-    </div>
-  </section>
+<?php om_page_hero([
+    'tag'        => 'Team',
+    'breadcrumb' => 'Ansprechpartner',
+    'title'      => 'Ihr persönliches<br><span class="gradient-text">Experten-Team</span>',
+    'sub'        => 'Drei Experten. Ein Ziel: messbare Mandantengewinnung für Ihre Kanzlei. Lernen Sie die Menschen kennen, die täglich für Ihren Erfolg arbeiten.',
+    'ctas'       => [
+        ['label' => 'Beratungsgespräch anfragen', 'href' => '/kontakt/', 'class' => 'btn-primary'],
+        ['label' => 'Über OMmatic',               'href' => '/ueber-uns/', 'class' => 'btn-ghost'],
+    ],
+]); ?>
 
   <!-- ============================================================
        TEAM CARDS
