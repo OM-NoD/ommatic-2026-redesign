@@ -691,13 +691,27 @@ button, input, textarea, select { font-family: inherit; }
    PROCESS
    ========================================================== */
 .process-section { padding:var(--py) 0; background:var(--bg-2); }
-.process-track { display:grid; grid-template-columns:repeat(4,1fr); position:relative; }
+.process-track { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; position:relative; }
 .process-track::before {
   content:''; position:absolute; top:44px;
   left:calc(12.5% + 22px); right:calc(12.5% + 22px);
   height:2px; background:var(--grad-line); z-index:0;
 }
-.process-step { position:relative; z-index:1; text-align:center; padding:0 16px 40px; }
+.process-step {
+  position:relative; z-index:1; text-align:center;
+  padding:32px 20px 32px;
+  background:var(--bg-card);
+  border:1px solid var(--border-s);
+  border-radius:var(--radius-l);
+  transition: transform .3s, border-color .3s, box-shadow .3s;
+}
+.process-step:hover { transform:translateY(-4px); border-color:var(--border); box-shadow:var(--shadow-card); }
+.process-step::before {
+  content:''; position:absolute; top:0; left:0; right:0; height:2px;
+  background:var(--grad-line); border-radius:var(--radius-l) var(--radius-l) 0 0;
+  opacity:0; transition:opacity .3s;
+}
+.process-step:hover::before { opacity:1; }
 .proc-circle {
   width:48px; height:48px; border-radius:50%; display:flex; align-items:center; justify-content:center;
   font-family:var(--font-h); font-size:17px; font-weight:800;
@@ -1010,13 +1024,31 @@ textarea { resize:vertical; min-height:120px; line-height:1.6; }
 
 /* Feature grid */
 .feature-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:20px; }
+/* ── Universeller Gradient-Border-Hover für ALLE Karten ─────── */
+.feature-card, .why-card, .team-card, .hs-card,
+.service-detail-block, .review-card, .blog-card {
+  position: relative;
+  overflow: hidden;
+}
+.feature-card::before, .why-card::before, .team-card::before,
+.hs-card::before, .service-detail-block::before, .review-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: var(--grad-line);
+  border-radius: var(--radius-l) var(--radius-l) 0 0;
+  opacity: 0; transition: opacity .3s;
+}
+.feature-card:hover::before, .why-card:hover::before, .team-card:hover::before,
+.hs-card:hover::before, .service-detail-block:hover::before, .review-card:hover::before {
+  opacity: 1;
+}
+
 .feature-card {
   background:var(--bg-card); border:1px solid var(--border-s);
   border-radius:var(--radius-l); padding:28px;
   backdrop-filter:blur(14px);
-  transition:border-color .3s, transform .3s;
+  transition:border-color .3s, transform .3s, box-shadow .3s;
 }
-.feature-card:hover { border-color:var(--border); transform:translateY(-4px); }
+.feature-card:hover { border-color:var(--border); transform:translateY(-4px); box-shadow:var(--shadow-card); }
 .feature-icon { width:44px; height:44px; border-radius:12px; display:flex; align-items:center; justify-content:center; margin-bottom:16px; }
 .feature-icon svg { width:20px; height:20px; }
 .feature-title { font-family:var(--font-h); font-size:17px; font-weight:700; color:var(--text); margin-bottom:8px; }
