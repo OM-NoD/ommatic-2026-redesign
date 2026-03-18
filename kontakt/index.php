@@ -1,283 +1,175 @@
-<!DOCTYPE html>
-<html lang="de" data-theme="dark">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kontakt – OMmatic Legal Marketing | Kostenlose Erstberatung anfragen</title>
-  <meta name="description" content="Kontaktieren Sie OMmatic für eine kostenlose Erstberatung. Wir analysieren Ihre Kanzlei-Marketing-Situation und zeigen, wie Sie messbar mehr Mandanten gewinnen.">
-  <meta name="robots" content="index, follow">
-  <meta property="og:title"       content="Kontakt – OMmatic Legal Marketing | Kostenlose Erstberatung anfragen">
-  <meta property="og:description" content="Kontaktieren Sie OMmatic für eine kostenlose Erstberatung. Wir analysieren Ihre Kanzlei-Marketing-Situation und zeigen, wie Sie messbar mehr Mandanten gewinnen.">
-  <meta property="og:url"         content="https://ommatic.de/kontakt/">
-  <meta property="og:type"        content="website">
-  <meta name="twitter:card"       content="summary_large_image">
-  <link rel="canonical" href="https://ommatic.de/kontakt/">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/main.css">
+<?php
+$page_title       = 'Kontakt – OMmatic Legal Marketing | Kostenlose Erstberatung anfragen';
+$page_description = 'Kontaktieren Sie OMmatic für eine kostenlose Erstberatung. Wir analysieren Ihre Kanzlei-Marketing-Situation und zeigen, wie Sie messbar mehr Mandanten gewinnen.';
+$page_canonical   = 'https://ommatic.de/kontakt/';
+require_once '../includes/header.php';
+?>
+<main>
 
-  <!-- Schema.org Organization -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "@id": "https://ommatic.de/#organization",
-    "name": "OMmatic GmbH",
-    "url": "https://ommatic.de",
-    "description": "Deutschlands führende Performance-Marketing-Agentur für Rechtsanwaltskanzleien.",
-    "telephone": "+49 631 20691820",
-    "email": "info@ommatic.de",
-    "openingHours": "Mo-Su 09:00-17:00",
-    "address": { "@type": "PostalAddress", "addressCountry": "DE" },
-    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "bestRating": "5", "reviewCount": "150" }
-  }
-  </script>
-</head>
-<body>
-
-<!-- ============================================================
-     HEADER
-     ============================================================ -->
-<header class="header" id="header">
-  <div class="container header-inner">
-
-    <a href="/" class="logo" aria-label="OMmatic – zur Startseite">OMmatic<span class="dot">.</span></a>
-
-    <nav class="nav-desktop" aria-label="Hauptnavigation">
-      <a href="/leistungen/"    class="nav-link">Leistungen</a>
-      <a href="/#ergebnisse"   class="nav-link">Ergebnisse</a>
-      <a href="/ueber-uns/"    class="nav-link">Über uns</a>
-      <a href="/#ablauf"       class="nav-link">Ablauf</a>
-      <a href="/#referenzen"   class="nav-link">Referenzen</a>
-      <a href="/kontakt/"      class="nav-link">Kontakt</a>
-    </nav>
-
-    <div class="header-right">
-      <button class="toggle-theme" id="themeToggle" aria-label="Dark/Light Mode umschalten">
-        <svg class="i-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
-        <svg class="i-sun"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
-      </button>
-      <a href="/kontakt/" class="btn btn-primary">Beratung anfragen</a>
-      <button class="hamburger" id="hamburger" aria-label="Menü öffnen/schließen">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-
-  </div>
-</header>
-
-<nav class="mobile-nav" id="mobileNav" aria-label="Mobile Navigation">
-  <a href="/leistungen/"   class="nav-link">Leistungen</a>
-  <a href="/#ergebnisse"  class="nav-link">Ergebnisse</a>
-  <a href="/ueber-uns/"   class="nav-link">Über uns</a>
-  <a href="/#ablauf"      class="nav-link">Ablauf</a>
-  <a href="/#referenzen"  class="nav-link">Referenzen</a>
-  <a href="/kontakt/"     class="btn btn-primary">Beratung anfragen</a>
-</nav>
-
-<section class="page-hero" style="min-height:auto; padding-bottom:0;">
-  <div class="hero-grid-bg" aria-hidden="true"></div>
-  <div class="container page-hero-inner" style="padding-bottom:clamp(48px,6vw,80px);">
-    <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="/">OMmatic</a>
-      <span class="breadcrumb-sep" aria-hidden="true">/</span>
-      <span>Kontakt</span>
-    </nav>
-    <div class="sr"><span class="tag-chip">Kostenlose Erstberatung</span></div>
-    <h1 class="page-hero-title sr sr-d1">
-      Ihr direkter Draht<br><span class="gradient-text">zu mehr Mandanten.</span>
-    </h1>
-    <p class="page-hero-sub sr sr-d2">
-      Kein Verkaufsgespräch. Nur eine ehrliche Analyse Ihrer Situation und ein konkreter Fahrplan für messbare Ergebnisse.
-    </p>
-  </div>
-</section>
-
-<section class="contact-section" id="kontakt" style="padding-top:0; margin-top:-2px;">
-  <div class="container">
-    <div class="contact-grid">
-
-      <div class="contact-info sr">
-        <span class="tag-chip" style="margin-top:clamp(48px,6vw,80px); display:inline-flex;">So erreichen Sie uns</span>
-        <h2 class="contact-info-title" style="margin-top:20px;">
-          Wir freuen uns<br><span class="gradient-text">auf Ihre Anfrage.</span>
-        </h2>
-        <p class="contact-info-sub">
-          Ob Fragen zu unseren Leistungen, Preisen oder einem konkreten Projekt – schreiben oder rufen Sie uns einfach an. Wir melden uns innerhalb von 24 Stunden.
-        </p>
-        <div class="contact-details">
-          <a href="tel:+4963120691820" class="contact-detail-item">
-            <div class="contact-detail-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.05 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16.92z"/></svg>
-            </div>
-            +49 631 206918 20
-          </a>
-          <a href="mailto:info@ommatic.de" class="contact-detail-item">
-            <div class="contact-detail-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            </div>
-            info@ommatic.de
-          </a>
-          <div class="contact-detail-item">
-            <div class="contact-detail-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            </div>
-            Mo – So, 09:00 – 17:00 Uhr
-          </div>
-        </div>
-        <div class="contact-trust">
-          <div class="contact-trust-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          </div>
-          <div class="contact-trust-text">
-            <strong>Kostenlos &amp; unverbindlich.</strong><br>
-            Erstberatung ohne Kosten und Verpflichtung. Keine Weitergabe Ihrer Daten an Dritte.
-          </div>
-        </div>
+  <!-- Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="tag-chip sr">Kontakt</div>
+      <h1 class="sr">Wir sind für Sie da</h1>
+      <p class="page-hero-sub sr">Durch Branchenkenntnis und Kompetenz Kunden begeistern. Buchen Sie jetzt Ihren kostenlosen Beratungstermin.</p>
+      <div class="page-hero-ctas sr">
+        <a href="https://calendly.com/marcel-zirkel/45min" class="btn btn-primary" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="18" height="18"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          Online Termin buchen
+        </a>
+        <a href="tel:+4963120691820" class="btn btn-ghost">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="18" height="18"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          0631 206 9182-0
+        </a>
       </div>
+    </div>
+  </section>
 
-      <div class="contact-form-wrap sr sr-d1" style="margin-top:clamp(48px,6vw,80px);">
-        <h2 class="form-title">Erstberatung anfragen</h2>
-        <p class="form-sub">Füllen Sie das Formular aus – wir melden uns innerhalb von 24 Stunden.</p>
-        <form id="contactForm" method="post" action="/kontakt/send.php" novalidate>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="f-name">Name <span class="req">*</span></label>
-              <input type="text" id="f-name" name="name" placeholder="Ihr vollständiger Name" required>
+  <!-- Contact Grid -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Left: Form -->
+        <div class="contact-form-wrap">
+          <h2 style="font-family:var(--font-h);font-size:clamp(22px,2.5vw,28px);font-weight:700;margin-bottom:8px;">Anfrage senden</h2>
+          <p style="color:var(--text-2);font-size:15px;margin-bottom:28px;">Wir benötigen nur 10 Minuten Ihrer wertvollen Zeit und melden uns innerhalb von 24 Stunden.</p>
+
+          <!-- Honeypot (DSGVO/Spam-Schutz) -->
+          <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
+
+          <form id="contactForm" method="post" action="/kontakt/send.php" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="f-name">Name <span class="req">*</span></label>
+                <input type="text" id="f-name" name="name" placeholder="Ihr vollständiger Name" required>
+              </div>
+              <div class="form-group">
+                <label for="f-kanzlei">Kanzlei</label>
+                <input type="text" id="f-kanzlei" name="kanzlei" placeholder="Name Ihrer Kanzlei">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="f-email">E-Mail <span class="req">*</span></label>
+                <input type="email" id="f-email" name="email" placeholder="ihre@email.de" required>
+              </div>
+              <div class="form-group">
+                <label for="f-tel">Telefon</label>
+                <input type="tel" id="f-tel" name="telefon" placeholder="+49 ...">
+              </div>
             </div>
             <div class="form-group">
-              <label for="f-kanzlei">Kanzlei</label>
-              <input type="text" id="f-kanzlei" name="kanzlei" placeholder="Name Ihrer Kanzlei">
+              <label for="f-leistung">Gewünschte Leistung</label>
+              <select id="f-leistung" name="leistung">
+                <option value="" disabled selected>Bitte wählen ...</option>
+                <option value="google-ads">Google Ads für Kanzleien</option>
+                <option value="seo">SEO für Rechtsanwälte</option>
+                <option value="sea">SEA-Kampagnen</option>
+                <option value="local">Lokales Online-Marketing</option>
+                <option value="social">Social Media Marketing</option>
+                <option value="ki">KI-Anrufbeantworter</option>
+                <option value="full-service">Full-Service (alles)</option>
+                <option value="beratung">Erstberatung / Analyse</option>
+              </select>
             </div>
-          </div>
-          <div class="form-row">
             <div class="form-group">
-              <label for="f-email">E-Mail <span class="req">*</span></label>
-              <input type="email" id="f-email" name="email" placeholder="ihre@email.de" required>
+              <label for="f-nachricht">Nachricht</label>
+              <textarea id="f-nachricht" name="nachricht" placeholder="Kurze Beschreibung Ihrer aktuellen Situation und Ihrer Ziele ..."></textarea>
             </div>
-            <div class="form-group">
-              <label for="f-tel">Telefon</label>
-              <input type="tel" id="f-tel" name="telefon" placeholder="+49 ...">
+            <div class="form-divider"></div>
+            <div class="form-check">
+              <input type="checkbox" id="f-dsgvo" name="f-dsgvo" value="1" required>
+              <label class="form-check-label" for="f-dsgvo">
+                Ich habe die <a href="/datenschutz/">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage zu. <span class="req">*</span>
+              </label>
             </div>
-          </div>
-          <div class="form-group">
-            <label for="f-leistung">Gewünschte Leistung</label>
-            <select id="f-leistung" name="leistung">
-              <option value="" disabled selected>Bitte wählen ...</option>
-              <option value="google-ads">Google Ads für Kanzleien</option>
-              <option value="social-ads">Facebook &amp; Instagram Ads</option>
-              <option value="webdesign">Webdesign &amp; Entwicklung</option>
-              <option value="seo">SEO für Anwälte</option>
-              <option value="landing-pages">SEA Landing Pages</option>
-              <option value="ki">KI-Anrufbeantworter</option>
-              <option value="full-service">Full-Service (alles)</option>
-              <option value="beratung">Erstberatung / Analyse</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="f-nachricht">Nachricht</label>
-            <textarea id="f-nachricht" name="nachricht" placeholder="Kurze Beschreibung Ihrer aktuellen Situation und Ihrer Ziele ..."></textarea>
-          </div>
-          <div class="form-divider"></div>
-          <div class="form-check">
-            <input type="checkbox" id="f-dsgvo" name="dsgvo" required>
-            <label class="form-check-label" for="f-dsgvo">
-              Ich habe die <a href="/datenschutz/">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage zu. <span class="req">*</span>
-            </label>
-          </div>
-          <button type="submit" class="btn btn-primary btn-lg form-submit">
-            Anfrage kostenfrei absenden
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width:18px;height:18px;"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-          </button>
-          <p class="form-note">Keine Weitergabe an Dritte. Antwort innerhalb von 24 Stunden.</p>
-        </form>
-      </div>
+            <button type="submit" class="btn btn-primary btn-lg form-submit">
+              Anfrage kostenfrei absenden
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width:18px;height:18px;"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </button>
+            <p class="form-note">Keine Weitergabe an Dritte. Antwort innerhalb von 24 Stunden.</p>
+          </form>
+        </div>
 
+        <!-- Right: Kontaktdaten + Google Maps -->
+        <div class="contact-info">
+
+          <div class="contact-info-cards">
+            <a href="tel:+4963120691820" class="contact-info-card">
+              <span class="contact-info-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" width="22" height="22"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              </span>
+              <div>
+                <div class="contact-info-label">Telefon</div>
+                <div class="contact-info-value">0631 206 9182-0</div>
+              </div>
+            </a>
+            <a href="mailto:hallo@ommatic.de" class="contact-info-card">
+              <span class="contact-info-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" width="22" height="22"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              </span>
+              <div>
+                <div class="contact-info-label">E-Mail</div>
+                <div class="contact-info-value">hallo@ommatic.de</div>
+              </div>
+            </a>
+            <div class="contact-info-card">
+              <span class="contact-info-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" width="22" height="22"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              </span>
+              <div>
+                <div class="contact-info-label">Adresse</div>
+                <div class="contact-info-value">Zollamtstraße 11, 67663 Kaiserslautern</div>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <span class="contact-info-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" width="22" height="22"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </span>
+              <div>
+                <div class="contact-info-label">Öffnungszeiten</div>
+                <div class="contact-info-value">Mo – Fr: 09:00 – 17:00 Uhr</div>
+              </div>
+            </div>
+            <a href="https://wa.me/+4915161587446" class="contact-info-card" target="_blank" rel="noopener">
+              <span class="contact-info-icon" style="background:rgba(37,211,102,0.12);color:#25D366;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              </span>
+              <div>
+                <div class="contact-info-label">WhatsApp</div>
+                <div class="contact-info-value">+49 151 61587446</div>
+              </div>
+            </a>
+            <a href="https://calendly.com/marcel-zirkel/45min" class="contact-info-card" target="_blank" rel="noopener" style="border-color:var(--primary);background:var(--primary-dim);">
+              <span class="contact-info-icon" style="background:var(--primary-dim);color:var(--primary);">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" width="22" height="22"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+              </span>
+              <div>
+                <div class="contact-info-label" style="color:var(--primary);">Online Termin</div>
+                <div class="contact-info-value">Calendly – kostenlos buchen</div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Google Maps -->
+          <div style="margin-top:24px;border-radius:14px;overflow:hidden;border:1px solid var(--border-s);">
+            <iframe
+              src="https://maps.google.com/maps?q=Zollamtstra%C3%9Fe+11+67663+Kaiserslautern&output=embed&z=15"
+              width="100%"
+              height="320"
+              style="border:0;display:block;"
+              allowfullscreen
+              loading="lazy"
+              title="OMmatic GmbH – Zollamtstraße 11, Kaiserslautern">
+            </iframe>
+          </div>
+
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
+</main>
 
-<!-- ============================================================
-     FOOTER
-     ============================================================ -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-
-      <!-- Col 1: Brand -->
-      <div>
-        <a href="/" class="logo f-logo">OMmatic<span class="dot">.</span></a>
-        <p class="f-tagline">Deutschlands führende Performance-Marketing-Agentur für Rechtsanwaltskanzleien. Legal · Tech · Growth.</p>
-        <div class="f-contact">
-          <a href="tel:+4963120691820" class="f-contact-item">
-            <span class="f-contact-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.07 1.18 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.16z"/></svg>
-            </span>
-            +49 631 20691820
-          </a>
-          <a href="mailto:info@ommatic.de" class="f-contact-item">
-            <span class="f-contact-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            </span>
-            info@ommatic.de
-          </a>
-        </div>
-      </div>
-
-      <!-- Col 2: Leistungen -->
-      <div>
-        <div class="f-col-title">Leistungen</div>
-        <div class="f-links">
-          <a href="/leistungen/google-ads/" class="f-link">Google Ads für Kanzleien</a>
-          <a href="/leistungen/facebook-ads/" class="f-link">Facebook &amp; Instagram Ads</a>
-          <a href="/leistungen/seo/" class="f-link">SEO-Optimierung</a>
-          <a href="/leistungen/webdesign/" class="f-link">Webdesign</a>
-          <a href="/leistungen/landing-pages/" class="f-link">Landing Pages</a>
-          <a href="/leistungen/ki-anrufbeantworter/" class="f-link">KI-Anrufbeantworter</a>
-        </div>
-      </div>
-
-      <!-- Col 3: Agentur -->
-      <div>
-        <div class="f-col-title">Agentur</div>
-        <div class="f-links">
-          <a href="/ueber-uns/" class="f-link">Über OMmatic</a>
-          <a href="/#referenzen" class="f-link">Referenzen</a>
-          <a href="/#ablauf" class="f-link">Unser Ablauf</a>
-          <a href="/kontakt/" class="f-link">Kontakt</a>
-        </div>
-      </div>
-
-      <!-- Col 4: Rechtliches -->
-      <div>
-        <div class="f-col-title">Rechtliches</div>
-        <div class="f-links">
-          <a href="/impressum/" class="f-link">Impressum</a>
-          <a href="/datenschutz/" class="f-link">Datenschutz</a>
-          <a href="/agb/" class="f-link">AGB</a>
-          <a href="/kontakt/" class="f-link">Kontakt</a>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="footer-bottom">
-      <div class="f-copy">© 2026 OMmatic GmbH · Alle Rechte vorbehalten</div>
-      <nav class="f-legal" aria-label="Rechtliche Links">
-        <a href="/impressum/">Impressum</a>
-        <a href="/datenschutz/">Datenschutz</a>
-        <a href="/agb/">AGB</a>
-      </nav>
-    </div>
-  </div>
-</footer>
-
-<button class="scroll-top" id="scrollTop" aria-label="Nach oben scrollen">
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
-</button>
-
-<script src="/assets/js/main.js"></script>
-</body>
-</html>
+<?php require_once '../includes/footer.php'; ?>
