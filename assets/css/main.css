@@ -190,6 +190,17 @@ button, input, textarea, select { font-family: inherit; }
   margin: 0;
 }
 
+/* Zentrale Section-Überschrift – links, fett, einheitlich auf allen Seiten */
+.section-h2 {
+  font-family: var(--font-h);
+  font-size: clamp(28px,3.5vw,44px);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  color: var(--text);
+  margin: 20px 0 12px;
+}
+
 /* Rohe h2 innerhalb content-sections (ohne spezifische Klasse) */
 .content-section h2:not([class]) {
   font-family: var(--font-h);

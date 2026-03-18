@@ -73,9 +73,9 @@ require_once '../includes/components.php';
        ============================================================ -->
   <section id="leistungen" class="services-section">
     <div class="container">
-      <div class="section-header sr">
+      <div class="sr" style="margin-bottom:clamp(32px,4vw,52px);">
         <span class="tag-chip">Was wir bieten</span>
-        <h2>Was beinhaltet Kanzleimarketing – und warum ist es essenziell?</h2>
+        <h2 class="section-h2">Was beinhaltet Kanzleimarketing – und warum ist es essenziell?</h2>
         <p class="section-sub">Die neun Säulen eines erfolgreichen digitalen Auftritts für Rechtsanwaltskanzleien.</p>
       </div>
 
@@ -245,9 +245,9 @@ require_once '../includes/components.php';
        ============================================================ -->
   <section class="content-section">
     <div class="container">
-      <div class="section-head sr">
+      <div class="sr" style="margin-bottom:clamp(32px,4vw,52px);">
         <span class="tag-chip">Leistungen im Detail</span>
-        <h2>Die 9 Säulen des <span class="gradient-text">Kanzleimarketings</span></h2>
+        <h2 class="section-h2">Die 9 Säulen des <span class="gradient-text">Kanzleimarketings</span></h2>
         <p class="section-sub">Jede Maßnahme hat ihre eigene Logik und Wirkung. Hier erfahren Sie, wie die einzelnen Bausteine funktionieren und warum sie für Ihre Kanzlei entscheidend sind.</p>
       </div>
 
