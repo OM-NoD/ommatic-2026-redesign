@@ -257,137 +257,134 @@ require_once '../includes/header.php';
         <p class="section-sub">Spezialistinnen und Spezialisten, die täglich für Ihren Kanzleierfolg arbeiten.</p>
       </div>
 
-      <!-- Alle Team-Mitglieder – 2 Spalten, Foto zentriert oben -->
-      <div class="team-grid sr" style="grid-template-columns:repeat(2,1fr);gap:24px;">
-
-        <!-- Marcel Zirkel -->
-        <div class="team-card">
+      <!-- ── BLOCK 1: Geschäftsführung ── -->
+      <div class="sr" style="display:flex;justify-content:center;margin-bottom:24px;">
+        <div class="team-card" style="max-width:400px;width:100%;">
           <div class="team-photo-wrap">
             <img src="/assets/img/team/Marcel-Zirkel_Ommatic.jpg" alt="Marcel Zirkel – CEO OMmatic" loading="lazy">
           </div>
           <div class="team-card-name">Marcel Zirkel</div>
           <div class="team-card-role">Geschäftsführer &amp; Gründer (CEO)</div>
-          <p class="team-card-bio">Marcel hat OMmatic mit der Vision gegründet, Legal Marketing auf ein neues Level zu heben. Mit tiefem Verständnis für juristische Märkte und über 10 Jahren Erfahrung als Business Development Manager entwickelt er Strategien, die messbar funktionieren.</p>
+          <p class="team-card-bio">Marcel gründete OMmatic 2019 mit der Vision, professionelles Legal Marketing für mittelständische Kanzleien zum Festpreis zu ermöglichen. Als CEO verantwortet er Strategie, Produktentwicklung und die Weiterentwicklung unserer Software-Plattform Trailblazer.</p>
         </div>
+      </div>
 
-        <!-- Cornelia Day -->
+      <!-- ── BLOCK 2: Sales & Account Management – Gesicht nach außen ── -->
+      <p class="sr" style="text-align:center;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--text-3);margin-bottom:16px;">Sales &amp; Account Management</p>
+      <div class="team-grid sr" style="grid-template-columns:repeat(2,1fr);gap:24px;margin-bottom:48px;">
+
         <div class="team-card">
           <div class="team-photo-wrap">
             <img src="/assets/img/team/ommatic-conny.jpg" alt="Cornelia Day – Head of Client Success" loading="lazy">
           </div>
           <div class="team-card-name">Cornelia Day</div>
           <div class="team-card-role">Head of Client Success</div>
-          <p class="team-card-bio">Cornelia sorgt dafür, dass jede Kanzlei die Betreuung bekommt, die sie verdient. Sie koordiniert alle laufenden Projekte und ist die direkte Schnittstelle zu unseren Kunden.</p>
+          <p class="team-card-bio">Cornelia ist die erste Ansprechpartnerin für unsere Kanzleikunden. Sie begleitet neue Kunden vom Onboarding bis zur laufenden Betreuung, führt die monatlichen Strategie-Calls durch und sorgt dafür, dass vereinbarte Maßnahmen termingerecht umgesetzt werden.</p>
         </div>
 
-        <!-- Alex Börsig -->
         <div class="team-card">
           <div class="team-photo-wrap">
             <img src="/assets/img/team/alex-boersig-ommatic.jpg" alt="Alex Börsig – Head of Performance Marketing" loading="lazy">
           </div>
           <div class="team-card-name">Alex Börsig</div>
           <div class="team-card-role">Head of Performance Marketing</div>
-          <p class="team-card-bio">Alex verantwortet alle Google Ads und SEA-Kampagnen. Seine datengetriebene Herangehensweise sorgt für maximalen ROI bei jedem Werbebudget unserer Kanzleikunden.</p>
+          <p class="team-card-bio">Alex ist Ansprechpartner für alle Performance-Themen und betreut Kanzleikunden direkt in der Kampagnen-Optimierung. Als Head of Performance Marketing verantwortet er alle Google Ads- und SEA-Kampagnen und präsentiert die monatlichen Ergebnisse persönlich.</p>
         </div>
 
-        <!-- Markus Weiler -->
+      </div>
+
+      <!-- ── BLOCK 3: Operations & Experten-Team ── -->
+      <p class="sr" style="text-align:center;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--text-3);margin-bottom:16px;">Operations &amp; Experten-Team</p>
+      <div class="team-grid sr" style="grid-template-columns:repeat(4,1fr);gap:20px;">
+
         <div class="team-card">
-          <div class="team-photo-wrap">
-            <img src="/assets/img/team/Markus_OMmatic_M-Mobile-1024x683.jpg" alt="Markus Weiler – Gesellschafter & Gründer" loading="lazy">
+          <div class="team-photo-wrap" style="width:100px;height:100px;">
+            <img src="/assets/img/team/Markus_OMmatic_M-Mobile-1024x683.jpg" alt="Markus Weiler" loading="lazy">
           </div>
-          <div class="team-card-name">Markus Weiler</div>
+          <div class="team-card-name" style="font-size:16px;">Markus Weiler</div>
           <div class="team-card-role">Gesellschafter &amp; Gründer</div>
-          <p class="team-card-bio">Markus führte bis zum erfolgreichen Exit 2019 eine Calltracking-Firma mit Kunden wie Vodafone und der Scout24 Gruppe. Heute verantwortet er die strategische Ausrichtung von OMmatic.</p>
+          <p class="team-card-bio" style="font-size:13px;">Strategische Ausrichtung und Unternehmensentwicklung. Erfolgreicher Exit einer Calltracking-Firma 2019 (Kunden: Vodafone, Scout24).</p>
         </div>
 
-        <!-- Normen Daunderer -->
         <div class="team-card">
-          <div class="team-photo-wrap">
-            <img src="/assets/img/team/ommatic_normen.jpg" alt="Normen Daunderer – Gesellschafter & Head of Tech" loading="lazy">
+          <div class="team-photo-wrap" style="width:100px;height:100px;">
+            <img src="/assets/img/team/ommatic_normen.jpg" alt="Normen Daunderer" loading="lazy">
           </div>
-          <div class="team-card-name">Normen Daunderer</div>
+          <div class="team-card-name" style="font-size:16px;">Normen Daunderer</div>
           <div class="team-card-role">Gesellschafter &amp; Head of Tech</div>
-          <p class="team-card-bio">Normen verantwortet die technische Infrastruktur und entwickelt innovative Tools, die OMmatics Kanzleikunden einen messbaren Wettbewerbsvorteil verschaffen.</p>
+          <p class="team-card-bio" style="font-size:13px;">Verantwortet die technische Infrastruktur, Softwareentwicklung und alle digitalen Tools der OMmatic-Plattform.</p>
         </div>
 
-        <!-- Kristin Krogmann -->
         <div class="team-card">
-          <div class="team-photo-wrap">
-            <img src="/assets/img/team/Kristin_OMmatic_M-Mobile-1024x683.jpg" alt="Kristin Krogmann – Content & Social Media" loading="lazy">
+          <div class="team-photo-wrap" style="width:100px;height:100px;">
+            <img src="/assets/img/team/Kristin_OMmatic_M-Mobile-1024x683.jpg" alt="Kristin Krogmann" loading="lazy">
           </div>
-          <div class="team-card-name">Kristin Krogmann</div>
+          <div class="team-card-name" style="font-size:16px;">Kristin Krogmann</div>
           <div class="team-card-role">Content &amp; Social Media</div>
-          <p class="team-card-bio">Kristin entwickelt Content-Strategien und Social-Media-Auftritte, die das Vertrauen potenzieller Mandanten gewinnen.</p>
+          <p class="team-card-bio" style="font-size:13px;">Erstellt Inhalte und Social-Media-Konzepte für Kanzleien – von Textproduktion bis zur Redaktionsplanung.</p>
         </div>
 
-        <!-- Vlad Sierov -->
         <div class="team-card">
-          <div class="team-photo-wrap">
-            <img src="/assets/img/team/Vlad_OMmatic_Mobile-Mobile-1024x683.jpg" alt="Vlad Sierov – Web Developer" loading="lazy">
+          <div class="team-photo-wrap" style="width:100px;height:100px;">
+            <img src="/assets/img/team/Vlad_OMmatic_Mobile-Mobile-1024x683.jpg" alt="Vlad Sierov" loading="lazy">
           </div>
-          <div class="team-card-name">Vlad Sierov</div>
+          <div class="team-card-name" style="font-size:16px;">Vlad Sierov</div>
           <div class="team-card-role">Web Developer</div>
-          <p class="team-card-bio">Vlad sorgt für technisch einwandfreie Kanzlei-Websites – schnell, sicher und für Suchmaschinen optimiert.</p>
+          <p class="team-card-bio" style="font-size:13px;">Entwickelt und wartet technisch einwandfreie Kanzlei-Websites – schnell, sicher, mobiloptimiert.</p>
         </div>
 
-        <!-- Celina Gann -->
         <div class="team-card">
-          <div class="team-photo-wrap">
-            <img src="/assets/img/team/Celina_OMmatic_2026-1024x683.jpg" alt="Celina Gann – Google Ads Managerin" loading="lazy">
+          <div class="team-photo-wrap" style="width:100px;height:100px;">
+            <img src="/assets/img/team/Celina_OMmatic_2026-1024x683.jpg" alt="Celina Gann" loading="lazy">
           </div>
-          <div class="team-card-name">Celina Gann</div>
+          <div class="team-card-name" style="font-size:16px;">Celina Gann</div>
           <div class="team-card-role">Google Ads Managerin</div>
-          <p class="team-card-bio">Celina betreut Google Ads Kampagnen für Kanzleien und stellt sicher, dass jeder Euro des Werbebudgets optimal eingesetzt wird.</p>
+          <p class="team-card-bio" style="font-size:13px;">Betreut und optimiert Google Ads Kampagnen für Kanzleien – mit Fokus auf maximale Effizienz des Werbebudgets.</p>
         </div>
 
-        <!-- Zoe Klein -->
         <div class="team-card">
-          <div class="team-photo-wrap">
-            <img src="/assets/img/team/Zoe_OMmatic_M-Mobile-1024x683.jpg" alt="Zoe Klein – Local SEO & Analytics" loading="lazy">
+          <div class="team-photo-wrap" style="width:100px;height:100px;">
+            <img src="/assets/img/team/Zoe_OMmatic_M-Mobile-1024x683.jpg" alt="Zoe Klein" loading="lazy">
           </div>
-          <div class="team-card-name">Zoe Klein</div>
+          <div class="team-card-name" style="font-size:16px;">Zoe Klein</div>
           <div class="team-card-role">Local SEO &amp; Analytics</div>
-          <p class="team-card-bio">Zoe ist unsere Expertin für lokales Online-Marketing und Google My Business – damit Kanzleien in ihrer Region ganz oben erscheinen.</p>
+          <p class="team-card-bio" style="font-size:13px;">Zuständig für lokale Sichtbarkeit, Google My Business und die Auswertung aller SEO-Kennzahlen.</p>
         </div>
 
-        <!-- Jannis Schottler -->
         <div class="team-card">
-          <div class="team-photo-wrap">
-            <img src="/assets/img/team/Jannis_OMmatic_M-Mobile-1024x683.jpg" alt="Jannis Schottler – Performance Analyst" loading="lazy">
+          <div class="team-photo-wrap" style="width:100px;height:100px;">
+            <img src="/assets/img/team/Jannis_OMmatic_M-Mobile-1024x683.jpg" alt="Jannis Schottler" loading="lazy">
           </div>
-          <div class="team-card-name">Jannis Schottler</div>
+          <div class="team-card-name" style="font-size:16px;">Jannis Schottler</div>
           <div class="team-card-role">Performance Analyst</div>
-          <p class="team-card-bio">Jannis analysiert Kampagnendaten und leitet daraus konkrete Handlungsempfehlungen ab – für kontinuierliche Performance-Steigerungen.</p>
+          <p class="team-card-bio" style="font-size:13px;">Analysiert Kampagnendaten und Suchverhalten, leitet daraus konkrete Optimierungsmaßnahmen ab.</p>
         </div>
 
-        <!-- Aziz Ben Salah -->
         <div class="team-card">
-          <div class="team-photo-wrap">
-            <img src="/assets/img/team/Aziz_OMmatic_M-Mobile-1024x683.jpg" alt="Aziz Ben Salah – SEA & Paid Social" loading="lazy">
+          <div class="team-photo-wrap" style="width:100px;height:100px;">
+            <img src="/assets/img/team/Aziz_OMmatic_M-Mobile-1024x683.jpg" alt="Aziz Ben Salah" loading="lazy">
           </div>
-          <div class="team-card-name">Aziz Ben Salah</div>
+          <div class="team-card-name" style="font-size:16px;">Aziz Ben Salah</div>
           <div class="team-card-role">SEA &amp; Paid Social</div>
-          <p class="team-card-bio">Aziz ist auf bezahlte Werbung spezialisiert und entwickelt Kampagnenstrategien, die Mandantenanfragen kosteneffizient generieren.</p>
+          <p class="team-card-bio" style="font-size:13px;">Entwickelt Kampagnenstrategien für bezahlte Suchanzeigen und Social Ads – kosteneffizient und datengestützt.</p>
         </div>
 
-        <!-- Dina Jokanovic -->
         <div class="team-card">
-          <div class="team-photo-wrap">
-            <img src="/assets/img/team/ommatic-dina.jpg" alt="Dina Jokanovic – Content Marketing" loading="lazy">
+          <div class="team-photo-wrap" style="width:100px;height:100px;">
+            <img src="/assets/img/team/ommatic-dina.jpg" alt="Dina Jokanovic" loading="lazy">
           </div>
-          <div class="team-card-name">Dina Jokanovic</div>
+          <div class="team-card-name" style="font-size:16px;">Dina Jokanovic</div>
           <div class="team-card-role">Content Marketing</div>
-          <p class="team-card-bio">Dina produziert hochwertige Inhalte für Kanzlei-Websites, die sowohl Suchmaschinen als auch potenzielle Mandanten überzeugen.</p>
+          <p class="team-card-bio" style="font-size:13px;">Produziert SEO-relevante Texte und Inhalte für Kanzlei-Websites, die Suchmaschinen und Besucher überzeugen.</p>
         </div>
 
-        <!-- Julia Weber -->
         <div class="team-card">
-          <div class="team-photo-wrap">
-            <img src="/assets/img/team/Julia-Weber_white_bg.jpg" alt="Julia Weber – Client Managerin" loading="lazy">
+          <div class="team-photo-wrap" style="width:100px;height:100px;">
+            <img src="/assets/img/team/Julia-Weber_white_bg.jpg" alt="Julia Weber" loading="lazy">
           </div>
-          <div class="team-card-name">Julia Weber</div>
+          <div class="team-card-name" style="font-size:16px;">Julia Weber</div>
           <div class="team-card-role">Client Managerin</div>
-          <p class="team-card-bio">Julia betreut unsere Kanzleikunden im Tagesgeschäft und sorgt dafür, dass alle laufenden Maßnahmen reibungslos umgesetzt werden.</p>
+          <p class="team-card-bio" style="font-size:13px;">Unterstützt das Account Management im Tagesgeschäft und stellt sicher, dass alle laufenden Maßnahmen koordiniert umgesetzt werden.</p>
         </div>
 
       </div>
