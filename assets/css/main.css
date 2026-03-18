@@ -518,17 +518,17 @@ button, input, textarea, select { font-family: inherit; }
   font-size:13px; color:var(--text-2); line-height:1.45;
 }
 .svc-feat-check {
-  width:20px; height:20px; border-radius:50%;
+  width:16px; height:16px;
   display:flex; align-items:center; justify-content:center;
-  flex-shrink:0; margin-top:1px;
+  flex-shrink:0; margin-top:2px;
 }
-.svc-feat-check svg { width:11px; height:11px; }
+.svc-feat-check svg { width:16px; height:16px; stroke-width:2.5; }
 .svc-card:nth-child(1) .svc-feat-check,
-.svc-card:nth-child(4) .svc-feat-check { background:var(--primary-dim); color:var(--primary); }
+.svc-card:nth-child(4) .svc-feat-check { color:var(--primary); }
 .svc-card:nth-child(2) .svc-feat-check,
-.svc-card:nth-child(5) .svc-feat-check { background:var(--indigo-dim); color:var(--indigo); }
+.svc-card:nth-child(5) .svc-feat-check { color:var(--indigo); }
 .svc-card:nth-child(3) .svc-feat-check,
-.svc-card:nth-child(6) .svc-feat-check { background:var(--teal-dim); color:var(--teal); }
+.svc-card:nth-child(6) .svc-feat-check { color:var(--teal); }
 
 /* ==========================================================
    SERVICE DETAILS GRID (Leistungen im Detail)
