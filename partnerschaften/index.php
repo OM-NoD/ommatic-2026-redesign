@@ -2,6 +2,7 @@
 $page_title       = 'Partnerschaften – OMmatic Legal Marketing';
 $page_description = 'OMmatic arbeitet mit führenden Partnern zusammen: Google Partner, Technologie- und Medienpartnerschaften für maximale Kanzlei-Performance.';
 $page_canonical   = 'https://ommatic.de/partnerschaften/';
+$hide_contact_section = true; // Seite hat eigenes Partnerschafts-Formular
 require_once '../includes/header.php';
 ?>
 <main>
@@ -25,7 +26,7 @@ require_once '../includes/header.php';
         Starke Partner für starke Ergebnisse im Legal Marketing.
       </p>
       <div class="page-hero-ctas sr sr-d3">
-        <a href="#partner-werden" class="btn btn-primary btn-lg">Partner werden</a>
+        <a href="#partner-anfrage" class="btn btn-primary btn-lg">Partnerschaft anfragen →</a>
         <a href="#partner" class="btn btn-ghost btn-lg">Alle Partner ansehen</a>
       </div>
     </div>
@@ -317,7 +318,7 @@ require_once '../includes/header.php';
           <p>
             Wir suchen Partner, die wie wir auf Qualität, Transparenz und messbare Ergebnisse setzen. Gemeinsam können wir Kanzleien umfassendere und bessere Lösungen anbieten.
           </p>
-          <a href="/kontakt/" class="btn btn-primary">Partnerschaft anfragen</a>
+          <a href="#partner-anfrage" class="btn btn-primary">Partnerschaft anfragen →</a>
         </div>
 
         <div style="display:flex;flex-direction:column;gap:.875rem;">
@@ -354,10 +355,100 @@ require_once '../includes/header.php';
           Werden Sie Teil des OMmatic-Partnernetzwerks und profitieren Sie von unserem einzigartigen Zugang zum deutschen Legal-Marketing-Markt.
         </p>
         <div class="cta-banner-btns">
-          <a href="/kontakt/" class="btn btn-primary btn-lg">Partnerschaft anfragen</a>
+          <a href="#partner-anfrage" class="btn btn-primary btn-lg">Partnerschaft anfragen →</a>
           <a href="/loesungen/" class="btn btn-ghost btn-lg">Unsere Lösungen</a>
         </div>
       </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       PARTNER-ANFRAGE FORMULAR
+       ============================================================ -->
+  <section class="content-section alt" id="partner-anfrage">
+    <div class="container">
+
+      <div class="sr" style="text-align:center;margin-bottom:3rem;">
+        <span class="tag-chip">Jetzt starten</span>
+        <h2 style="font-family:var(--font-h);font-size:clamp(1.75rem,4vw,2.75rem);font-weight:800;margin-top:1rem;">
+          <span class="gradient-text">Partnerschaft anfragen</span>
+        </h2>
+        <p style="color:var(--text-2);max-width:600px;margin:1rem auto 0;font-size:1rem;line-height:1.75;">
+          Werden Sie Teil unseres Netzwerks. Wir melden uns innerhalb von 48 Stunden bei Ihnen.
+        </p>
+      </div>
+
+      <div class="contact-form-wrap sr sr-d1" style="max-width:860px;margin:0 auto;">
+        <form method="post" action="/kontakt/send.php" class="contact-form" novalidate>
+          <input type="text" name="honeypot" style="display:none;" tabindex="-1" autocomplete="off">
+          <input type="hidden" name="form_type" value="partnerschaft">
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+            <div class="form-group">
+              <label class="form-label" for="p-name">Ihr Name <span style="color:var(--primary)">*</span></label>
+              <input type="text" id="p-name" name="name" class="form-input" placeholder="Max Mustermann" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="p-unternehmen">Unternehmensname <span style="color:var(--primary)">*</span></label>
+              <input type="text" id="p-unternehmen" name="unternehmen" class="form-input" placeholder="Muster GmbH" required>
+            </div>
+          </div>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+            <div class="form-group">
+              <label class="form-label" for="p-email">E-Mail-Adresse <span style="color:var(--primary)">*</span></label>
+              <input type="email" id="p-email" name="email" class="form-input" placeholder="info@beispiel.de" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="p-website">Ihre Website</label>
+              <input type="url" id="p-website" name="website" class="form-input" placeholder="https://www.beispiel.de">
+            </div>
+          </div>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+            <div class="form-group">
+              <label class="form-label" for="p-telefon">Telefonnummer</label>
+              <input type="tel" id="p-telefon" name="telefon" class="form-input" placeholder="+49 631 ...">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="p-art">Art der Partnerschaft <span style="color:var(--primary)">*</span></label>
+              <select id="p-art" name="partnerschaftsart" class="form-input" required>
+                <option value="" disabled selected>Art der Partnerschaft wählen...</option>
+                <option value="technologie">Technologiepartner</option>
+                <option value="legaltech">Legal-Tech-Partner</option>
+                <option value="referral">Empfehlungspartner</option>
+                <option value="integration">Integrationspartner</option>
+                <option value="sonstiges">Sonstiges</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="p-nachricht">Ihre Nachricht / Ihr Angebot</label>
+            <textarea id="p-nachricht" name="nachricht" class="form-input" rows="4"
+                      placeholder="Beschreiben Sie kurz Ihr Unternehmen und wie eine Partnerschaft aussehen könnte ..."
+                      style="resize:vertical;"></textarea>
+          </div>
+
+          <div class="form-group" style="display:flex;align-items:flex-start;gap:12px;margin-bottom:4px;">
+            <input type="checkbox" id="p-dsgvo" name="dsgvo" required
+                   style="width:18px;height:18px;margin-top:3px;flex-shrink:0;accent-color:var(--primary);">
+            <label for="p-dsgvo" style="font-size:13px;color:var(--text-2);line-height:1.6;">
+              Ich habe die <a href="/datenschutz/" style="color:var(--primary);">Datenschutzerklärung</a> gelesen und stimme zu. <span style="color:var(--primary)">*</span>
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;margin-top:16px;">
+            Partnerschaftsanfrage senden
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width:18px;height:18px;"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </button>
+          <p style="text-align:center;font-size:13px;color:var(--text-3);margin-top:12px;margin-bottom:0;">
+            Ihre Daten werden vertraulich behandelt und nicht an Dritte weitergegeben.
+          </p>
+        </form>
+      </div>
+
     </div>
   </section>
 
