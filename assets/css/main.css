@@ -1170,7 +1170,7 @@ textarea { resize:vertical; min-height:120px; line-height:1.6; }
   padding: calc(68px + clamp(48px,8vw,96px)) 0 clamp(48px,7vw,80px);
   position: relative;
   overflow: hidden;
-  text-align: center;
+  text-align: left;
   background: var(--bg);
 }
 .blog-hero::after {
@@ -1194,7 +1194,7 @@ textarea { resize:vertical; min-height:120px; line-height:1.6; }
   font-size: clamp(16px,1.8vw,19px);
   color: var(--text-2);
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0 0 40px;
   line-height: 1.7;
 }
 

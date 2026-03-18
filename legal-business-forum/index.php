@@ -8,159 +8,275 @@ require_once '../includes/header.php';
 <main>
 
   <!-- ============================================================
-       HERO
+       PAGE HERO
        ============================================================ -->
-  <section class="section hero" style="padding-top:clamp(6rem,12vw,10rem);">
-    <div class="container" style="text-align:center;max-width:900px;margin:0 auto;">
-      <div class="sr">
-        <span class="tag-chip">Community & Wissen</span>
-        <h1 style="font-family:var(--font-heading);font-size:clamp(2.5rem,6vw,4.5rem);font-weight:900;line-height:1.1;margin-top:1rem;">
-          Legal Business<br><span class="gradient-text">Forum</span>
-        </h1>
-        <p style="font-size:clamp(1rem,2vw,1.25rem);color:var(--color-text-muted);max-width:680px;margin:1.5rem auto 2.5rem;">
-          Kein klassisches Webinar, kein Verkaufsformat und kein standardisierter Workshop. Ein Ort für fachlichen Austausch, aktuelle Impulse und unternehmerisches Denken – speziell für Rechtsanwältinnen und Rechtsanwälte.
-        </p>
-        <a href="#anmelden" class="btn btn-primary">Kostenlos teilnehmen</a>
+  <section class="page-hero">
+    <div class="hero-mesh" aria-hidden="true">
+      <div class="mesh-blob mesh-1"></div>
+      <div class="mesh-blob mesh-2"></div>
+    </div>
+    <div class="hero-grid-bg" aria-hidden="true"></div>
+    <div class="container page-hero-inner">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">OMmatic</a>
+        <span class="breadcrumb-sep" aria-hidden="true">/</span>
+        <span>Legal Business Forum</span>
+      </nav>
+      <div class="sr"><span class="tag-chip">Community &amp; Wissen</span></div>
+      <h1 class="page-hero-title sr sr-d1">
+        Legal Business<br><span class="gradient-text">Forum</span>
+      </h1>
+      <p class="page-hero-sub sr sr-d2">
+        Kein klassisches Webinar, kein Verkaufsformat und kein standardisierter Workshop. Ein Ort für fachlichen Austausch, aktuelle Impulse und unternehmerisches Denken – speziell für Rechtsanwältinnen und Rechtsanwälte, die ihre Kanzlei zukunftsorientiert aufstellen möchten.
+      </p>
+      <div class="page-hero-ctas sr sr-d3">
+        <a href="/kontakt/" class="btn btn-primary btn-lg">Jetzt kostenlos anmelden</a>
+        <a href="#themen" class="btn btn-ghost btn-lg">Themen entdecken</a>
       </div>
     </div>
   </section>
 
+
   <!-- ============================================================
-       WARUM TEILNEHMEN
+       WAS IST DAS FORUM? – Two-col: prose left, 4 benefit cards right
        ============================================================ -->
-  <section class="section">
+  <section class="content-section" id="was-ist-das-forum">
     <div class="container">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;" class="sr">
-        <div>
-          <span class="tag-chip">Für Anwälte</span>
-          <h2 style="font-family:var(--font-heading);font-size:clamp(1.75rem,4vw,2.75rem);font-weight:800;margin:1rem 0 1.5rem;">
-            Warum sollten Sie teilnehmen?
-          </h2>
-          <p style="color:var(--color-text-muted);line-height:1.8;margin-bottom:1.25rem;">
-            Ihre juristische Expertise bildet das Fundament Ihrer Arbeit – doch um Ihre Kanzlei nachhaltig erfolgreich zu positionieren, braucht es zusätzlich unternehmerisches Denken und praxisnahes Wissen.
-          </p>
-          <p style="color:var(--color-text-muted);line-height:1.8;">
-            Das Legal Business Forum schließt diese Lücke: mit relevanten Impulsen, ehrlichem Austausch und einer Community auf Augenhöhe.
-          </p>
+      <div class="two-col">
+
+        <div class="prose sr">
+          <span class="tag-chip" style="margin-bottom:1.25rem;display:inline-block;">Für Anwältinnen &amp; Anwälte</span>
+          <h2>Was ist das Legal Business Forum?</h2>
+          <p>Das Legal Business Forum ist kein klassisches Webinar, kein Verkaufsformat und kein standardisierter Workshop. Es ist ein Ort für fachlichen Austausch, aktuelle Impulse und unternehmerisches Denken – speziell für Rechtsanwältinnen und Rechtsanwälte, die ihre Kanzlei zukunftsorientiert aufstellen möchten.</p>
+          <p>Ihre juristische Expertise bildet das Fundament Ihrer Arbeit – doch um Ihre Kanzlei nachhaltig erfolgreich zu positionieren, braucht es zusätzlich unternehmerisches Denken, digitale Sichtbarkeit und eine effiziente Organisation des Kanzleialltags.</p>
+          <p>Das Legal Business Forum schließt genau diese Lücke: mit relevantem Praxiswissen, ehrlichem Austausch und einer Community auf Augenhöhe – völlig kostenlos und ohne Verkaufsdruck.</p>
         </div>
-        <div style="display:flex;flex-direction:column;gap:1rem;">
-          <?php
-          $benefits = [
-              ['icon' => '📚', 'text' => 'Relevantes Fachwissen zu Digitalisierung, Marketing, Kanzleisoftware & Co.'],
-              ['icon' => '💡', 'text' => 'Impulse aus der Praxis – ehrlich, konkret und umsetzbar'],
-              ['icon' => '🤝', 'text' => 'Vernetzung auf Augenhöhe mit Kolleg:innen aus ganz Deutschland'],
-              ['icon' => '🚀', 'text' => 'Inspirationen, wie erfolgreiche Kanzleien heute denken und arbeiten'],
-          ];
-          foreach ($benefits as $b): ?>
-          <div class="card" style="padding:1.25rem 1.5rem;display:flex;align-items:flex-start;gap:1rem;">
-            <span style="font-size:1.5rem;flex-shrink:0;"><?= $b['icon'] ?></span>
-            <p style="color:var(--color-text-muted);font-size:0.95rem;line-height:1.6;margin:0;"><?= htmlspecialchars($b['text']) ?></p>
+
+        <div class="sr sr-d1">
+          <div class="feature-grid">
+
+            <div class="feature-card">
+              <div class="feature-icon ic-cyan">
+                <!-- Heroicon: calendar -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+                </svg>
+              </div>
+              <div class="feature-title">Aktuelles Fachwissen</div>
+              <div class="feature-text">Relevantes Wissen zu Digitalisierung, Marketing, Kanzleisoftware &amp; Co. – direkt aus der Praxis.</div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon ic-indigo">
+                <!-- Heroicon: users -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <div class="feature-title">Community auf Augenhöhe</div>
+              <div class="feature-text">Vernetzung mit Kolleg:innen aus ganz Deutschland – offen, direkt und ohne Hierarchiedenken.</div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon ic-teal">
+                <!-- Heroicon: light-bulb -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 18h6M10 22h4M12 2a7 7 0 0 1 7 7c0 2.5-1.3 4.7-3.3 6l-.7.5V17H9v-1.5l-.7-.5A7 7 0 0 1 12 2z"/>
+                </svg>
+              </div>
+              <div class="feature-title">Impulse aus der Praxis</div>
+              <div class="feature-text">Ehrliche, konkrete und sofort umsetzbare Impulse – keine Theorie von der Stange, sondern echter Kanzleialltag.</div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon ic-cyan">
+                <!-- Heroicon: share / network -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+                </svg>
+              </div>
+              <div class="feature-title">Inspirierende Einblicke</div>
+              <div class="feature-text">Erfahren Sie, wie erfolgreiche Kanzleien heute denken und arbeiten – und was Sie davon direkt übernehmen können.</div>
+            </div>
+
           </div>
-          <?php endforeach; ?>
         </div>
+
       </div>
     </div>
   </section>
 
+
   <!-- ============================================================
-       THEMEN
+       THEMEN – feature-grid mit 6 Topic Cards
        ============================================================ -->
-  <section class="section">
+  <section id="themen" class="content-section" style="background:var(--bg-2);">
     <div class="container">
-      <div class="sr" style="text-align:center;margin-bottom:3rem;">
-        <h2 style="font-family:var(--font-heading);font-size:clamp(1.75rem,4vw,2.75rem);font-weight:800;">
-          Was erwartet Sie <span class="gradient-text">konkret</span>?
+      <div class="section-head sr" style="text-align:center;margin-bottom:3rem;">
+        <span class="tag-chip" style="margin-bottom:1rem;display:inline-block;">Was erwartet Sie?</span>
+        <h2 style="font-size:clamp(1.75rem,4vw,2.75rem);font-weight:800;font-family:var(--font-h,'Outfit');">
+          Die <span class="gradient-text">Themen</span> des Forums
         </h2>
-      </div>
-
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;">
-
-        <?php
-        $topics = [
-            ['title' => 'Kanzleimarketing & Online-Marketing', 'desc' => 'Was funktioniert wirklich? Bewährte Strategien aus der Praxis für messbar mehr Mandantenanfragen.'],
-            ['title' => 'Legal Tech & KI', 'desc' => 'Welche Tools sparen wirklich Zeit? Praxisberichte und ehrliche Bewertungen moderner Kanzlei-Technologie.'],
-            ['title' => 'Effizienz & Organisation', 'desc' => 'Kanzleistrukturen, Delegation und smarte Prozesse – wie erfolgreiche Kanzleien ihren Alltag organisieren.'],
-            ['title' => 'Kanzleisoftware & Digitalisierung', 'desc' => 'Marktüberblick, Vergleiche und Erfahrungsberichte zu Software für moderne Kanzleien.'],
-            ['title' => 'Finanzen & BWL-Basics', 'desc' => 'Betriebswirtschaftliche Grundlagen für Rechtsanwälte: Kennzahlen, Planung und Steuerung.'],
-            ['title' => 'Best Practices erfolgreicher Kanzleien', 'desc' => 'Konkrete Beispiele und Fallstudien: Was machen die besten Kanzleien anders – und warum?'],
-        ];
-        foreach ($topics as $topic): ?>
-        <div class="card sr" style="padding:2rem;">
-          <h3 style="font-weight:700;font-size:1.05rem;margin-bottom:0.75rem;"><?= htmlspecialchars($topic['title']) ?></h3>
-          <p style="color:var(--color-text-muted);font-size:0.9rem;line-height:1.7;"><?= htmlspecialchars($topic['desc']) ?></p>
-        </div>
-        <?php endforeach; ?>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       WAS ES NICHT IST
-       ============================================================ -->
-  <section class="section">
-    <div class="container">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;" class="sr">
-
-        <div class="card" style="padding:2.5rem;border:1px solid rgba(239,68,68,0.3);">
-          <h2 style="font-size:1.3rem;font-weight:700;margin-bottom:1.5rem;color:#ef4444;">Was das Legal Business Forum <em>nicht</em> ist:</h2>
-          <ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:0.75rem;">
-            <li style="display:flex;align-items:center;gap:0.75rem;color:var(--color-text-muted);">
-              <span style="color:#ef4444;font-weight:700;font-size:1.1rem;">✗</span> Keine Verkaufsveranstaltung
-            </li>
-            <li style="display:flex;align-items:center;gap:0.75rem;color:var(--color-text-muted);">
-              <span style="color:#ef4444;font-weight:700;font-size:1.1rem;">✗</span> Kein Frontalvortrag ohne Beteiligung
-            </li>
-            <li style="display:flex;align-items:center;gap:0.75rem;color:var(--color-text-muted);">
-              <span style="color:#ef4444;font-weight:700;font-size:1.1rem;">✗</span> Kein Coaching „von der Stange"
-            </li>
-          </ul>
-        </div>
-
-        <div class="card" style="padding:2.5rem;border:1px solid rgba(var(--color-primary-rgb,234,179,8),0.3);">
-          <h2 style="font-size:1.3rem;font-weight:700;margin-bottom:1.5rem;">Stattdessen:</h2>
-          <ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:0.75rem;">
-            <li style="display:flex;align-items:center;gap:0.75rem;color:var(--color-text-muted);">
-              <span style="color:var(--color-primary);font-weight:700;">✓</span> Offener Austausch mit echten Expert:innen – von Profis für Profis
-            </li>
-            <li style="display:flex;align-items:center;gap:0.75rem;color:var(--color-text-muted);">
-              <span style="color:var(--color-primary);font-weight:700;">✓</span> Konkrete, umsetzbare Impulse
-            </li>
-            <li style="display:flex;align-items:center;gap:0.75rem;color:var(--color-text-muted);">
-              <span style="color:var(--color-primary);font-weight:700;">✓</span> Echte Community auf Augenhöhe
-            </li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       AUFTAKTVERANSTALTUNG
-       ============================================================ -->
-  <section class="section" id="anmelden">
-    <div class="container">
-      <div class="card sr" style="background:linear-gradient(135deg,rgba(var(--color-primary-rgb,234,179,8),0.12) 0%,rgba(124,58,237,0.12) 100%);border:1px solid rgba(var(--color-primary-rgb,234,179,8),0.2);padding:clamp(2.5rem,6vw,4rem);text-align:center;">
-        <span class="tag-chip">Nächster Termin</span>
-        <h2 style="font-family:var(--font-heading);font-size:clamp(1.75rem,4vw,2.5rem);font-weight:800;margin:1rem 0;">
-          Starten Sie mit uns
-        </h2>
-        <p style="font-size:1.1rem;font-weight:700;color:var(--color-primary);margin-bottom:0.5rem;">
-          „Wie geht Legal Business heute?"
+        <p style="color:var(--text-2);max-width:600px;margin:1rem auto 0;line-height:1.7;">
+          Nach jedem Vortrag: Diskussion &amp; Erfahrungsaustausch – ohne Verkaufsdruck.
         </p>
-        <div style="display:flex;justify-content:center;gap:2rem;flex-wrap:wrap;margin:1.5rem 0;color:var(--color-text-muted);">
-          <span>📅 Dienstag, 27. Mai 2025</span>
-          <span>⏰ 16:00 Uhr (ca. 45 Minuten)</span>
-          <span>💻 Online via Google Meet</span>
-          <span>🆓 Kostenfrei & unverbindlich</span>
+      </div>
+
+      <div class="feature-grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));">
+
+        <div class="feature-card sr">
+          <div class="feature-icon ic-cyan">
+            <!-- Heroicon: megaphone / marketing -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+            </svg>
+          </div>
+          <div class="feature-title">Kanzleimarketing &amp; Online-Marketing</div>
+          <div class="feature-text">Was funktioniert wirklich? Bewährte Strategien für messbar mehr Mandantenanfragen – ehrlich und ohne Buzzwords.</div>
         </div>
-        <a href="/kontakt/" class="btn btn-primary" style="font-size:1.05rem;padding:1rem 2.5rem;">
-          Jetzt kostenlos anmelden
-        </a>
+
+        <div class="feature-card sr sr-d1">
+          <div class="feature-icon ic-indigo">
+            <!-- Heroicon: cpu chip / AI -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/>
+            </svg>
+          </div>
+          <div class="feature-title">Legal Tech &amp; KI</div>
+          <div class="feature-text">Wie nutzen Sie moderne Tools sinnvoll? Praxisberichte und ehrliche Bewertungen aktueller Kanzlei-Technologie.</div>
+        </div>
+
+        <div class="feature-card sr sr-d2">
+          <div class="feature-icon ic-teal">
+            <!-- Heroicon: adjustments / efficiency -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/><circle cx="8" cy="6" r="2" fill="currentColor" stroke="none"/><circle cx="16" cy="12" r="2" fill="currentColor" stroke="none"/><circle cx="10" cy="18" r="2" fill="currentColor" stroke="none"/>
+            </svg>
+          </div>
+          <div class="feature-title">Effizienz &amp; Organisation</div>
+          <div class="feature-text">Wie arbeiten Sie wirtschaftlicher ohne Qualitätsverlust? Kanzleistrukturen, Delegation und smarte Prozesse.</div>
+        </div>
+
+        <div class="feature-card sr">
+          <div class="feature-icon ic-indigo">
+            <!-- Heroicon: server / software -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/>
+            </svg>
+          </div>
+          <div class="feature-title">Kanzleisoftware &amp; Digitalisierung</div>
+          <div class="feature-text">Welche Systeme bringen echten Mehrwert? Marktüberblick, Vergleiche und Erfahrungsberichte aus der Praxis.</div>
+        </div>
+
+        <div class="feature-card sr sr-d1">
+          <div class="feature-icon ic-cyan">
+            <!-- Heroicon: currency / finance -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+            </svg>
+          </div>
+          <div class="feature-title">Finanzen &amp; betriebswirtschaftliche Basics</div>
+          <div class="feature-text">Worauf kommt es wirklich an? Kennzahlen, Planung und Steuerung für Rechtsanwälte verständlich erklärt.</div>
+        </div>
+
+        <div class="feature-card sr sr-d2">
+          <div class="feature-icon ic-teal">
+            <!-- Heroicon: star / best practices -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+          </div>
+          <div class="feature-title">Best Practices aus erfolgreichen Kanzleien</div>
+          <div class="feature-text">Was machen andere besser? Konkrete Fallstudien und inspirierende Einblicke von Kanzleien, die es bereits geschafft haben.</div>
+        </div>
+
       </div>
     </div>
   </section>
+
+
+  <!-- ============================================================
+       WAS ERHALTEN SIE? – 3 why-cards
+       ============================================================ -->
+  <section class="content-section" id="was-erhalten-sie">
+    <div class="container">
+      <div class="section-head sr" style="text-align:center;margin-bottom:3rem;">
+        <span class="tag-chip" style="margin-bottom:1rem;display:inline-block;">Ihr Nutzen</span>
+        <h2 style="font-size:clamp(1.75rem,4vw,2.75rem);font-weight:800;font-family:var(--font-h,'Outfit');">
+          Was erhalten <span class="gradient-text">Sie</span>?
+        </h2>
+        <p style="color:var(--text-2);max-width:580px;margin:1rem auto 0;line-height:1.7;">
+          Praxiswissen, das Sie sofort in Ihrer Kanzlei anwenden können – kostenlos und ohne Verpflichtung.
+        </p>
+      </div>
+
+      <div class="why-grid">
+
+        <div class="why-card sr">
+          <span class="why-num" aria-hidden="true">01</span>
+          <div class="why-icon-wrap">
+            <!-- Heroicon: academic-cap / knowledge -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>
+            </svg>
+          </div>
+          <h3 class="why-title">Topaktuelles Kanzleiwissen</h3>
+          <p class="why-text">Topaktuelles Wissen rund um Kanzleistrategie, Technik und Organisation – immer nah dran an dem, was Kanzleien heute wirklich bewegt.</p>
+        </div>
+
+        <div class="why-card sr sr-d1">
+          <span class="why-num" aria-hidden="true">02</span>
+          <div class="why-icon-wrap">
+            <!-- Heroicon: lightning-bolt / actionable tips -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+            </svg>
+          </div>
+          <h3 class="why-title">Direkt anwendbare Tipps</h3>
+          <p class="why-text">Keine Theorie für die Schublade: Direkt anwendbare Tipps für Ihren Kanzleialltag, die Sie am nächsten Tag umsetzen können.</p>
+        </div>
+
+        <div class="why-card sr sr-d2">
+          <span class="why-num" aria-hidden="true">03</span>
+          <div class="why-icon-wrap">
+            <!-- Heroicon: briefcase / expert insights -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>
+            </svg>
+          </div>
+          <h3 class="why-title">Praxisnahe Expert:innen-Einblicke</h3>
+          <p class="why-text">Praxisnahe Einblicke von Expert:innen aus der Branche – Profis, die den Kanzleialltag kennen und wissen, worauf es wirklich ankommt.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FORMAT & CTA – Kostenlos teilnehmen
+       ============================================================ -->
+  <section class="cta-banner" id="anmelden" aria-labelledby="cta-lbf-h">
+    <div class="container">
+      <div class="cta-banner-inner sr">
+        <span class="tag-chip" style="margin-bottom:24px;">Kostenlos &amp; online</span>
+        <h2 class="cta-banner-title" id="cta-lbf-h">
+          Kostenlos<br><span class="gradient-text">teilnehmen</span>
+        </h2>
+        <p class="cta-banner-sub">
+          Das Legal Business Forum ist kostenfrei. Die Sessions finden online per Video-Call statt – bundesweit, ohne Reiseaufwand, für Rechtsanwältinnen und Rechtsanwälte, die ihre Kanzlei zukunftssicher aufstellen möchten.
+        </p>
+        <div class="cta-banner-btns">
+          <a href="/kontakt/" class="btn btn-primary btn-lg">
+            Jetzt kostenlos anmelden
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width:18px;height:18px;"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+          <a href="#themen" class="btn btn-ghost btn-lg">Alle Themen ansehen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
 </main>
 

@@ -426,14 +426,18 @@ require_once '../includes/header.php';
   </section>
 
   <!-- CTA -->
-  <section class="cta-section">
-    <div class="container" style="text-align:center;position:relative;z-index:1">
-      <div class="tag-chip" style="margin-bottom:20px;display:inline-flex">Kostenlose Erstberatung</div>
-      <h2 class="sr">Mehr Mandanten für Ihre Kanzlei?</h2>
-      <p class="text-muted">Sprechen Sie jetzt mit unseren Experten und erfahren Sie, welche Maßnahmen für Ihre Kanzlei den größten Hebel haben.</p>
-      <div style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center">
-        <a href="https://calendly.com/marcel-zirkel/45min" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Kostenlose Erstberatung buchen</a>
-        <a href="/kanzleimarketing/" class="btn btn-ghost btn-lg">Alle Leistungen ansehen</a>
+  <section class="cta-banner" aria-labelledby="blog-cta-h">
+    <div class="container">
+      <div class="cta-banner-inner sr">
+        <span class="tag-chip" style="margin-bottom:24px;">Kostenlose Erstberatung</span>
+        <h2 class="cta-banner-title" id="blog-cta-h">Mehr Mandanten für<br><span class="gradient-text">Ihre Kanzlei?</span></h2>
+        <p class="cta-banner-sub">Sprechen Sie jetzt mit unseren Experten und erfahren Sie, welche Maßnahmen für Ihre Kanzlei den größten Hebel haben.</p>
+        <div class="cta-banner-btns">
+          <a href="https://calendly.com/marcel-zirkel/45min" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Kostenlose Erstberatung buchen
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width:18px;height:18px;"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+          <a href="/kanzleimarketing/" class="btn btn-ghost btn-lg">Alle Leistungen ansehen</a>
+        </div>
       </div>
     </div>
   </section>
