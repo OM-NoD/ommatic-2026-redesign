@@ -233,6 +233,11 @@ $robots_content = $page_noindex ? 'noindex, nofollow' : 'index, follow';
       </a>
     </div>
 
+    <div class="mobile-nav-section">
+      <div class="mobile-nav-label">Kontakt</div>
+      <a href="/kontakt/" class="mobile-nav-link">Kontakt &amp; Beratung</a>
+    </div>
+
   </div>
 
   <!-- Drawer Footer: CTA + Theme Toggle -->

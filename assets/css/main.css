@@ -337,7 +337,7 @@ button, input, textarea, select { font-family: inherit; }
 
 /* Drawer: Scrollable body */
 .mobile-nav-body {
-  flex:1; overflow-y:auto; padding:8px 0 16px;
+  flex:1; min-height:0; overflow-y:auto; padding:8px 0 16px;
   -webkit-overflow-scrolling:touch;
 }
 .mobile-nav-section { padding:12px 0 4px; }
@@ -366,7 +366,8 @@ button, input, textarea, select { font-family: inherit; }
 
 /* Drawer: Footer (always visible at bottom) */
 .mobile-nav-foot {
-  flex-shrink:0; padding:16px 20px 28px;
+  flex-shrink:0; padding:16px 20px;
+  padding-bottom:max(24px, env(safe-area-inset-bottom, 24px));
   border-top:1px solid var(--border-s);
   display:flex; flex-direction:column; gap:10px;
 }
@@ -405,7 +406,7 @@ button, input, textarea, select { font-family: inherit; }
   background-size:64px 64px;
 }
 
-.hero-content { position:relative; z-index:1; padding:clamp(72px,10vw,120px) 0; width:100%; }
+.hero-content { position:relative; z-index:1; padding-top:clamp(72px,10vw,120px); padding-bottom:clamp(72px,10vw,120px); width:100%; }
 .hero-grid { display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center; }
 
 .hero-left .tag-chip { margin-bottom:28px; }
