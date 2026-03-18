@@ -257,13 +257,13 @@ require_once '../includes/header.php';
         <p class="section-sub">Spezialistinnen und Spezialisten, die täglich für Ihren Kanzleierfolg arbeiten.</p>
       </div>
 
-      <!-- Leadership: 3 with real photos -->
-      <div class="team-grid sr" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-bottom:3rem;">
+      <!-- Leadership: 3 mit echten Fotos – max 3 Spalten, zentriert -->
+      <div class="team-grid sr" style="grid-template-columns:repeat(3,1fr);max-width:900px;margin:0 auto 3.5rem;">
 
         <!-- Marcel Zirkel -->
         <div class="team-card">
           <div class="team-card-img" style="width:120px;height:120px;overflow:hidden;border-radius:50%;background:var(--bg-2);margin:0 auto 1rem;">
-            <img src="https://ommatic.de/wp-content/uploads/2025/03/Marcel-Zirkel_Ommatic.jpg"
+            <img src="/assets/img/team/marcel-zirkel.jpg"
                  alt="Marcel Zirkel – CEO OMmatic"
                  style="width:100%;height:100%;object-fit:cover;"
                  loading="lazy">
@@ -278,7 +278,7 @@ require_once '../includes/header.php';
         <!-- Cornelia Day -->
         <div class="team-card">
           <div class="team-card-img" style="width:120px;height:120px;overflow:hidden;border-radius:50%;background:var(--bg-2);margin:0 auto 1rem;">
-            <img src="https://ommatic.de/wp-content/uploads/2025/09/ommatic-conny.jpg"
+            <img src="/assets/img/team/cornelia-day.jpg"
                  alt="Cornelia Day – OMmatic"
                  style="width:100%;height:100%;object-fit:cover;"
                  loading="lazy">
@@ -293,7 +293,7 @@ require_once '../includes/header.php';
         <!-- Alex Börsig -->
         <div class="team-card">
           <div class="team-card-img" style="width:120px;height:120px;overflow:hidden;border-radius:50%;background:var(--bg-2);margin:0 auto 1rem;">
-            <img src="https://ommatic.de/wp-content/uploads/2025/11/alex-boersig-ommatic.jpg"
+            <img src="/assets/img/team/alex-boersig.jpg"
                  alt="Alex Börsig – OMmatic"
                  style="width:100%;height:100%;object-fit:cover;"
                  loading="lazy">
@@ -307,8 +307,8 @@ require_once '../includes/header.php';
 
       </div>
 
-      <!-- Rest of team: initials avatars -->
-      <div class="team-grid sr" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr));">
+      <!-- Rest of team: Initialen-Avatare, max 4 Spalten -->
+      <div class="team-grid sr" style="grid-template-columns:repeat(4,1fr);">
 
         <!-- Markus Weiler -->
         <div class="team-card">

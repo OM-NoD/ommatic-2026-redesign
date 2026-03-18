@@ -1025,7 +1025,7 @@ textarea { resize:vertical; min-height:120px; line-height:1.6; }
   .contact-info { max-width:600px; }
   .two-col { grid-template-columns:1fr; }
   .two-col.reverse { direction:ltr; }
-  .team-grid { grid-template-columns:1fr 1fr; }
+  .team-grid { grid-template-columns:repeat(2,1fr) !important; }
   .service-details-grid { grid-template-columns:1fr 1fr; }
   .stats-row { grid-template-columns:1fr 1fr; }
   .stats-row .stat-block:nth-child(2) { border-right:none; }
@@ -1060,7 +1060,7 @@ textarea { resize:vertical; min-height:120px; line-height:1.6; }
   .stat-item { border-right:none !important; border-top:1px solid var(--border-s); }
   .stat-item:first-child { border-top:none; }
   .process-track { grid-template-columns:1fr; }
-  .team-grid { grid-template-columns:1fr; }
+  .team-grid { grid-template-columns:1fr !important; }
   .page-hero-ctas { flex-direction:column; }
   .page-hero-inner { padding: 0; }
   .blog-hero .container { padding-left: 20px; padding-right: 20px; }
