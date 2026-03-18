@@ -35,7 +35,7 @@
   --font-h:       'Outfit', sans-serif;
   --font-b:       'Manrope', sans-serif;
   --max-w:        1280px;
-  --py:           clamp(72px, 10vw, 120px);
+  --py:           clamp(56px, 6vw, 88px);
 }
 [data-theme="light"] {
   --bg:           #F8FAFC;
