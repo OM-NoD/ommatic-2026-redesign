@@ -187,6 +187,7 @@ document.addEventListener('click', () => {
     b.classList.remove('active');
     b.setAttribute('aria-expanded', 'false');
   });
+});
 
 /* ==========================================================
    CALENDLY MODAL – Intercept + Tracking
@@ -280,4 +281,3 @@ document.addEventListener('click', () => {
     }
   }
 })();
-});
