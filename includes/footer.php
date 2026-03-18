@@ -151,6 +151,6 @@ if (empty($hide_contact_section)) om_contact_section();
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
 </button>
 
-<script src="/assets/js/main.js"></script>
+<script src="/assets/js/main.js?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/assets/js/main.js') ?>"></script>
 </body>
 </html>
