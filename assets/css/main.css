@@ -171,7 +171,9 @@ button, input, textarea, select { font-family: inherit; }
   margin: 0 auto clamp(40px,5vw,64px);
 }
 .section-header.sh-left { text-align: left; margin-left: 0; }
-.section-header .tag-chip { margin-bottom: 14px; }
+.section-header .tag-chip { margin-bottom: 20px; }
+/* Globaler Abstand: Pill direkt vor H2 – gilt für alle Seiten */
+.tag-chip + h2 { margin-top: 20px; }
 .section-header h2 {
   font-family: var(--font-h);
   font-size: clamp(24px,3vw,38px);
