@@ -126,6 +126,27 @@ if (empty($hide_contact_section)) om_contact_section();
   </div>
 </footer>
 
+<!-- ============================================================
+     CALENDLY MODAL
+     ============================================================ -->
+<div id="cal-modal" class="cal-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="cal-modal-title">
+  <div class="cal-modal-overlay" id="cal-modal-overlay"></div>
+  <div class="cal-modal-dialog">
+    <div class="cal-modal-header">
+      <div class="cal-modal-title" id="cal-modal-title">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width:18px;height:18px;color:var(--primary)"><rect x="3" y="4" width="18" height="18" rx="2" stroke-width="1.75"/><line x1="16" y1="2" x2="16" y2="6" stroke-width="1.75"/><line x1="8" y1="2" x2="8" y2="6" stroke-width="1.75"/><line x1="3" y1="10" x2="21" y2="10" stroke-width="1.75"/></svg>
+        Termin buchen
+      </div>
+      <button class="cal-modal-close" id="cal-modal-close" aria-label="Schließen">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="cal-modal-body">
+      <iframe id="cal-iframe" src="" frameborder="0" allowfullscreen title="Termin buchen bei OMmatic"></iframe>
+    </div>
+  </div>
+</div>
+
 <button class="scroll-top" id="scrollTop" aria-label="Nach oben scrollen">
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
 </button>

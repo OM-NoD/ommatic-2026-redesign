@@ -2336,3 +2336,102 @@ main > section ul li::before {
   .team-detail-hero { grid-template-columns: 1fr; gap: 32px; padding: 48px 0 32px; }
   .team-detail-img { aspect-ratio: 4/3; }
 }
+
+
+/* ==========================================================
+   CALENDLY MODAL
+   ========================================================== */
+.cal-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+.cal-modal.open {
+  opacity: 1;
+  pointer-events: all;
+}
+.cal-modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.75);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  cursor: pointer;
+}
+.cal-modal-dialog {
+  position: relative;
+  z-index: 1;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-l);
+  width: 100%;
+  max-width: 900px;
+  max-height: calc(100vh - 32px);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 32px 80px rgba(0,0,0,.6);
+  transform: translateY(24px) scale(.97);
+  transition: transform 0.25s ease;
+}
+.cal-modal.open .cal-modal-dialog {
+  transform: translateY(0) scale(1);
+}
+.cal-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border-s);
+  flex-shrink: 0;
+}
+.cal-modal-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-h);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+}
+.cal-modal-close {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: 1px solid var(--border-s);
+  background: transparent;
+  color: var(--text-2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .15s, color .15s;
+  flex-shrink: 0;
+}
+.cal-modal-close:hover {
+  background: var(--bg-2);
+  color: var(--text);
+}
+.cal-modal-body {
+  flex: 1;
+  overflow: hidden;
+  min-height: 580px;
+}
+#cal-iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 580px;
+  border: none;
+  display: block;
+}
+@media (max-width: 600px) {
+  .cal-modal-dialog { border-radius: var(--radius); max-height: calc(100vh - 16px); }
+  .cal-modal-body, #cal-iframe { min-height: 520px; }
+}

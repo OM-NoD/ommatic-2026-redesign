@@ -187,4 +187,97 @@ document.addEventListener('click', () => {
     b.classList.remove('active');
     b.setAttribute('aria-expanded', 'false');
   });
+
+/* ==========================================================
+   CALENDLY MODAL – Intercept + Tracking
+   Alle Links mit href*="calendly.com" öffnen das modale Fenster.
+   Buchungs-Conversions werden via GA4 + GTM dataLayer getrackt.
+   ========================================================== */
+(function() {
+  const modal   = document.getElementById('cal-modal');
+  const iframe  = document.getElementById('cal-iframe');
+  const overlay = document.getElementById('cal-modal-overlay');
+  const closeBtn= document.getElementById('cal-modal-close');
+  if (!modal || !iframe) return;
+
+  // Calendly-URL: Dunkel-Styling-Parameter anhängen
+  function buildCalUrl(href) {
+    const base = href.split('?')[0];
+    return base +
+      '?embed_type=Inline' +
+      '&hide_gdpr_banner=1' +
+      '&background_color=0d0d0f' +
+      '&text_color=e8eaf0' +
+      '&primary_color=00c2ff';
+  }
+
+  function openModal(calUrl) {
+    iframe.src = buildCalUrl(calUrl);
+    modal.classList.add('open');
+    modal.removeAttribute('aria-hidden');
+    document.body.style.overflow = 'hidden';
+    closeBtn.focus();
+    // Tracking: Modal geöffnet
+    trackCalendly('calendly_modal_open', { url: calUrl });
+  }
+
+  function closeModal() {
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    // Iframe src nach Animation leeren (500ms)
+    setTimeout(() => { iframe.src = ''; }, 300);
+  }
+
+  // Intercept aller Calendly-Links auf der Seite
+  document.addEventListener('click', function(e) {
+    const link = e.target.closest('a[href*="calendly.com"]');
+    if (!link) return;
+    e.preventDefault();
+    openModal(link.getAttribute('href'));
+  });
+
+  // Schließen via Button oder Overlay
+  if (closeBtn)  closeBtn.addEventListener('click', closeModal);
+  if (overlay)   overlay.addEventListener('click', closeModal);
+
+  // Schließen via ESC
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
+  });
+
+  // Calendly postMessage Events für Conversion-Tracking
+  window.addEventListener('message', function(e) {
+    if (!e.data || !e.data.event) return;
+    switch (e.data.event) {
+      case 'calendly.event_type_viewed':
+        trackCalendly('calendly_view', { step: 'event_type' });
+        break;
+      case 'calendly.date_and_time_selected':
+        trackCalendly('calendly_step', { step: 'datetime_selected' });
+        break;
+      case 'calendly.event_scheduled':
+        // Buchung abgeschlossen – Haupt-Conversion!
+        trackCalendly('calendly_booking_complete', {
+          event_name: e.data.payload?.event?.name || '',
+          invitee:    e.data.payload?.invitee?.name || ''
+        });
+        // Optional: Seite kurz nach Buchung schließen
+        setTimeout(closeModal, 3000);
+        break;
+    }
+  });
+
+  // Einheitliche Tracking-Funktion: GA4 + GTM dataLayer
+  function trackCalendly(eventName, params) {
+    // GA4 via gtag
+    if (typeof gtag === 'function') {
+      gtag('event', eventName, Object.assign({ event_category: 'Calendly' }, params));
+    }
+    // GTM dataLayer
+    if (window.dataLayer) {
+      window.dataLayer.push(Object.assign({ event: eventName }, params));
+    }
+  }
+})();
 });
