@@ -232,6 +232,18 @@ button, input, textarea, select { font-family: inherit; }
 .i-sun  { display:none; }
 [data-theme="light"] .i-moon { display:none; }
 [data-theme="light"] .i-sun  { display:block; }
+[data-theme="light"] .mesh-blob { opacity: 0.04; }
+[data-theme="light"] .hero-grid-bg { opacity: 0.3; }
+[data-theme="light"] .svc-card { background: #fff; }
+[data-theme="light"] .feature-card { background: #fff; }
+[data-theme="light"] .why-card { background: #fff; }
+[data-theme="light"] .hs-card { background: #fff; }
+[data-theme="light"] .blog-card { background: #fff; }
+[data-theme="light"] .contact-info-card { background: #fff; }
+[data-theme="light"] .process-step { background: #fff; }
+[data-theme="light"] .cta-banner { background: linear-gradient(135deg, #E8F4FF 0%, #EEF2FF 50%, #E6FFF9 100%); }
+[data-theme="light"] .topbar { background: #EBF5FF; border-bottom: 1px solid rgba(0,153,204,0.15); }
+[data-theme="light"] .nav-dropdown-menu { background: #fff; border-color: rgba(0,0,0,0.1); }
 
 .hamburger {
   display:none; flex-direction:column; gap:5px;
@@ -1050,6 +1062,12 @@ textarea { resize:vertical; min-height:120px; line-height:1.6; }
   .process-track { grid-template-columns:1fr; }
   .team-grid { grid-template-columns:1fr; }
   .page-hero-ctas { flex-direction:column; }
+  .page-hero-inner { padding: 0; }
+  .blog-hero .container { padding-left: 20px; padding-right: 20px; }
+  .cta-banner-inner { padding: 32px 20px; }
+  .hero-stats .hs-card { padding: 20px 14px; }
+  .contact-info-cards { gap: 8px; }
+  .contact-info-card { padding: 12px 16px; }
 }
 
 ::selection { background:var(--primary-dim); color:var(--primary); }
