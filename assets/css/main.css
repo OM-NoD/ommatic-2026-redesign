@@ -638,7 +638,7 @@ button, input, textarea, select { font-family: inherit; }
 .stats-section::after  { bottom:0; }
 .stats-bg-glow { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:800px; height:400px; background:radial-gradient(ellipse,rgba(0,194,255,.04) 0%,transparent 70%); pointer-events:none; }
 
-.stats-grid { display:grid; grid-template-columns:repeat(4,1fr); position:relative; z-index:1; }
+.stats-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; position:relative; z-index:1; }
 .stat-item {
   padding:clamp(40px,5vw,64px) 32px; text-align:center;
   border-right:1px solid var(--border-s); transition:background .3s; cursor:default;
@@ -1107,6 +1107,18 @@ main > section ul li::before {
   backdrop-filter:blur(14px); transition:border-color .3s, transform .3s;
 }
 .team-card:hover { border-color:var(--border); transform:translateY(-4px); }
+
+/* Foto-Wrapper: zentriertes Kreisbild oben in der Karte */
+.team-photo-wrap {
+  width: 130px; height: 130px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  border: 3px solid var(--border-s);
+  background: var(--bg-2);
+  flex-shrink: 0;
+}
+.team-photo-wrap img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
 
 /* Horizontale Variante: Foto links, Text rechts – für 2-Spalten-Grid */
 .team-card--wide {
