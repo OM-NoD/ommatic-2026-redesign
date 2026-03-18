@@ -65,7 +65,7 @@ require_once '../includes/header.php';
         <h2>Ihre Herausforderung am Markt – Relevanz</h2>
         <p class="section-sub">Warum Online-Marketing heute für jedes Unternehmen unverzichtbar ist.</p>
       </div>
-      <div class="prose sr" style="max-width:880px;margin:0 auto 3rem;">
+      <div class="prose sr" style="max-width:880px;margin:0 0 3rem;">
         <p>In der heutigen digitalisierten Welt wird das Online-Marketing für Unternehmen immer wichtiger, um wettbewerbsfähig zu bleiben und ihre Zielgruppe zu erreichen. Laut einer Studie des Bundesverbands Digitale Wirtschaft (BVDW) haben 96 Prozent der deutschen Unternehmen eine eigene Website und 82 Prozent betreiben Online-Marketing. Eine Untersuchung von Bitkom Research zeigt, dass 77 Prozent der deutschen Unternehmen Social-Media-Kanäle nutzen.</p>
         <p>Laut einer Studie von Google aus dem Jahr 2019 nutzen 89 Prozent der Verbraucher das Internet, um lokale Unternehmen zu suchen, und 46 Prozent aller Google-Suchen haben einen lokalen Bezug. 76 Prozent der Menschen, die nach einem lokalen Unternehmen suchen, haben das Unternehmen innerhalb von 24 Stunden besucht oder kontaktiert.</p>
       </div>
@@ -202,7 +202,7 @@ require_once '../includes/header.php';
         <h2>Was wir bieten</h2>
         <p class="section-sub">Alle erforderlichen Aspekte eines auf Ihre Branche zugeschnittenen Marketingkonzepts – effizient und messbar.</p>
       </div>
-      <div class="prose sr" style="max-width:880px;margin:0 auto 3rem;">
+      <div class="prose sr" style="max-width:880px;margin:0 0 3rem;">
         <p>Das Leistungsportfolio von OMmatic umfasst alle erforderlichen Aspekte eines speziell auf die Bedürfnisse der jeweiligen Branche zugeschnittenen Marketingkonzepts, profitiert dabei jedoch von einer effizienten Mischung aus standardisierten sowie automatisierten Leistungen und einer individuellen Anpassung.</p>
         <p>Den Kern bildet dabei eine mit individuellen Bildern und Texten gestaltete Website, die auch die Grundlage für Maßnahmen der Suchmaschinenoptimierung und damit der Auffindbarkeit des individuellen Angebots bildet. Die übergeordnete Zielsetzung lautet, potenziellen Mandanten innerhalb weniger Augenblicke eine grundlegende Einschätzung zu ermöglichen, ob die angebotene Leistung und der Anwalt als solcher über die individuell erforderlichen Kompetenzen verfügt und das gewünschte Vertrauensverhältnis absehbar ist.</p>
         <p>Die Struktur der Webseite ist so gestaltet, dass Online-Marketing-Maßnahmen (Kundengewinnung) wirksam und punktgenau auf das entsprechende Rechtsgebiet oder die Dienstleistung eingesetzt werden können. Die Reichweite, das Ranking und die Erfolge sind messbar durch monatliche Reports, die mit einem persönlichen Ansprechpartner erklärt und besprochen werden.</p>
