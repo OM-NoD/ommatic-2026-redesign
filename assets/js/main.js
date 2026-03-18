@@ -12,14 +12,15 @@ const html = document.documentElement;
 const saved = localStorage.getItem('om-theme') || 'dark';
 html.setAttribute('data-theme', saved);
 
-const themeToggle = document.getElementById('themeToggle');
-if (themeToggle) {
-  themeToggle.addEventListener('click', () => {
-    const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-    html.setAttribute('data-theme', next);
-    localStorage.setItem('om-theme', next);
-  });
+function toggleTheme() {
+  const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  html.setAttribute('data-theme', next);
+  localStorage.setItem('om-theme', next);
 }
+const themeToggle = document.getElementById('themeToggle');
+if (themeToggle) themeToggle.addEventListener('click', toggleTheme);
+const themeToggleMobile = document.getElementById('themeToggleMobile');
+if (themeToggleMobile) themeToggleMobile.addEventListener('click', toggleTheme);
 
 /* ==========================================================
    HAMBURGER MENU
