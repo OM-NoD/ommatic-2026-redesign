@@ -164,30 +164,45 @@ require_once '../includes/header.php';
         </h2>
       </div>
 
-      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1rem;" class="sr">
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1.25rem;" class="sr">
         <?php
         $partners = [
-            ['name' => 'jur|nodes',        'cat' => 'Legal Tech'],
-            ['name' => 'VAReNo',            'cat' => 'Kanzleiverwaltung'],
-            ['name' => 'Flexilead',         'cat' => 'Lead-Management'],
-            ['name' => 'Actaport',          'cat' => 'Kanzleisoftware'],
-            ['name' => 'Silberfluss',       'cat' => 'Legal Design'],
-            ['name' => 'Justin Legal',      'cat' => 'Legal Tech'],
-            ['name' => 'Lawlink',           'cat' => 'Mandantenportal'],
-            ['name' => 'Rawtime',           'cat' => 'Zeiterfassung'],
-            ['name' => 'B2B Evolution',     'cat' => 'B2B Marketing'],
-            ['name' => 'Eurojuris',         'cat' => 'Anwaltsnetzwerk'],
-            ['name' => 'stp.one',           'cat' => 'Kanzleisoftware'],
-            ['name' => 'Muxom',             'cat' => 'Tech Solutions'],
+            ['name' => 'jur|nodes',      'cat' => 'Legal Tech',         'domain' => 'jurnodes.de',        'url' => 'https://jurnodes.de/'],
+            ['name' => 'VAReNo',          'cat' => 'Kanzleiverwaltung',  'domain' => 'vareno.de',           'url' => 'https://vareno.de/'],
+            ['name' => 'Flexilead',       'cat' => 'Lead-Management',    'domain' => 'flexilead.de',        'url' => 'https://flexilead.de/'],
+            ['name' => 'Actaport',        'cat' => 'Kanzleisoftware',    'domain' => 'actaport.de',         'url' => 'https://actaport.de/'],
+            ['name' => 'Silberfluss',     'cat' => 'Legal Design',       'domain' => 'silberfluss.de',      'url' => 'https://silberfluss.de/'],
+            ['name' => 'Justin Legal',    'cat' => 'Legal Tech',         'domain' => 'justin.legal',        'url' => 'https://justin.legal/'],
+            ['name' => 'Lawlink',         'cat' => 'Mandantenportal',    'domain' => 'lawlink.de',          'url' => 'https://lawlink.de/'],
+            ['name' => 'RAWTIME',         'cat' => 'Video & Multimedia', 'domain' => 'rawtime.de',          'url' => 'https://rawtime.de/'],
+            ['name' => 'B2B Evolution',   'cat' => 'B2B Marketing',      'domain' => 'b2b-evolution.de',    'url' => 'https://b2b-evolution.de/'],
+            ['name' => 'Eurojuris',       'cat' => 'Anwaltsnetzwerk',    'domain' => 'eurojuris.de',        'url' => 'https://eurojuris.de/'],
+            ['name' => 'stp.one',         'cat' => 'Kanzleisoftware',    'domain' => 'stp.one',             'url' => 'https://stp.one/'],
+            ['name' => 'Muxom',           'cat' => 'Tech Solutions',     'domain' => 'muxom.de',            'url' => 'https://muxom.de/'],
         ];
-        foreach ($partners as $p): ?>
-        <div style="background:var(--bg-card);border:1px solid var(--border-s);border-radius:var(--radius);padding:1.25rem;text-align:center;transition:border-color .2s,transform .2s;" onmouseover="this.style.borderColor='var(--primary)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--border-s)';this.style.transform='translateY(0)'">
-          <div style="width:2.5rem;height:2.5rem;border-radius:.625rem;background:var(--primary-dim);display:flex;align-items:center;justify-content:center;margin:0 auto .75rem;">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width:1.2rem;height:1.2rem;color:var(--primary);"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>
+        foreach ($partners as $p):
+            $logo = 'https://logo.clearbit.com/' . $p['domain'];
+            $initials = strtoupper(substr($p['name'], 0, 2));
+        ?>
+        <a href="<?= htmlspecialchars($p['url']) ?>" target="_blank" rel="noopener"
+           style="background:var(--bg-card);border:1px solid var(--border-s);border-radius:var(--radius);padding:1.5rem 1.25rem;text-align:center;transition:border-color .2s,transform .2s,box-shadow .2s;display:block;text-decoration:none;"
+           onmouseover="this.style.borderColor='var(--primary)';this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 32px var(--primary-glow)'"
+           onmouseout="this.style.borderColor='var(--border-s)';this.style.transform='translateY(0)';this.style.boxShadow='none'">
+          <!-- Logo mit Fallback auf Initialen -->
+          <div style="height:3.5rem;display:flex;align-items:center;justify-content:center;margin:0 auto .875rem;">
+            <img
+              src="<?= htmlspecialchars($logo) ?>"
+              alt="<?= htmlspecialchars($p['name']) ?> Logo"
+              style="max-height:3rem;max-width:8rem;object-fit:contain;filter:brightness(0) invert(1);opacity:.85;"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+            >
+            <div style="display:none;width:3rem;height:3rem;border-radius:.75rem;background:var(--primary-dim);align-items:center;justify-content:center;font-weight:800;font-size:.95rem;color:var(--primary);">
+              <?= htmlspecialchars($initials) ?>
+            </div>
           </div>
-          <div style="font-weight:700;font-size:.9rem;margin-bottom:.25rem;"><?= htmlspecialchars($p['name']) ?></div>
+          <div style="font-weight:700;font-size:.9rem;color:var(--text-1);margin-bottom:.3rem;"><?= htmlspecialchars($p['name']) ?></div>
           <div style="font-size:.75rem;color:var(--text-3);"><?= htmlspecialchars($p['cat']) ?></div>
-        </div>
+        </a>
         <?php endforeach; ?>
       </div>
     </div>

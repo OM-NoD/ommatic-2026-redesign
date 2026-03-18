@@ -29,19 +29,15 @@ require_once '../includes/components.php';
         <!-- Marcel Zirkel -->
         <article class="team-card sr">
           <img
-            src="https://ommatic.de/wp-content/uploads/2025/01/Marcel_OMMatic.jpg"
+            src="/assets/img/team/Marcel-Zirkel_Ommatic.jpg"
             alt="Marcel Zirkel – Geschäftsführer OMmatic"
             class="team-card-img"
-            loading="lazy"
           >
           <div class="team-card-body">
             <div class="team-card-name">Marcel Zirkel</div>
-            <div class="team-card-role">Geschäftsführer</div>
+            <div class="team-card-role">Geschäftsführer &amp; Co-Founder</div>
             <p class="team-card-bio">
-              Über ein Jahrzehnt Erfahrung in SEO, SEA und Social Media.
-              Getreu dem Motto „Wir arbeiten für Kunden, nicht für Budgets"
-              entwickelt Marcel individuelle Online-Marketing-Strategien
-              für Kanzleien und KMUs.
+              Als Geschäftsführer und Co-Founder der OMmatic GmbH verantwortet Marcel Strategie, Produktentwicklung und die Weiterentwicklung der Software-Plattform Trailblazer. Er bringt über 10 Jahre Erfahrung in SEO, SEA und Social Media mit und betreut mit seinem Team alle Kundenbelange.
             </p>
             <div class="team-card-actions">
               <a href="/ansprechpartner/marcel-zirkel/" class="btn btn-primary">Profil ansehen</a>
@@ -53,19 +49,15 @@ require_once '../includes/components.php';
         <!-- Alex Börsig -->
         <article class="team-card sr sr-d1">
           <img
-            src="https://ommatic.de/wp-content/uploads/2025/02/alex_thumb.jpg"
-            alt="Alex Börsig – Geschäftsführer & Google Ads Experte OMmatic"
+            src="/assets/img/team/alex-boersig-ommatic.jpg"
+            alt="Alex Börsig – Chief Sales Officer OMmatic"
             class="team-card-img"
-            loading="lazy"
           >
           <div class="team-card-body">
             <div class="team-card-name">Alex Börsig</div>
-            <div class="team-card-role">Geschäftsführer & Google Ads Experte</div>
+            <div class="team-card-role">Chief Sales Officer (CSO)</div>
             <p class="team-card-bio">
-              Strukturierte Go-to-Market-Konzepte, klare Positionierung und
-              messbare Vertriebsergebnisse für Kanzleien. Alex verbindet
-              Beratungserfahrung, Training und operativen Vertrieb mit tiefem
-              Verständnis für Professional Services.
+              Alex verantwortet die strategische Ausrichtung des Vertriebs, den Aufbau skalierbarer Sales-Prozesse und die Entwicklung neuer Angebote für Kanzleien und Beratungsunternehmen. Sein Fokus liegt auf strukturierten Go-to-Market-Konzepten und klarer Positionierung.
             </p>
             <div class="team-card-actions">
               <a href="/ansprechpartner/alex-boersig/" class="btn btn-primary">Profil ansehen</a>
@@ -77,10 +69,9 @@ require_once '../includes/components.php';
         <!-- Cornelia Day -->
         <article class="team-card sr sr-d2">
           <img
-            src="https://ommatic.de/wp-content/uploads/2025/02/conny-thumb.jpg"
+            src="/assets/img/team/ommatic-conny.jpg"
             alt="Cornelia Day – Senior Account Managerin OMmatic"
             class="team-card-img"
-            loading="lazy"
           >
           <div class="team-card-body">
             <div class="team-card-name">Cornelia Day</div>
