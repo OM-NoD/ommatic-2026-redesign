@@ -693,8 +693,8 @@ button, input, textarea, select { font-family: inherit; }
 .process-section { padding:var(--py) 0; background:var(--bg-2); }
 .process-track { display:grid; grid-template-columns:repeat(4,1fr); position:relative; }
 .process-track::before {
-  content:''; position:absolute; top:44px;
-  left:calc(12.5% + 22px); right:calc(12.5% + 22px);
+  content:''; position:absolute; top:56px;
+  left:calc(12.5% + 28px); right:calc(12.5% + 28px);
   height:2px; background:var(--grad-line); z-index:0;
 }
 .process-step { position:relative; z-index:1; text-align:center; padding:0 16px 40px; }
