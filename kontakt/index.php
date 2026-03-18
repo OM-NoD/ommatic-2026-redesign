@@ -178,7 +178,7 @@ require_once '../includes/components.php';
           </div>
           <h3 class="feature-title">Erstgespräch buchen</h3>
           <p class="feature-text">45-minütiges kostenloses Strategiegespräch direkt mit Marcel Zirkel – unverbindlich, ohne Verkaufsdruck.</p>
-          <a href="https://calendly.com/marcel-zirkel/45min" class="btn btn-ghost btn-sm" style="margin-top:auto;display:inline-flex;align-items:center;gap:6px;">
+          <a href="https://calendly.com/marcel-zirkel/45min" class="btn btn-ghost btn-sm" style="margin-top:1.5rem;display:inline-flex;align-items:center;gap:6px;">
             Termin buchen →
           </a>
         </article>
@@ -189,7 +189,7 @@ require_once '../includes/components.php';
           </div>
           <h3 class="feature-title">Direkt anrufen</h3>
           <p class="feature-text">Mo – So von 09:00 bis 17:00 Uhr erreichbar. Wir nehmen uns Zeit für Ihre Fragen.</p>
-          <a href="tel:+4963120691820" class="btn btn-ghost btn-sm" style="margin-top:auto;display:inline-flex;align-items:center;gap:6px;">
+          <a href="tel:+4963120691820" class="btn btn-ghost btn-sm" style="margin-top:1.5rem;display:inline-flex;align-items:center;gap:6px;">
             +49 631 206918-20 →
           </a>
         </article>
@@ -200,7 +200,7 @@ require_once '../includes/components.php';
           </div>
           <h3 class="feature-title">WhatsApp</h3>
           <p class="feature-text">Schnelle Fragen, schnelle Antworten – schreiben Sie uns auf WhatsApp, wir antworten prompt.</p>
-          <a href="https://wa.me/+4915161587446" target="_blank" rel="noopener" class="btn btn-ghost btn-sm" style="margin-top:auto;display:inline-flex;align-items:center;gap:6px;">
+          <a href="https://wa.me/+4915161587446" target="_blank" rel="noopener" class="btn btn-ghost btn-sm" style="margin-top:1.5rem;display:inline-flex;align-items:center;gap:6px;">
             WhatsApp öffnen →
           </a>
         </article>
